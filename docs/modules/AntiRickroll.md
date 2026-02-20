@@ -12,14 +12,17 @@ AntiRickroll
 - 版本属性：普通可用
 
 介绍
-AntiRickroll 是 JackalClient 的 Web 分类模块。启用后会围绕 反诈骗 这一能力工作，核心行为是：暂无描述
+AntiRickroll（反诈骗）用于暂无描述。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Notify、Check Cooldown、Mode。
 
 配置项
-- Check Cooldown：类型=数值，默认=200U
-- Simple Allow Kill Process：类型=布尔，默认=false
-- Notify：类型=布尔，默认=true
-- Mode：类型=枚举，默认="Simple"
-- Async：类型=布尔，默认=true
+- Notify（中文：通知）：类型=布尔，默认=true
+- Check Cooldown（中文：检查冷却）：类型=数值，默认=200U
+- Async（中文：异步）：类型=布尔，默认=true
+- Simple Allow Kill Process（中文：简易模式允许杀进程）：类型=布尔，默认=false
+- Mode（中文：模式）：类型=枚举，默认="Simple"
+  可选：Simple（简易）；Violence（暴力）
 
 历史更新
 - 5. 修改了 AntiRickroll 模块。现在的配置项：
@@ -42,3 +45,4 @@ AntiRickroll 是 JackalClient 的 Web 分类模块。启用后会围绕 反诈�
 
 相关资料
 无
+

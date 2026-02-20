@@ -12,11 +12,13 @@ HoverFocus
 - 版本属性：普通可用
 
 介绍
-HoverFocus 是 JackalClient 的 Window 分类模块。启用后会围绕 悬停聚焦 这一能力工作，核心行为是：暂无描述
+HoverFocus（悬停聚焦）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Bring to Top、Hover Timeout (ms)。
 
 配置项
-- Hover Timeout (ms)：类型=数值，默认=1000L
-- Bring to Top：类型=布尔，默认=false
+- Bring to Top（中文：带到顶部）：类型=布尔，默认=false
+- Hover Timeout (ms)（中文：悬停超时（毫秒））：类型=数值，默认=1000L
 
 历史更新
 - 65. 修复 CaretBrowser, HoverFocus, NoAnimation, MouseTrails 的开关超时问题。
@@ -41,3 +43,4 @@ HoverFocus 是 JackalClient 的 Window 分类模块。启用后会围绕 悬停�
 
 相关资料
 无
+

@@ -12,21 +12,27 @@ CrackPassword
 - 版本属性：普通可用
 
 介绍
-CrackPassword 是 JackalClient 的 Combat 分类模块。启用后会围绕 破解密码 这一能力工作，核心行为是：凭借字典，暴力破解计算机当前用户的密码。
+CrackPassword（破解密码）用于凭借字典，暴力破解计算机当前用户的密码。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：HUD、HUD Show Current Password Attempt、Notify Speed。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- Threshold Setting Confirmation MessageBox Timeout (ms)：类型=数值，默认=20000
-- Hide HUD When Menu On：类型=布尔，默认=false
-- HUD：类型=布尔，默认=true
-- Multithread：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Try Birthdays：类型=布尔，默认=true
-- HUD Show Current Password Attempt：类型=布尔，默认=true
-- Threshold Setting Default Option：类型=枚举，默认="Cancel"
-- Memorize Prev Password：类型=布尔，默认=true
-- Use Strong Password Dictionary：类型=布尔，默认=true
-- Notify Password：类型=布尔，默认=true
-- Notify Speed：类型=布尔，默认=true
+- Use Strong Password Dictionary（中文：使用强口令字典）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- HUD（中文：是否显示HUD。）：类型=布尔，默认=true
+- HUD Show Current Password Attempt（中文：在HUD中显示当前的密码尝试）：类型=布尔，默认=true
+- Notify Speed（中文：通知速率）：类型=布尔，默认=true
+- Threshold Setting Confirmation MessageBox Timeout (ms)（中文：阈值设置确认提示框超时时间 (毫秒)）：类型=数值，默认=20000
+- Multithread（中文：多线程）：类型=布尔，默认=true
+- Hide HUD When Menu On（中文：打开菜单时隐藏HUD）：类型=布尔，默认=false
+- Memorize Prev Password（中文：记住上一次的密码）：类型=布尔，默认=true
+- Try Birthdays（中文：尝试生日）：类型=布尔，默认=true
+- Notify Password（中文：通知密码）：类型=布尔，默认=true
+- Account Lockout Threshold Policy（中文：账号锁定阈值策略）：类型=枚举，默认="Query"
+  可选：Ignore（忽略）；Safe（安全）；Query（询问）
+- Threshold Setting Default Option（中文：阈值设置默认选项）：类型=枚举，默认="Cancel"
+  可选：Yes（是）；No（否）；Cancel（取消）
 
 历史更新
 - 18. 添加了 CrackPassword 破解密码时的HUD。
@@ -51,3 +57,4 @@ CrackPassword 是 JackalClient 的 Combat 分类模块。启用后会围绕 破�
 
 相关资料
 无
+

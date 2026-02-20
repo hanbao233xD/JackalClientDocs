@@ -12,16 +12,20 @@ B站热搜
 - 版本属性：普通可用
 
 介绍
-BiliHot 是 JackalClient 的 Web 分类模块。启用后会围绕 B站热搜 这一能力工作，核心行为是：显示B站热搜。
+BiliHot（B站热搜）用于显示B站热搜。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Auto Console、Interface、Show Top (Mobile)。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Interface：类型=枚举，默认="Standard"
-- Auto Console：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Show Heat Score (Standard)：类型=布尔，默认=true
-- Show Top (Mobile)：类型=布尔，默认=true
-- Limit：类型=数值，默认=20U
-- Connect Timeout (s)：类型=数值，默认=5L
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Interface（中文：接口）：类型=枚举，默认="Standard"
+  可选：Standard（标准）；Mobile（移动端）
+- Show Top (Mobile)（中文：显示登顶 (移动端)）：类型=布尔，默认=true
+- Show Heat Score (Standard)（中文：显示热度分数 (标准)）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=5L
+- Limit（中文：上限）：类型=数值，默认=20U
 
 历史更新
 - 10. 添加模块：Bili Hot，显示指定数量的B站热搜。
@@ -44,3 +48,4 @@ BiliHot 是 JackalClient 的 Web 分类模块。启用后会围绕 B站热搜 �
 
 相关资料
 无
+

@@ -12,10 +12,12 @@ AntiIntercept
 - 版本属性：普通可用
 
 介绍
-AntiIntercept 是 JackalClient 的 Combat 分类模块。启用后会围绕 反拦截 这一能力工作，核心行为是：自动对一些杀软的拦截窗口按允许。
+AntiIntercept（反拦截）用于自动对一些杀软的拦截窗口按允许。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Keep Alive。
 
 配置项
-- Keep Alive：类型=布尔，默认=false
+- Keep Alive（中文：保持存活）：类型=布尔，默认=false
 
 历史更新
 - 20. AntiIntercept: 略更改关闭时的代码。
@@ -38,3 +40,4 @@ AntiIntercept 是 JackalClient 的 Combat 分类模块。启用后会围绕 反�
 
 相关资料
 无
+

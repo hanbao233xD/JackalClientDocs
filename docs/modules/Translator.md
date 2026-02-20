@@ -12,12 +12,15 @@ Translator
 - 版本属性：普通可用
 
 介绍
-Translator 是 JackalClient 的 未分类 分类模块。启用后会围绕 翻译器 这一能力工作，核心行为是：一个简单的翻译服务。
+Translator（翻译器）用于一个简单的翻译服务。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Mode。
 
 配置项
-- Module Status Auto Switch：类型=布尔，默认=true
-- Mode：类型=枚举，默认="PearAPI"
-- AI Prompt：类型=文本，默认="将冒号后面的文本翻译成{lang}，直接输出即可，不要输出其他任何内容：\n{text}"
+- Module Status Auto Switch（中文：模块状态自动切换）：类型=布尔，默认=true
+- AI Prompt（中文：人工智能提示词）：类型=文本，默认="将冒号后面的文本翻译成{lang}，直接输出即可，不要输出其他任何内容：\n{text}"
+- Mode（中文：模式）：类型=枚举，默认="PearAPI"
+  可选：Edge（未收录）；PearAPI（未收录）；AI（人工智能）
 
 历史更新
 - 29. 为 Translator 模式添加：PearAPI，可能不是很稳定，有时候会报 500 错误
@@ -34,3 +37,4 @@ Translator 是 JackalClient 的 未分类 分类模块。启用后会围绕 翻�
 
 相关资料
 无
+

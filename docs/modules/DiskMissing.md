@@ -12,13 +12,16 @@ DiskMissing
 - 版本属性：普通可用
 
 介绍
-DiskMissing 是 JackalClient 的 File 分类模块。启用后会围绕 磁盘丢失 这一能力工作，核心行为是：制造磁盘丢失的假象。
+DiskMissing（磁盘丢失）用于制造磁盘丢失的假象。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Signal Cooldown (ms)。
 
 配置项
-- Signal Cooldown (ms)：类型=数值，默认=80L
-- Keep：类型=布尔，默认=true
-- Custom Missing Drives：类型=文本，默认="D;E"
-- Missing Drives：类型=枚举，默认="System Drive"
+- Custom Missing Drives（中文：自定义丢失的磁盘）：类型=文本，默认="D;E"
+- Keep（中文：保持）：类型=布尔，默认=true
+- Signal Cooldown (ms)（中文：发送信号冷却 (毫秒)）：类型=数值，默认=80L
+- Missing Drives（中文：丢失的磁盘）：类型=枚举，默认="System Drive"
+  可选：System Drive（系统盘）；All（所有）；Custom（自定义）
 
 历史更新
 - 21. 添加模块：DiskMissing，可以制造磁盘消失的假象。
@@ -41,3 +44,4 @@ DiskMissing 是 JackalClient 的 File 分类模块。启用后会围绕 磁盘�
 
 相关资料
 无
+

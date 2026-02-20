@@ -12,11 +12,13 @@ Perfmon
 - 版本属性：普通可用
 
 介绍
-Perfmon 是 JackalClient 的 Process 分类模块。启用后会围绕 资源监视器 这一能力工作，核心行为是：打开资源监视器。
+Perfmon（资源监视器）用于打开资源监视器。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：No Wow64 Redirection、Parameters。
 
 配置项
-- Parameters：类型=文本，默认="/reS"
-- No Wow64 Redirection：类型=布尔，默认=true
+- No Wow64 Redirection（中文：禁用 Wow64 重定向）：类型=布尔，默认=true
+- Parameters（中文：参数）：类型=文本，默认="/reS"
 
 历史更新
 - 10. 添加模块：Perfmon。打开资源监视器。
@@ -39,3 +41,4 @@ Perfmon 是 JackalClient 的 Process 分类模块。启用后会围绕 资源监
 
 相关资料
 无
+

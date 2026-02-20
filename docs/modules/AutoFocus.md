@@ -12,15 +12,19 @@ AutoFocus
 - 版本属性：普通可用
 
 介绍
-AutoFocus 是 JackalClient 的 Window 分类模块。启用后会围绕 自动聚焦 这一能力工作，核心行为是：自动聚焦到某些窗口。
+AutoFocus（自动聚焦）用于自动聚焦到某些窗口。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Mode、Notify、Check Cooldown (ms)。
 
 配置项
-- Mode：类型=枚举，默认="PointAt"
-- Restore Window While Focusing：类型=布尔，默认=false
-- Notify：类型=枚举，默认="Off"
-- Disable When Quit：类型=布尔，默认=false
-- Disable When Menu On：类型=布尔，默认=false
-- Check Cooldown (ms)：类型=数值，默认=200
+- Mode（中文：模式）：类型=枚举，默认="PointAt"
+  可选：PointAt（指向）；Foreground Locked（前端 锁定）
+- Notify（中文：通知）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Notify（通知）；Chatter（弹幕）；Actionbar（行为栏）
+- Disable When Menu On（中文：打开GUI后关闭模块。）：类型=布尔，默认=false
+- Disable When Quit（中文：退出时关闭）：类型=布尔，默认=false
+- Restore Window While Focusing（中文：聚焦时还原窗口）：类型=布尔，默认=false
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=200
 
 历史更新
 - 17. 【WIP】添加模块：HoverFocus，和 Auto Focus效果一样但是是 Windows 自带的。会同步系统的设置。
@@ -45,3 +49,4 @@ AutoFocus 是 JackalClient 的 Window 分类模块。启用后会围绕 自动�
 
 相关资料
 无
+

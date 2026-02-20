@@ -12,7 +12,8 @@ WeakView
 - 版本属性：普通可用
 
 介绍
-WeakView 是 JackalClient 的 未分类 分类模块。启用后会围绕 节电模式 这一能力工作，核心行为是：打开系统节电模式。
+WeakView（节电模式）用于打开系统节电模式。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +32,4 @@ WeakView 是 JackalClient 的 未分类 分类模块。启用后会围绕 节电
 
 相关资料
 无
+

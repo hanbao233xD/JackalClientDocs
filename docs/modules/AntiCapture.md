@@ -12,18 +12,22 @@ AntiCapture
 - 版本属性：普通可用
 
 介绍
-AntiCapture 是 JackalClient 的 Combat 分类模块。启用后会围绕 反捕获 这一能力工作，核心行为是：从截屏或录屏中排除此客户端的窗口（至少需要 Win10）
+AntiCapture（反捕获）用于从截屏或录屏中排除此客户端的窗口（至少需要 Win10）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：HUD、HUD Alignment、HUD X Rate。
 
 配置项
-- Console：类型=布尔，默认=true
-- HUD：类型=布尔，默认=false
-- HUD Opacity (0~1)：类型=数值，默认=0.8f
-- HUD Font Size：类型=数值，默认=30
-- HUD X Rate：类型=数值，默认=0.5f
-- HUD Y Rate：类型=数值，默认=0.55f
-- HUD Color：类型=枚举，默认="Rainbow"
-- Hide When Menu On：类型=布尔，默认=false
-- HUD Alignment：类型=枚举，默认="Center"
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=false
+- HUD（中文：是否显示HUD。）：类型=布尔，默认=false
+- HUD Alignment（中文：HUD 对齐方式）：类型=枚举，默认="Center"
+  可选：Left（左侧）；Center（居中）；Right（右侧）
+- HUD X Rate（中文：HUD 横坐标比例）：类型=数值，默认=0.5f
+- HUD Font Size（中文：HUD 字号）：类型=数值，默认=30
+- HUD Color（中文：HUD 颜色）：类型=枚举，默认="Rainbow"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Console（中文：控制台）：类型=布尔，默认=true
+- HUD Y Rate（中文：HUD 纵坐标比例）：类型=数值，默认=0.55f
+- HUD Opacity (0~1)（中文：HUD 不透明度）：类型=数值，默认=0.8f
 
 历史更新
 - 61. 为 Anti Capture 和 Black Capture 添加配置：
@@ -48,3 +52,4 @@ AntiCapture 是 JackalClient 的 Combat 分类模块。启用后会围绕 反捕
 
 相关资料
 无
+

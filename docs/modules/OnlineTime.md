@@ -12,11 +12,15 @@ OnlineTime
 - 版本属性：普通可用
 
 介绍
-OnlineTime 是 JackalClient 的 Web 分类模块。启用后会围绕 在线时间 这一能力工作，核心行为是：获取在线时间。
+OnlineTime（在线时间）用于获取在线时间。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Source、Connect Timeout (s)。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Connect Timeout (s)：类型=数值，默认=3L
-- Source：类型=枚举，默认="Taobao"
+- Source（中文：来源）：类型=枚举，默认="Taobao"
+  可选：Taobao（未收录）；Time.is（未收录）；Suning（未收录）
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=3L
 
 历史更新
 - 3. 修改在线时间获取，源改为 Taobao, Time.is 和 Suning
@@ -40,3 +44,4 @@ OnlineTime 是 JackalClient 的 Web 分类模块。启用后会围绕 在线时�
 
 相关资料
 无
+

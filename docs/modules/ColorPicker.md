@@ -12,16 +12,19 @@ ColorPicker
 - 版本属性：普通可用
 
 介绍
-ColorPicker 是 JackalClient 的 Control 分类模块。启用后会围绕 取色器 这一能力工作，核心行为是：显示和复制鼠标位置的颜色。
+ColorPicker（取色器）用于显示和复制鼠标位置的颜色。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：HUD、Mode、HUD Font Size。
 
 配置项
-- Mode：类型=枚举，默认="Tool"
-- HUD：类型=布尔，默认=true
-- Format：类型=枚举，默认="R
-- Copy Hotkey (Inverted Color)：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, 'I'}}}
-- Exclude Client：类型=布尔，默认=true
-- Copy Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, 'C'}}}
-- HUD Font Size：类型=数值，默认=25
+- Copy Hotkey（中文：复制快捷键）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, 'C'}}}
+- HUD（中文：是否显示HUD。）：类型=布尔，默认=true
+- Mode（中文：模式）：类型=枚举，默认="Tool"
+  可选：Instant（瞬间）；Tool（工具）
+- Exclude Client（中文：排除客户端）：类型=布尔，默认=true
+- HUD Font Size（中文：HUD 字号）：类型=数值，默认=25
+- Copy Hotkey (Inverted Color)（中文：复制快捷键（反转色））：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, 'I'}}}
+- Format（中文：格式）：类型=枚举，默认="R
 
 历史更新
 - 13. 添加模块：Color Picker 取色器。
@@ -44,3 +47,4 @@ ColorPicker 是 JackalClient 的 Control 分类模块。启用后会围绕 取�
 
 相关资料
 无
+

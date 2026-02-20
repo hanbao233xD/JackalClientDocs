@@ -12,17 +12,20 @@ Watermark
 - 版本属性：普通可用
 
 介绍
-Watermark 是 JackalClient 的 Render 分类模块。启用后会围绕 水印 这一能力工作，核心行为是：暂无描述
+Watermark（水印）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Menu On Alpha、Opacity Max (0~1)、Text Color。
 
 配置项
-- Opacity Min (0~1)：类型=数值，默认=0.5f
-- Size：类型=数值，默认=80
-- Menu On Alpha：类型=数值，默认=0.2f
-- Text：类型=文本，默认="W O R M W A K E R"
-- Opacity Max (0~1)：类型=数值，默认=0.5f
-- Text Whiteness (0~1)：类型=数值，默认=0.8f
-- Text Color：类型=枚举，默认="White"
-- Menu Off Alpha：类型=数值，默认=0.3f
+- Menu On Alpha（中文：菜单打开时不透明度）：类型=数值，默认=0.2f
+- Opacity Max (0~1)（中文：不透明度最大值 (0~1)）：类型=数值，默认=0.5f
+- Text Color（中文：文本颜色）：类型=枚举，默认="White"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Menu Off Alpha（中文：菜单关闭时不透明度）：类型=数值，默认=0.3f
+- Text Whiteness (0~1)（中文：文本变白程度 (0~1)）：类型=数值，默认=0.8f
+- Text（中文：文本）：类型=文本，默认="W O R M W A K E R"
+- Opacity Min (0~1)（中文：不透明度最小值 (0~1)）：类型=数值，默认=0.5f
+- Size（中文：大小）：类型=数值，默认=80
 
 历史更新
 - 7. 为模块 Watermark 添加配置：
@@ -45,3 +48,4 @@ Watermark 是 JackalClient 的 Render 分类模块。启用后会围绕 水印 �
 
 相关资料
 无
+

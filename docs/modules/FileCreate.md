@@ -12,17 +12,19 @@ FileCreate
 - 版本属性：普通可用
 
 介绍
-FileCreate 是 JackalClient 的 File 分类模块。启用后会围绕 文件创建 这一能力工作，核心行为是：暂无描述
+FileCreate（文件创建）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify。
 
 配置项
-- UNC Path：类型=布尔，默认=true
-- Path：类型=文本，默认=""
-- Notify：类型=布尔，默认=true
-- Readonly：类型=布尔，默认=false
-- Hidden：类型=布尔，默认=false
-- Keep：类型=布尔，默认=false
-- Create Folder：类型=布尔，默认=false
-- System：类型=布尔，默认=false
+- System（中文：系统）：类型=布尔，默认=false
+- Readonly（中文：只读）：类型=布尔，默认=false
+- Keep（中文：保持）：类型=布尔，默认=false
+- Create Folder（中文：创建文件夹）：类型=布尔，默认=false
+- Hidden（中文：隐藏）：类型=布尔，默认=false
+- UNC Path（中文：UNC路径）：类型=布尔，默认=true
+- Notify（中文：通知）：类型=布尔，默认=true
+- Path（中文：路径）：类型=文本，默认=""
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -45,3 +47,4 @@ FileCreate 是 JackalClient 的 File 分类模块。启用后会围绕 文件创
 
 相关资料
 无
+

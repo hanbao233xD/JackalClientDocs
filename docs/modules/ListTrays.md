@@ -12,11 +12,13 @@ ListTrays
 - 版本属性：普通可用
 
 介绍
-ListTrays 是 JackalClient 的 未分类 分类模块。启用后会围绕 列举托盘 这一能力工作，核心行为是：暂无描述
+ListTrays（列举托盘）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Async、Auto Console。
 
 配置项
-- Async：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
 
 历史更新
 - 23. 添加模块 List Trays: 枚举系统各个托盘的窗口句柄、标题和路径。可能仅在旧版本 Windows 有效。
@@ -32,3 +34,4 @@ ListTrays 是 JackalClient 的 未分类 分类模块。启用后会围绕 列�
 
 相关资料
 无
+

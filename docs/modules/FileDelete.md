@@ -12,13 +12,16 @@ FileDelete
 - 版本属性：普通可用
 
 介绍
-FileDelete 是 JackalClient 的 File 分类模块。启用后会围绕 文件删除 这一能力工作，核心行为是：暂无描述
+FileDelete（文件删除）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify、Mode。
 
 配置项
-- Keep：类型=布尔，默认=false
-- Notify：类型=布尔，默认=true
-- Mode：类型=枚举，默认="Normal"
-- Path：类型=文本，默认="null"
+- Notify（中文：通知）：类型=布尔，默认=true
+- Path（中文：路径）：类型=文本，默认="null"
+- Keep（中文：保持）：类型=布尔，默认=false
+- Mode（中文：模式）：类型=枚举，默认="Normal"
+  可选：Normal（普通）；Command（命令）；Supreme（超级）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -41,3 +44,4 @@ FileDelete 是 JackalClient 的 File 分类模块。启用后会围绕 文件删
 
 相关资料
 无
+

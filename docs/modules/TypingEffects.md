@@ -12,42 +12,57 @@ TypingEffects
 - 版本属性：普通可用
 
 介绍
-TypingEffects 是 JackalClient 的 Control 分类模块。启用后会围绕 打字效果 这一能力工作，核心行为是：打字时展示一些特效。
+TypingEffects（打字效果）用于打字时展示一些特效。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Selected Text Indicator Mode、Caret Indicator Style、Caret Indicator Arrow Style。
 
 配置项
-- Area Indicator Color：类型=枚举，默认="Red"
-- Caret Indicator Capture Scale：类型=数值，默认=4.0f
-- Caret Indicator：类型=枚举，默认="Temp"
-- Selected Text Indicator Translation Exclude Characters：类型=文本，默认="^#{}<>\\/*|"
-- Selected Text Indicator Translation Max Length：类型=数值，默认=300
-- Selected Text Indicator Size：类型=数值，默认=30
-- Caret Indicator Opacity (0~1)：类型=数值，默认=0.8f
-- Caret Indicator Arrow Style：类型=枚举，默认="Up"
-- Caret Easing：类型=布尔，默认=true
-- Caret Indicator Style：类型=枚举，默认="Capture"
-- IME Indicator Size：类型=数值，默认=50
-- Area Indicator Easing Speed (0~1)：类型=数值，默认=0.2f
-- IME Indicator Temp Duration (ms)：类型=数值，默认=3000L
-- Selected Text Indicator Temp Duration (ms)：类型=数值，默认=5000L
-- Caret Indicator Temp Duration (ms)：类型=数值，默认=5000L
-- Caret Particles Amount：类型=数值，默认=1.0f
-- Selected Text Indicator Mode：类型=枚举，默认="Translation"
-- Not As Debuggee：类型=布尔，默认=true
-- IME Indicator：类型=枚举，默认="Temp"
-- Area Indicator：类型=枚举，默认="Off"
-- Caret Particles：类型=枚举，默认="Moving"
-- Selected Text Indicator Opacity (0~1)：类型=数值，默认=0.75f
-- Caret Particles Color Jitter：类型=数值，默认=0.2f
-- Area Indicator Easing：类型=布尔，默认=true
-- Caret Indicator Capture Rotation Speed：类型=数值，默认=4.0f
-- Caret Particles Color：类型=枚举，默认="Rainbow"
-- Caret Indicator Color：类型=枚举，默认="Rainbow"
-- Caret Indicator Size：类型=数值，默认=40
-- Caret Update Cooldown (ms)：类型=数值，默认=500L
-- IME Indicator Style：类型=枚举，默认="1"
-- Selected Text Indicator：类型=枚举，默认="Off"
-- Selected Text Indicator Color：类型=枚举，默认="Blue"
-- Caret Easing Speed (0~1)：类型=数值，默认=0.05f
+- Area Indicator Color（中文：区域指示器颜色）：类型=枚举，默认="Red"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Caret Indicator Capture Rotation Speed（中文：插入符指示器捕获旋转速率）：类型=数值，默认=4.0f
+- IME Indicator（中文：输入法指示器）：类型=枚举，默认="Temp"
+  可选：Off（关闭）；Temp（临时）；Always（总是）
+- Selected Text Indicator（中文：选中文本指示器）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Temp（临时）；Always（总是）
+- Selected Text Indicator Mode（中文：选中文本指示器模式）：类型=枚举，默认="Translation"
+  可选：Raw（原始）；Translation（翻译）
+- Caret Indicator Style（中文：插入符指示器风格）：类型=枚举，默认="Capture"
+  可选：Arrow（未收录）；Box（方框）；Crosshair（准星）；Capture（未收录）
+- Area Indicator（中文：区域指示器）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Temp（临时）；Always（总是）
+- Caret Indicator Arrow Style（中文：插入符指示器箭头风格）：类型=枚举，默认="Up"
+  可选：Up（向上）；Down（向下）；Up & Down（向上 & 向下）
+- Caret Update Cooldown (ms)（中文：Caret 更新窗口 冷却 (ms)）：类型=数值，默认=500L
+- Area Indicator Easing Speed (0~1)（中文：区域指示器缓动速率 (0~1)）：类型=数值，默认=0.2f
+- IME Indicator Temp Duration (ms)（中文：输入法指示器临时时长（毫秒））：类型=数值，默认=3000L
+- Caret Particles（中文：插入符粒子）：类型=枚举，默认="Moving"
+  可选：Off（关闭）；Moving（正在移动）；Continuous（连续）
+- Selected Text Indicator Translation Max Length（中文：选中文本指示器翻译最大长度）：类型=数值，默认=300
+- Caret Indicator Temp Duration (ms)（中文：插入符指示器临时时长（毫秒））：类型=数值，默认=5000L
+- Caret Easing Speed (0~1)（中文：Caret 缓动 速率 (0~1)）：类型=数值，默认=0.05f
+- Selected Text Indicator Opacity (0~1)（中文：选中文本指示器不透明度 (0~1)）：类型=数值，默认=0.75f
+- Caret Indicator Size（中文：插入符指示器大小）：类型=数值，默认=40
+- Caret Particles Color（中文：插入符粒子颜色）：类型=枚举，默认="Rainbow"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Area Indicator Easing（中文：区域指示器缓动）：类型=布尔，默认=true
+- Not As Debuggee（中文：被调试时禁用）：类型=布尔，默认=true
+- Caret Indicator Capture Scale（中文：插入符指示器捕获缩放）：类型=数值，默认=4.0f
+- Caret Easing（中文：Caret 缓动）：类型=布尔，默认=true
+- Selected Text Indicator Color（中文：选中文本指示器颜色）：类型=枚举，默认="Blue"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Caret Particles Amount（中文：插入符粒子量）：类型=数值，默认=1.0f
+- IME Indicator Style（中文：输入法指示器风格）：类型=枚举，默认="1"
+  可选：1（未收录）；2（未收录）；3（未收录）；4（未收录）；5（未收录）
+- Selected Text Indicator Size（中文：选中文本指示器大小）：类型=数值，默认=30
+- Caret Indicator Color（中文：插入符指示器颜色）：类型=枚举，默认="Rainbow"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Selected Text Indicator Temp Duration (ms)（中文：选中文本指示器临时时长（毫秒））：类型=数值，默认=5000L
+- Selected Text Indicator Translation Exclude Characters（中文：选中文本指示器翻译排除字符）：类型=文本，默认="^#{}<>\\/*|"
+- Caret Indicator（中文：插入符指示器）：类型=枚举，默认="Temp"
+  可选：Off（关闭）；Temp（临时）；Always（总是）
+- IME Indicator Size（中文：输入法指示器大小）：类型=数值，默认=50
+- Caret Indicator Opacity (0~1)（中文：插入符指示器不透明度 (0~1)）：类型=数值，默认=0.8f
+- Caret Particles Color Jitter（中文：插入符粒子颜色抖动）：类型=数值，默认=0.2f
 
 历史更新
 - 20. 修复 TypingEffects 显示的 % 占位符注入导致崩溃的问题。
@@ -72,3 +87,4 @@ TypingEffects 是 JackalClient 的 Control 分类模块。启用后会围绕 打
 
 相关资料
 无
+

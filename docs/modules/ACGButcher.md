@@ -12,7 +12,8 @@ ACGButcher
 - 版本属性：普通可用
 
 介绍
-ACGButcher 是 JackalClient 的 未分类 分类模块。启用后会围绕 ACGButcher 这一能力工作，核心行为是：尝试关闭一切进程的动态代码政策。
+ACGButcher（ACGButcher）用于尝试关闭一切进程的动态代码政策。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +32,4 @@ ACGButcher 是 JackalClient 的 未分类 分类模块。启用后会围绕 ACGB
 
 相关资料
 无
+

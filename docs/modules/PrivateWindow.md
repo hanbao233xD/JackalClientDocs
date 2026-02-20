@@ -12,23 +12,26 @@ PrivateWindow
 - 版本属性：普通可用
 
 介绍
-PrivateWindow 是 JackalClient 的 Window 分类模块。启用后会围绕 隐私窗口 这一能力工作，核心行为是：防止一些私人窗口被截屏或者录屏。
+PrivateWindow（隐私窗口）用于防止一些私人窗口被截屏或者录屏。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Policy、Keep Checking Cooldown (ms)、Mode。
 
 配置项
-- WeChat New：类型=布尔，默认=true
-- QQ NT：类型=布尔，默认=true
-- Mode：类型=枚举，默认="Invisible (>= Win10
-- Async：类型=布尔，默认=true
-- Keep Checking Cooldown (ms)：类型=数值，默认=1000U
-- Edge：类型=布尔，默认=true
-- Steam：类型=布尔，默认=true
-- Bilibili Desktop：类型=布尔，默认=true
-- Edge Overlay Mode：类型=布尔，默认=false
-- Record Window When Failed：类型=布尔，默认=true
-- Policy：类型=枚举，默认="Simple Check"
-- WeChat：类型=布尔，默认=true
-- Clear Overlay Windows When Disabling：类型=布尔，默认=false
-- Notify Each Window Affinity Result：类型=布尔，默认=true
+- Policy（中文：策略）：类型=枚举，默认="Simple Check"
+  可选：Set Once（单次设置时间点）；Simple Check（简单检查）；Complete Check（完整检查）；Blatant Apply（暴力应用）
+- Async（中文：异步）：类型=布尔，默认=true
+- Clear Overlay Windows When Disabling（中文：关闭时清空覆盖层窗口）：类型=布尔，默认=false
+- Keep Checking Cooldown (ms)（中文：持续检查冷却（毫秒））：类型=数值，默认=1000U
+- Edge（中文：未收录）：类型=布尔，默认=true
+- Mode（中文：模式）：类型=枚举，默认="Invisible (>= Win10
+- Bilibili Desktop（中文：B站桌面客户端）：类型=布尔，默认=true
+- WeChat New（中文：新版微信）：类型=布尔，默认=true
+- Steam（中文：Steam 游戏平台的窗口。）：类型=布尔，默认=true
+- Notify Each Window Affinity Result（中文：逐窗口通知设置亲和结果）：类型=布尔，默认=true
+- Record Window When Failed（中文：失败时也记载窗口）：类型=布尔，默认=true
+- QQ NT（中文：未收录）：类型=布尔，默认=true
+- Edge Overlay Mode（中文：Edge 浏览器覆盖层模式）：类型=布尔，默认=false
+- WeChat（中文：微信）：类型=布尔，默认=true
 
 历史更新
 - 45. 为 PrivateWindow 添加配置：
@@ -53,3 +56,4 @@ PrivateWindow 是 JackalClient 的 Window 分类模块。启用后会围绕 隐�
 
 相关资料
 无
+

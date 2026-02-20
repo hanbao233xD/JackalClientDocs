@@ -12,16 +12,19 @@ Speedhack
 - 版本属性：普通可用
 
 介绍
-Speedhack 是 JackalClient 的 Process 分类模块。启用后会围绕 变速齿轮 这一能力工作，核心行为是：暂无描述
+Speedhack（变速齿轮）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Speed Up Keybind、Process Name (Empty For Any)、Anti Unload。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Process Name (Empty For Any)：类型=文本，默认="javaw.exe"
-- Anti Unload：类型=布尔，默认=false
-- Speed Up Keybind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 187}}}
-- Speed Down Keybind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 189}}}
-- Process Id (Zero For Any)：类型=数值，默认=0
-- Speed Change Step：类型=数值，默认=0.1f
-- Speed：类型=数值，默认=0.5f
+- Speed Up Keybind（中文：加速按键绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 187}}}
+- Process Name (Empty For Any)（中文：进程名 (用空指代任何)）：类型=文本，默认="javaw.exe"
+- Anti Unload（中文：反卸载）：类型=布尔，默认=false
+- Process Id (Zero For Any)（中文：进程ID (用0指代任何)）：类型=数值，默认=0
+- Speed（中文：速率）：类型=数值，默认=0.5f
+- Speed Down Keybind（中文：减速按键绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 189}}}
+- Speed Change Step（中文：每次变速差值）：类型=数值，默认=0.1f
 
 历史更新
 - 15. 为 JDSpeedhack.dll 变速模块添加了一个针对 Sleep 的 hook，以便变速延时。
@@ -46,3 +49,4 @@ Speedhack 是 JackalClient 的 Process 分类模块。启用后会围绕 变速�
 
 相关资料
 无
+

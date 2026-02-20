@@ -12,20 +12,26 @@ QuakeWarning
 - 版本属性：普通可用
 
 介绍
-QuakeWarning 是 JackalClient 的 Web 分类模块。启用后会围绕 地震预警 这一能力工作，核心行为是：地震来临时提供预警。
+QuakeWarning（地震预警）用于地震来临时提供预警。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Warning Filter、Notify Mode、Check Cooldown (ms)。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Check Cooldown (ms)：类型=数值，默认=30000L
-- Min Warning Magnitude：类型=数值，默认=0.0
-- Async：类型=布尔，默认=true
-- Warning Filter：类型=枚举，默认="Global"
-- Clear Events When Disabled：类型=布尔，默认=true
-- AI Location Validation：类型=布尔，默认=false
-- Max Warning Event Age (hour)：类型=数值，默认=3.0
-- Min Warning Intensity：类型=数值，默认=0.0
-- Connect Timeout (s)：类型=数值，默认=10L
-- Notify Mode：类型=枚举，默认="Title"
-- Quake Query Source：类型=枚举，默认="Auto"
+- Min Warning Intensity（中文：最低警告烈度）：类型=数值，默认=0.0
+- Warning Filter（中文：警告过滤器）：类型=枚举，默认="Global"
+  可选：Global（全局）；Domestic（国内）；Province（省份）；City（城市）
+- Notify Mode（中文：通知模式）：类型=枚举，默认="Title"
+  可选：Notify（通知）；Chatter（弹幕）；Title（标题）；WinToast（系统通知）
+- Quake Query Source（中文：地震查询源）：类型=枚举，默认="Auto"
+  可选：Auto（自动）；JMA（未收录）；Sichuan（四川）；Fujian（福建）；CENC（未收录）；CWA（未收录）
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=30000L
+- Async（中文：异步）：类型=布尔，默认=true
+- Max Warning Event Age (hour)（中文：最大警告事件间隔 (小时)）：类型=数值，默认=3.0
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=10L
+- AI Location Validation（中文：人工智能位置校验）：类型=布尔，默认=false
+- Min Warning Magnitude（中文：最低警告震级）：类型=数值，默认=0.0
+- Clear Events When Disabled（中文：禁用时清空事件）：类型=布尔，默认=true
 
 历史更新
 - 32. 添加模块：Quake Warning，提供地震预警
@@ -48,3 +54,4 @@ QuakeWarning 是 JackalClient 的 Web 分类模块。启用后会围绕 地震�
 
 相关资料
 无
+

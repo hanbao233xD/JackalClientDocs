@@ -12,13 +12,16 @@ KeyReaction
 - 版本属性：普通可用
 
 介绍
-KeyReaction 是 JackalClient 的 Control 分类模块。启用后会围绕 按键反应 这一能力工作，核心行为是：当按下某些键时执行某些操作。
+KeyReaction（按键反应）用于当按下某些键时执行某些操作。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Key Notify Mode、Key Reaction Data Enabled、Key Reaction Data JSON Array。
 
 配置项
-- Key Notify Mode：类型=枚举，默认="Notify"
-- Auto Release F22 When WeChat Running：类型=布尔，默认=true
-- Key Reaction Data Enabled：类型=布尔，默认=true
-- Key Reaction Data JSON Array：类型=文本，默认="[]"
+- Auto Release F22 When WeChat Running（中文：微信运行时自动释放F22键）：类型=布尔，默认=true
+- Key Notify Mode（中文：按键通知模式）：类型=枚举，默认="Notify"
+  可选：Off（关闭）；Notify（通知）；Chatter（弹幕）；Title（标题）
+- Key Reaction Data Enabled（中文：是否启用按键反应数据）：类型=布尔，默认=true
+- Key Reaction Data JSON Array（中文：按键反应数据JSON序列）：类型=文本，默认="[]"
 
 历史更新
 - 18. 为 Key Reaction 添加新配置：
@@ -42,3 +45,4 @@ KeyReaction 是 JackalClient 的 Control 分类模块。启用后会围绕 按�
 
 相关资料
 无
+

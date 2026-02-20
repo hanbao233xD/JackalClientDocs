@@ -12,10 +12,12 @@ MinAura
 - 版本属性：普通可用
 
 介绍
-MinAura 是 JackalClient 的 Window 分类模块。启用后会围绕 最小化光环 这一能力工作，核心行为是：暂无描述
+MinAura（最小化光环）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Cooldown (ms)。
 
 配置项
-- Cooldown (ms)：类型=数值，默认=400U
+- Cooldown (ms)（中文：冷却 (毫秒)）：类型=数值，默认=400U
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +40,4 @@ MinAura 是 JackalClient 的 Window 分类模块。启用后会围绕 最小化�
 
 相关资料
 无
+

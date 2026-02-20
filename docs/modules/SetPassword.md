@@ -12,16 +12,20 @@ SetPassword
 - 版本属性：普通可用
 
 介绍
-SetPassword 是 JackalClient 的 Combat 分类模块。启用后会围绕 篡改密码 这一能力工作，核心行为是：清除或设置计算机密码。（需要管理员）
+SetPassword（篡改密码）用于清除或设置计算机密码。（需要管理员）。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Close Menu、Or Custom Password:、Or Custom Username:。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- Async Single Instance：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Just Clear：类型=布尔，默认=true
-- Or Custom Password:：类型=文本，默认="123456"
-- Or Custom Username:：类型=文本，默认="Administrator"
-- Auto Fill Username：类型=布尔，默认=true
-- Close Menu：类型=布尔，默认=true
+- Close Menu（中文：关闭菜单）：类型=布尔，默认=true
+- Or Custom Password:（中文：或者自定义密码:）：类型=文本，默认="123456"
+- Or Custom Username:（中文：或者自定义用户名:）：类型=文本，默认="Administrator"
+- Async（中文：异步）：类型=布尔，默认=true
+- Just Clear（中文：清除就行）：类型=布尔，默认=true
+- Auto Fill Username（中文：自动填写用户名）：类型=布尔，默认=true
+- Async Single Instance（中文：异步单例）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -44,3 +48,4 @@ SetPassword 是 JackalClient 的 Combat 分类模块。启用后会围绕 篡改
 
 相关资料
 无
+

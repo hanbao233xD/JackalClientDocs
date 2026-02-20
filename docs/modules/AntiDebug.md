@@ -12,14 +12,17 @@ AntiDebug
 - 版本属性：普通可用
 
 介绍
-AntiDebug 是 JackalClient 的 Combat 分类模块。启用后会围绕 反调试 这一能力工作，核心行为是：防止客户端被调试。
+AntiDebug（反调试）用于防止客户端被调试。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Check Cooldown、Reaction。
 
 配置项
-- Check Cooldown：类型=数值，默认=500
-- Active Defense：类型=布尔，默认=true
-- Reaction：类型=枚举，默认="Exit"
-- Related File Detection：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
+- Related File Detection（中文：相关文件探测）：类型=布尔，默认=true
+- Active Defense（中文：主动防御）：类型=布尔，默认=true
+- Check Cooldown（中文：检查冷却）：类型=数值，默认=500
+- Async（中文：异步）：类型=布尔，默认=true
+- Reaction（中文：反应）：类型=枚举，默认="Exit"
+  可选：Warn（警告）；Exit（退出）；Self Destruct（自毁）；Extinction（灭亡）
 
 历史更新
 - 8. 修复 Anti Debug 报错的问题。
@@ -43,3 +46,4 @@ AntiDebug 是 JackalClient 的 Combat 分类模块。启用后会围绕 反调�
 
 相关资料
 无
+

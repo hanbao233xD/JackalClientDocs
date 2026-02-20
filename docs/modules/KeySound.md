@@ -12,33 +12,39 @@ KeySound
 - 版本属性：普通可用
 
 介绍
-KeySound 是 JackalClient 的 Control 分类模块。启用后会围绕 按键音效 这一能力工作，核心行为是：暂无描述
+KeySound（按键音效）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Alloc Mode、Custom Mode Config File、Detect Mode。
 
 配置项
-- Category Lock Sound：类型=文本，默认=""
-- Alloc Mode：类型=枚举，默认="All"
-- Category Back Sound：类型=文本，默认=""
-- Category Esc Sound：类型=文本，默认=""
-- Category Right Click Sound：类型=文本，默认=""
-- Category Num Sound：类型=文本，默认=""
-- Recursive Selection in Folder：类型=布尔，默认=true
-- Custom Mode Config File：类型=文本，默认="config/keyCustomSounds.ini"
-- All Mode Sound：类型=文本，默认=""
-- Sound Selection：类型=枚举，默认="Single File"
-- Category Other Mouse Sound：类型=文本，默认=""
-- Debug Notification：类型=枚举，默认="Off"
-- Category FN Sound：类型=文本，默认=""
-- Mouse All Mode Sound：类型=文本，默认=""
-- Category Control Sound：类型=文本，默认=""
-- Category Arrow Sound：类型=文本，默认=""
-- Category Space Sound：类型=文本，默认=""
-- Category Punct Sound：类型=文本，默认=""
-- Category Letter Sound：类型=文本，默认=""
-- Keyboard All Mode Sound：类型=文本，默认=""
-- Detect Mode：类型=枚举，默认="Raw Input"
-- Category Other Keyboard Sound：类型=文本，默认=""
-- Category Enter Sound：类型=文本，默认=""
-- Category Left Click Sound：类型=文本，默认=""
+- Category Right Click Sound（中文：类别“右键”音效）：类型=文本，默认=""
+- Category Punct Sound（中文：类别“标点”音效）：类型=文本，默认=""
+- Category Back Sound（中文：类别“退格”音效）：类型=文本，默认=""
+- Category Lock Sound（中文：类别“锁定”音效）：类型=文本，默认=""
+- Alloc Mode（中文：分配模式）：类型=枚举，默认="All"
+  可选：All（所有）；Keyboard All（键盘所有）；Mouse All（鼠标所有）；Category（类别）；Custom（自定义）
+- Category Other Mouse Sound（中文：类别“其他鼠标键”音效）：类型=文本，默认=""
+- Custom Mode Config File（中文：“自定义”模式配置文件）：类型=文本，默认="config/keyCustomSounds.ini"
+- Detect Mode（中文：检测模式）：类型=枚举，默认="Raw Input"
+  可选：Raw Input（原始输入）；GetKeyState（获取键状态）
+- Category Other Keyboard Sound（中文：类别“其他键盘键”音效）：类型=文本，默认=""
+- Category FN Sound（中文：类别“FN功能键”音效）：类型=文本，默认=""
+- Category Control Sound（中文：类别“控制键”音效）：类型=文本，默认=""
+- Category Space Sound（中文：类别“空格”音效）：类型=文本，默认=""
+- Recursive Selection in Folder（中文：文件夹中选择文件时采用递归）：类型=布尔，默认=true
+- Category Enter Sound（中文：类别“回车”音效）：类型=文本，默认=""
+- Category Left Click Sound（中文：类别“左键”音效）：类型=文本，默认=""
+- Debug Notification（中文：调试通知）：类型=枚举，默认="Off"
+  可选：Off（关闭）；File Path（文件路径）；Key Name（键名）
+- Mouse All Mode Sound（中文：“鼠标所有”模式音效）：类型=文本，默认=""
+- Category Arrow Sound（中文：类别“箭头”音效）：类型=文本，默认=""
+- All Mode Sound（中文：“所有”模式音效）：类型=文本，默认=""
+- Category Letter Sound（中文：类别“字母”音效）：类型=文本，默认=""
+- Keyboard All Mode Sound（中文：“键盘所有”模式音效）：类型=文本，默认=""
+- Sound Selection（中文：音效	选择）：类型=枚举，默认="Single File"
+  可选：Single File（单一文件）；Folder Random Select（文件夹中随机选择）；Folder Map Select（文件夹中映射选择）
+- Category Num Sound（中文：类别“数字”音效）：类型=文本，默认=""
+- Category Esc Sound（中文：类别“Esc”音效）：类型=文本，默认=""
 
 历史更新
 - 1. 添加了 KeySound 缺少的 Category Space Sound 配置。
@@ -63,3 +69,4 @@ KeySound 是 JackalClient 的 Control 分类模块。启用后会围绕 按键�
 
 相关资料
 无
+

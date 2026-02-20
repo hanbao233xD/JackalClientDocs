@@ -13,18 +13,22 @@ BHop
 - 版本属性：PRO 独有
 
 介绍
-BHop 是 JackalClient 的 Control 分类模块。启用后会围绕 兔子跳 这一能力工作，核心行为是：帮助你连续跳。（专业版）
+BHop（兔子跳）用于帮助你连续跳。（专业版）。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Trigger Mode、Basic Tap Cooldown (ms)。
 
 配置项
-- Repeat Times：类型=数值，默认=3L
-- Jump Key：类型=枚举，默认="Wheel Down"
-- Trigger Mode：类型=枚举，默认="Hold"
-- Basic Tap Cooldown (ms)：类型=数值，默认=500L
-- Jump Custom Key Hold Interval (ms)：类型=数值，默认=100L
-- Jump Custom Key：类型=按键/复合，默认={{"Keybind", {VK_LMENU}}}
-- Repeat Interval (ms)：类型=数值，默认=50L
-- Only In Game：类型=布尔，默认=true
-- Trigger Key：类型=按键/复合，默认={{"Keybind", {VK_SPACE}}}
+- Trigger Mode（中文：触发模式）：类型=枚举，默认="Hold"
+  可选：Hold（未收录）；Toggle（切换）
+- Repeat Times（中文：重复次数）：类型=数值，默认=3L
+- Trigger Key（中文：触发键）：类型=按键/复合，默认={{"Keybind", {VK_SPACE}}}
+- Repeat Interval (ms)（中文：重复间隙（毫秒））：类型=数值，默认=50L
+- Jump Custom Key Hold Interval (ms)（中文：自定义跳跃键按住时间（毫秒））：类型=数值，默认=100L
+- Only In Game（中文：仅在游戏内）：类型=布尔，默认=true
+- Jump Custom Key（中文：自定义跳跃键）：类型=按键/复合，默认={{"Keybind", {VK_LMENU}}}
+- Jump Key（中文：跳跃键）：类型=枚举，默认="Wheel Down"
+  可选：Wheel Down（向下滚轮）；Wheel Up（向上滚轮）；Custom（自定义）
+- Basic Tap Cooldown (ms)（中文：基本敲击冷却（毫秒））：类型=数值，默认=500L
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -47,3 +51,4 @@ BHop 是 JackalClient 的 Control 分类模块。启用后会围绕 兔子跳 �
 
 相关资料
 无
+

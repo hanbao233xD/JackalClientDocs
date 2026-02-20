@@ -12,11 +12,15 @@ ScreenCapture
 - 版本属性：普通可用
 
 介绍
-ScreenCapture 是 JackalClient 的 Misc 分类模块。启用后会围绕 屏幕捕获 这一能力工作，核心行为是：一个持续捕捉屏幕的后台线程。
+ScreenCapture（屏幕捕获）用于一个持续捕捉屏幕的后台线程。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Backend、Exclude Client。
 
 配置项
-- Exclude Client：类型=枚举，默认="Keep"
-- Backend：类型=枚举，默认="GDI"
+- Backend（中文：后端）：类型=枚举，默认="GDI"
+  可选：GDI（未收录）；DXGI（未收录）
+- Exclude Client（中文：排除客户端）：类型=枚举，默认="Keep"
+  可选：Off（关闭）；Slow（缓慢）；Keep（保持）
 
 历史更新
 - 29. 将屏幕捕获线程单独放到新的模块：Screen Capture，支持DXGI方法
@@ -40,3 +44,4 @@ ScreenCapture 是 JackalClient 的 Misc 分类模块。启用后会围绕 屏幕
 
 相关资料
 无
+

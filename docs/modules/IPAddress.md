@@ -12,22 +12,27 @@ IP地址
 - 版本属性：普通可用
 
 介绍
-IPAddress 是 JackalClient 的 Web 分类模块。启用后会围绕 IP地址 这一能力工作，核心行为是：查看本机IP地址及相关信息。
+IPAddress（IP地址）用于查看本机IP地址及相关信息。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Location Cache Update Cooldown (ms)、Method。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- AI Generated Description of IP Position：类型=布尔，默认=false
-- IP Location Query Source：类型=枚举，默认="PearAPI"
-- External IP Address Source URL：类型=枚举，默认=XorStringA("https:
-- Output Local IP Details：类型=布尔，默认=true
-- Connect Timeout (s)：类型=数值，默认=5L
-- Location Cache Update Cooldown (ms)：类型=数值，默认=30000L
-- Async：类型=布尔，默认=true
-- Query External IP：类型=布尔，默认=true
-- Query External IP Position：类型=布尔，默认=true
-- Method：类型=枚举，默认="Curl"
-- Use HTTPS When Query Position：类型=布尔，默认=true
-- Output Verbose Connection Info：类型=布尔，默认=false
-- Auto Console：类型=布尔，默认=true
+- Query External IP Position（中文：查询外网 IP 地理位置）：类型=布尔，默认=true
+- External IP Address Source URL（中文：外网 IP 获取来源网址）：类型=枚举，默认=XorStringA("https:
+- Async（中文：异步）：类型=布尔，默认=true
+- Location Cache Update Cooldown (ms)（中文：位置缓存更新冷却（毫秒））：类型=数值，默认=30000L
+- Use HTTPS When Query Position（中文：查询位置时使用 HTTPS）：类型=布尔，默认=true
+- Output Local IP Details（中文：输出本地 IP 详细信息）：类型=布尔，默认=true
+- Output Verbose Connection Info（中文：输出冗长的连接信息）：类型=布尔，默认=false
+- Method（中文：方法）：类型=枚举，默认="Curl"
+  可选：Curl（未收录）；Command（命令）
+- IP Location Query Source（中文：IP位置查询源）：类型=枚举，默认="PearAPI"
+  可选：Vore.top（Vore.顶端）；PearAPI（未收录）；IQIYI（未收录）
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Query External IP（中文：查询外网 IP）：类型=布尔，默认=true
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=5L
+- AI Generated Description of IP Position（中文：IP位置使用人工智能生成的描述）：类型=布尔，默认=false
 
 历史更新
 - 72. 为 IPAddress 添加配置：
@@ -52,3 +57,4 @@ IPAddress 是 JackalClient 的 Web 分类模块。启用后会围绕 IP地址 �
 
 相关资料
 无
+

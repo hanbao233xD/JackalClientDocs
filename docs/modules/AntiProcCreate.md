@@ -12,7 +12,8 @@ AntiProcCreate
 - 版本属性：普通可用
 
 介绍
-AntiProcCreate 是 JackalClient 的 未分类 分类模块。启用后会围绕 禁止创建进程 这一能力工作，核心行为是：使用驱动程序阻止新进程的创建。
+AntiProcCreate（禁止创建进程）用于使用驱动程序阻止新进程的创建。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +32,4 @@ AntiProcCreate 是 JackalClient 的 未分类 分类模块。启用后会围绕 
 
 相关资料
 无
+

@@ -12,19 +12,22 @@ QQ窥探
 - 版本属性：普通可用
 
 介绍
-QQInspect 是 JackalClient 的 未分类 分类模块。启用后会围绕 QQ窥探 这一能力工作，核心行为是：如果漏洞存在，则窥探你的基本QQ信息。
+QQInspect（QQ窥探）用于如果漏洞存在，则窥探你的基本QQ信息。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify Others、Notify Basic Info。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- Output Steps：类型=布尔，默认=false
-- Scan Port Max：类型=数值，默认=4305
-- Notify Others：类型=布尔，默认=false
-- Auto Console：类型=布尔，默认=true
-- Notify Basic Info：类型=布尔，默认=false
-- Async：类型=布尔，默认=true
-- Close Menu：类型=布尔，默认=true
-- Scan Port Min：类型=数值，默认=4300
-- Connect Timeout (s)：类型=数值，默认=3L
-- Output Verbose Connection Info：类型=布尔，默认=false
+- Close Menu（中文：关闭菜单）：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Notify Others（中文：通知其他信息）：类型=布尔，默认=false
+- Notify Basic Info（中文：通知基本信息）：类型=布尔，默认=false
+- Scan Port Min（中文：扫描端口最小值）：类型=数值，默认=4300
+- Async（中文：异步）：类型=布尔，默认=true
+- Output Verbose Connection Info（中文：输出冗长的连接信息）：类型=布尔，默认=false
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=3L
+- Output Steps（中文：输出步骤）：类型=布尔，默认=false
+- Scan Port Max（中文：扫描端口最大值）：类型=数值，默认=4305
 
 历史更新
 - 27. 添加几个实验性模块：Totem, AutoTotem, QQInspect, IPHorror,
@@ -40,3 +43,4 @@ QQInspect 是 JackalClient 的 未分类 分类模块。启用后会围绕 QQ窥
 
 相关资料
 无
+

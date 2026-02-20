@@ -12,11 +12,13 @@ MouseTeleport
 - 版本属性：普通可用
 
 介绍
-MouseTeleport 是 JackalClient 的 Control 分类模块。启用后会围绕 鼠标传送 这一能力工作，核心行为是：在某些场合下传送鼠标。
+MouseTeleport（鼠标传送）用于在某些场合下传送鼠标。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Edge Teleport、Teleport Sound。
 
 配置项
-- Edge Teleport：类型=布尔，默认=true
-- Teleport Sound：类型=布尔，默认=true
+- Edge Teleport（中文：边缘传送）：类型=布尔，默认=true
+- Teleport Sound（中文：传送音效）：类型=布尔，默认=true
 
 历史更新
 - 12. 修复 Mouse Teleport 忽视屏幕全局缩放的问题。
@@ -40,3 +42,4 @@ MouseTeleport 是 JackalClient 的 Control 分类模块。启用后会围绕 鼠
 
 相关资料
 无
+

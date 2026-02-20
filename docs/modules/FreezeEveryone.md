@@ -12,7 +12,9 @@ FreezeEveryone
 - 版本属性：普通可用
 
 介绍
-FreezeEveryone 是 JackalClient 的 未分类 分类模块。启用后会围绕 全员冻结 这一能力工作，核心行为是：尝试冻结0和自身以外的一切进程。
+FreezeEveryone（全员冻结）用于尝试冻结0和自身以外的一切进程。
+适合在日常管理与自动化场景中按需启用。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +33,4 @@ FreezeEveryone 是 JackalClient 的 未分类 分类模块。启用后会围绕 
 
 相关资料
 无
+

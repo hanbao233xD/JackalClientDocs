@@ -12,10 +12,12 @@ AntiMouseHook
 - 版本属性：普通可用
 
 介绍
-AntiMouseHook 是 JackalClient 的 Combat 分类模块。启用后会围绕 反鼠标钩子 这一能力工作，核心行为是：阻止普通的鼠标钩子。
+AntiMouseHook（反鼠标钩子）用于阻止普通的鼠标钩子。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：bind。
 
 配置项
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'M'}}}
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'M'}}}
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +40,4 @@ AntiMouseHook 是 JackalClient 的 Combat 分类模块。启用后会围绕 反�
 
 相关资料
 无
+

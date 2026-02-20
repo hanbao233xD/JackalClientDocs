@@ -12,11 +12,15 @@ CapsGuard
 - 版本属性：普通可用
 
 介绍
-CapsGuard 是 JackalClient 的 Control 分类模块。启用后会围绕 大写守护 这一能力工作，核心行为是：暂无描述
+CapsGuard（大写守护）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Caps Lock Operation、Caps Lock When。
 
 配置项
-- Caps Lock When：类型=枚举，默认="Always"
-- Caps Lock Operation：类型=枚举，默认="Disable"
+- Caps Lock Operation（中文：大写锁定操作）：类型=枚举，默认="Disable"
+  可选：Ignore（忽略）；Disable（禁用）；Enable（启用）
+- Caps Lock When（中文：大写锁定何时）：类型=枚举，默认="Always"
+  可选：Always（总是）；Chinese Input Method（中文输入法）；Non-chinese Input Method（非中文输入法）
 
 历史更新
 - 44. 添加模块：Caps Guard，保持大写锁定键状态。
@@ -39,3 +43,4 @@ CapsGuard 是 JackalClient 的 Control 分类模块。启用后会围绕 大写�
 
 相关资料
 无
+

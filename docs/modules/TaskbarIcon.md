@@ -12,10 +12,12 @@ TaskbarIcon
 - 版本属性：普通可用
 
 介绍
-TaskbarIcon 是 JackalClient 的 Misc 分类模块。启用后会围绕 任务栏图标 这一能力工作，核心行为是：是否显示任务栏图标。
+TaskbarIcon（任务栏图标）用于是否显示任务栏图标。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：FORBID TASKBAR ICON。
 
 配置项
-- FORBID TASKBAR ICON：类型=布尔，默认=false
+- FORBID TASKBAR ICON（中文：禁止任务栏图标！）：类型=布尔，默认=false
 
 历史更新
 - 58. 尝试修复客户端任务栏图标时常无法加载的问题。
@@ -40,3 +42,4 @@ TaskbarIcon 是 JackalClient 的 Misc 分类模块。启用后会围绕 任务�
 
 相关资料
 无
+

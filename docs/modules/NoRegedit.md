@@ -12,11 +12,15 @@ NoRegedit
 - 版本属性：普通可用
 
 介绍
-NoRegedit 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁注册表编辑器 这一能力工作，核心行为是：暂无描述
+NoRegedit（禁注册表编辑器）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Method。
 
 配置项
-- Method：类型=枚举，默认="WINAPI"
-- Keep：类型=布尔，默认=false
+- Keep（中文：保持）：类型=布尔，默认=false
+- Method（中文：方法）：类型=枚举，默认="WINAPI"
+  可选：WINAPI（未收录）；Reg（未收录）
 
 历史更新
 - 2. 修复了 NoCmd, NoPowerShell, NoTaskmgr, NoRegedit 无效的问题。
@@ -39,3 +43,4 @@ NoRegedit 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁注
 
 相关资料
 无
+

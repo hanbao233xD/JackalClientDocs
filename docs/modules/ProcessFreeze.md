@@ -12,14 +12,16 @@ ProcessFreeze
 - 版本属性：普通可用
 
 介绍
-ProcessFreeze 是 JackalClient 的 Process 分类模块。启用后会围绕 进程冻结 这一能力工作，核心行为是：暂无描述
+ProcessFreeze（进程冻结）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Notify Freeze。
 
 配置项
-- Freeze PID：类型=数值，默认=0
-- Notify Freeze：类型=布尔，默认=true
-- Freeze Name：类型=文本，默认="1.exe"
-- Keep：类型=布尔，默认=true
-- Disable After Attempt：类型=布尔，默认=false
+- Freeze PID（中文：冻结PID）：类型=数值，默认=0
+- Freeze Name（中文：冻结名称）：类型=文本，默认="1.exe"
+- Disable After Attempt（中文：尝试之后关闭）：类型=布尔，默认=false
+- Keep（中文：保持）：类型=布尔，默认=true
+- Notify Freeze（中文：通知冻结）：类型=布尔，默认=true
 
 历史更新
 - 13. 完善 ProcessFreeze 模块。现在关闭改模块会解冻进程。
@@ -42,3 +44,4 @@ ProcessFreeze 是 JackalClient 的 Process 分类模块。启用后会围绕 进
 
 相关资料
 无
+

@@ -12,7 +12,8 @@ Masquerade
 - 版本属性：普通可用
 
 介绍
-Masquerade 是 JackalClient 的 未分类 分类模块。启用后会围绕 伪装 这一能力工作，核心行为是：修改PEB伪装成资源管理器。
+Masquerade（伪装）用于修改PEB伪装成资源管理器。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -32,3 +33,4 @@ Masquerade 是 JackalClient 的 未分类 分类模块。启用后会围绕 伪�
 
 相关资料
 无
+

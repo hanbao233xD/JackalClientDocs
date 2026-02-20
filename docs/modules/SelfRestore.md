@@ -12,10 +12,12 @@ SelfRestore
 - 版本属性：普通可用
 
 介绍
-SelfRestore 是 JackalClient 的 File 分类模块。启用后会围绕 自我还原 这一能力工作，核心行为是：暂无描述
+SelfRestore（自我还原）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Async。
 
 配置项
-- Async：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 - 19. 为 Self Backup 和 Self Restore 添加配置项：Async （是否异步操作）.
@@ -38,3 +40,4 @@ SelfRestore 是 JackalClient 的 File 分类模块。启用后会围绕 自我�
 
 相关资料
 无
+

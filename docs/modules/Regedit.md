@@ -12,10 +12,12 @@ Regedit
 - 版本属性：普通可用
 
 介绍
-Regedit 是 JackalClient 的 Process 分类模块。启用后会围绕 注册表 这一能力工作，核心行为是：打开注册表编辑器。
+Regedit（注册表）用于打开注册表编辑器。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：No Wow64 Redirection。
 
 配置项
-- No Wow64 Redirection：类型=布尔，默认=true
+- No Wow64 Redirection（中文：禁用 Wow64 重定向）：类型=布尔，默认=true
 
 历史更新
 - 5. 检查 taskmgr, regedit, cmd 是否被禁用如果失败将不会输出错误信息了，以免刷屏。
@@ -39,3 +41,4 @@ Regedit 是 JackalClient 的 Process 分类模块。启用后会围绕 注册表
 
 相关资料
 无
+

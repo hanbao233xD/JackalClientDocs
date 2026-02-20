@@ -12,13 +12,15 @@ SystemProxy
 - 版本属性：普通可用
 
 介绍
-SystemProxy 是 JackalClient 的 Web 分类模块。启用后会围绕 系统代理 这一能力工作，核心行为是：设置系统因特网代理。
+SystemProxy（系统代理）用于设置系统因特网代理。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Notify、Options Sync Cooldown (ms)。
 
 配置项
-- Proxy Override：类型=文本，默认=""
-- Options Sync Cooldown (ms)：类型=数值，默认=10000L
-- Proxy Server：类型=文本，默认=""
-- Notify：类型=布尔，默认=true
+- Notify（中文：通知）：类型=布尔，默认=true
+- Options Sync Cooldown (ms)（中文：选项同步冷却 (毫秒)）：类型=数值，默认=10000L
+- Proxy Server（中文：代理服务器）：类型=文本，默认=""
+- Proxy Override（中文：代理绕过）：类型=文本，默认=""
 
 历史更新
 - 4. 添加模块：System Proxy，系统因特网代理设置
@@ -41,3 +43,4 @@ SystemProxy 是 JackalClient 的 Web 分类模块。启用后会围绕 系统代
 
 相关资料
 无
+

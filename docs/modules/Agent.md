@@ -12,23 +12,30 @@ AI代理
 - 版本属性：普通可用
 
 介绍
-Agent 是 JackalClient 的 Web 分类模块。启用后会围绕 AI代理 这一能力工作，核心行为是：使用一个简单的人工智能代理完成你的任务。
+Agent（AI代理）用于使用一个简单的人工智能代理完成你的任务。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Allow Tool Preparation Missing、Output Real Ask、Command Confirmation。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Output Real Ask：类型=布尔，默认=true
-- Pause Task Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, VK_NUMPAD0}}}
-- Current Instruction：类型=枚举，默认="Run"
-- MessageBox Confirm Timeout Enabled：类型=布尔，默认=true
-- Max Allowed Asks：类型=数值，默认=100
-- Command Confirmation：类型=枚举，默认="MessageBox"
-- Allow Tool Preparation Missing：类型=布尔，默认=false
-- File Confirmation：类型=枚举，默认="AI Basic Check"
-- MessageBox Confirm Timeout (ms)：类型=数值，默认=60000L
-- Max Allowed File Operations：类型=数值，默认=100
-- Correct JSON Format：类型=布尔，默认=true
-- Max Allowed Commands：类型=数值，默认=50
-- Max Allowed Repeated Commands：类型=数值，默认=3
-- MessageBox Confirm Timeout Operation：类型=枚举，默认="Cancel"
+- Allow Tool Preparation Missing（中文：允许工具缺少准备）：类型=布尔，默认=false
+- Output Real Ask（中文：输出真实问题）：类型=布尔，默认=true
+- Command Confirmation（中文：命令确认）：类型=枚举，默认="MessageBox"
+  可选：Always Allow（始终允许）；AI Basic Check（用人工智能自己检查）；MessageBox（消息框）；Console（控制台）
+- Max Allowed Commands（中文：最大允许执行的命令次数）：类型=数值，默认=50
+- Max Allowed Asks（中文：最大允许对话次数）：类型=数值，默认=100
+- Max Allowed Repeated Commands（中文：最大允许执行的重复命令次数）：类型=数值，默认=3
+- Max Allowed File Operations（中文：最大允许文件操作次数）：类型=数值，默认=100
+- MessageBox Confirm Timeout Enabled（中文：启用消息框超时自动操作）：类型=布尔，默认=true
+- File Confirmation（中文：文件确认）：类型=枚举，默认="AI Basic Check"
+  可选：Always Allow（始终允许）；AI Basic Check（用人工智能自己检查）；MessageBox（消息框）；Console（控制台）
+- Pause Task Hotkey（中文：暂停任务快捷键）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, VK_NUMPAD0}}}
+- MessageBox Confirm Timeout (ms)（中文：消息框超时时间（毫秒））：类型=数值，默认=60000L
+- Correct JSON Format（中文：纠正JSON格式）：类型=布尔，默认=true
+- MessageBox Confirm Timeout Operation（中文：消息框确认超时操作）：类型=枚举，默认="Cancel"
+  可选：Accept（接受）；Decline（拒绝）；Cancel（取消）
+- Current Instruction（中文：当前指令）：类型=枚举，默认="Run"
+  可选：Run（未收录）；Pause（未收录）；Stop（停止）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -51,3 +58,4 @@ Agent 是 JackalClient 的 Web 分类模块。启用后会围绕 AI代理 这一
 
 相关资料
 无
+

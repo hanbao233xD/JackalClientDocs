@@ -12,14 +12,16 @@ Run
 - 版本属性：普通可用
 
 介绍
-Run 是 JackalClient 的 Process 分类模块。启用后会围绕 运行 这一能力工作，核心行为是：运行指定进程。
+Run（运行）用于运行指定进程。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Target。
 
 配置项
-- Hidden：类型=布尔，默认=false
-- Parameters：类型=文本，默认=""
-- Target：类型=文本，默认="cmd.exe"
-- Directory：类型=文本，默认=""
-- Watch：类型=布尔，默认=false
+- Target（中文：目标）：类型=文本，默认="cmd.exe"
+- Parameters（中文：参数）：类型=文本，默认=""
+- Hidden（中文：隐藏）：类型=布尔，默认=false
+- Watch（中文：守望）：类型=布尔，默认=false
+- Directory（中文：目录）：类型=文本，默认=""
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -42,3 +44,4 @@ Run 是 JackalClient 的 Process 分类模块。启用后会围绕 运行 这一
 
 相关资料
 无
+

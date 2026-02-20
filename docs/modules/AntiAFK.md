@@ -12,11 +12,13 @@ AntiAFK
 - 版本属性：普通可用
 
 介绍
-AntiAFK 是 JackalClient 的 Control 分类模块。启用后会围绕 反挂机 这一能力工作，核心行为是：暂无描述
+AntiAFK（反挂机）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Move Cooldown。
 
 配置项
-- Move Cooldown：类型=数值，默认=2000L
-- Move Duration：类型=数值，默认=3000L
+- Move Duration（中文：移动时长）：类型=数值，默认=3000L
+- Move Cooldown（中文：移动冷却）：类型=数值，默认=2000L
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -39,3 +41,4 @@ AntiAFK 是 JackalClient 的 Control 分类模块。启用后会围绕 反挂机
 
 相关资料
 无
+

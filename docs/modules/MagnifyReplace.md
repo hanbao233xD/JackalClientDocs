@@ -12,7 +12,9 @@ MagnifyReplace
 - 版本属性：普通可用
 
 介绍
-MagnifyReplace 是 JackalClient 的 未分类 分类模块。启用后会围绕 放大镜替换 这一能力工作，核心行为是：用本客户端的启动器替换系统放大镜。按下 Win + = 快捷启动。（需要管理员）
+MagnifyReplace（放大镜替换）用于用本客户端的启动器替换系统放大镜。按下 Win + = 快捷启动。（需要管理员）。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +33,4 @@ MagnifyReplace 是 JackalClient 的 未分类 分类模块。启用后会围绕 
 
 相关资料
 无
+

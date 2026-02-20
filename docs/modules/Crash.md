@@ -12,10 +12,13 @@ Crash
 - 版本属性：普通可用
 
 介绍
-Crash 是 JackalClient 的 Combat 分类模块。启用后会围绕 蓝屏 这一能力工作，核心行为是：暂无描述
+Crash（蓝屏）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Custom Win32 Error Code。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Custom Win32 Error Code：类型=数值，默认=28
+- Custom Win32 Error Code（中文：自定义Win32错误码）：类型=数值，默认=28
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +41,4 @@ Crash 是 JackalClient 的 Combat 分类模块。启用后会围绕 蓝屏 这�
 
 相关资料
 无
+

@@ -12,14 +12,16 @@ Anti360Ad
 - 版本属性：普通可用
 
 介绍
-Anti360Ad 是 JackalClient 的 Process 分类模块。启用后会围绕 反数字广告 这一能力工作，核心行为是：暂无描述
+Anti360Ad（反数字广告）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Remove 360 Suspended Ball、Kill 360 Ad Processes、MultiTip.exe。
 
 配置项
-- 360SpeedldHealth.exe：类型=布尔，默认=true
-- sesvcr.exe：类型=布尔，默认=true
-- Remove 360 Suspended Ball：类型=布尔，默认=true
-- MultiTip.exe：类型=布尔，默认=true
-- Kill 360 Ad Processes：类型=布尔，默认=true
+- Remove 360 Suspended Ball（中文：移除 360 悬浮球）：类型=布尔，默认=true
+- Kill 360 Ad Processes（中文：杀死 360 广告进程）：类型=布尔，默认=true
+- MultiTip.exe（中文：未收录）：类型=布尔，默认=true
+- sesvcr.exe（中文：未收录）：类型=布尔，默认=true
+- 360SpeedldHealth.exe（中文：未收录）：类型=布尔，默认=true
 
 历史更新
 - 9. 修复 Anti360Ad 在系统权限下 %AppData% 路径错误的问题。
@@ -44,3 +46,4 @@ Anti360Ad 是 JackalClient 的 Process 分类模块。启用后会围绕 反数�
 
 相关资料
 无
+

@@ -12,13 +12,15 @@ RecyclerClear
 - 版本属性：普通可用
 
 介绍
-RecyclerClear 是 JackalClient 的 File 分类模块。启用后会围绕 回收站清空 这一能力工作，核心行为是：清空系统回收站。
+RecyclerClear（回收站清空）用于清空系统回收站。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Confirm、Sound、Progress Bar。
 
 配置项
-- Progress Bar：类型=布尔，默认=true
-- Sound：类型=布尔，默认=true
-- Confirm：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
+- Confirm（中文：确认）：类型=布尔，默认=true
+- Sound（中文：音效）：类型=布尔，默认=true
+- Progress Bar（中文：进度条）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -41,3 +43,4 @@ RecyclerClear 是 JackalClient 的 File 分类模块。启用后会围绕 回收
 
 相关资料
 无
+

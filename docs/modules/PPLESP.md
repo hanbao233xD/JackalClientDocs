@@ -12,10 +12,12 @@ PPLESP
 - 版本属性：普通可用
 
 介绍
-PPLESP 是 JackalClient 的 未分类 分类模块。启用后会围绕 保护进程透视 这一能力工作，核心行为是：在左侧显示所有受保护进程。（需要RTCore64驱动）
+PPLESP（保护进程透视）用于在左侧显示所有受保护进程。（需要RTCore64驱动）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Hide When Menu On。
 
 配置项
-- Hide When Menu On：类型=布尔，默认=true
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=true
 
 历史更新
 - 21. Vape 模块被搬运至 Render 列， PPLESP 被塞进模块库。
@@ -31,3 +33,4 @@ PPLESP 是 JackalClient 的 未分类 分类模块。启用后会围绕 保护�
 
 相关资料
 无
+

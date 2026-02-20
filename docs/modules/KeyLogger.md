@@ -12,11 +12,13 @@ KeyLogger
 - 版本属性：普通可用
 
 介绍
-KeyLogger 是 JackalClient 的 Control 分类模块。启用后会围绕 键盘记录 这一能力工作，核心行为是：暂无描述
+KeyLogger（键盘记录）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Log Output、Console Output。
 
 配置项
-- Console Output：类型=布尔，默认=true
-- Log Output：类型=布尔，默认=true
+- Log Output（中文：日志输出）：类型=布尔，默认=true
+- Console Output（中文：控制台输出）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -39,3 +41,4 @@ KeyLogger 是 JackalClient 的 Control 分类模块。启用后会围绕 键盘�
 
 相关资料
 无
+

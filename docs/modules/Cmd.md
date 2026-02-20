@@ -12,11 +12,13 @@ Cmd
 - 版本属性：普通可用
 
 介绍
-Cmd 是 JackalClient 的 Process 分类模块。启用后会围绕 命令提示符 这一能力工作，核心行为是：打开命令提示符。
+Cmd（命令提示符）用于打开命令提示符。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Run As Admin、No Wow64 Redirection。
 
 配置项
-- Run As Admin：类型=布尔，默认=false
-- No Wow64 Redirection：类型=布尔，默认=true
+- Run As Admin（中文：以管理员身份运行）：类型=布尔，默认=false
+- No Wow64 Redirection（中文：禁用 Wow64 重定向）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -39,3 +41,4 @@ Cmd 是 JackalClient 的 Process 分类模块。启用后会围绕 命令提示�
 
 相关资料
 无
+

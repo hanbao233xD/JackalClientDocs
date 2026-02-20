@@ -12,12 +12,15 @@ ListDrivers
 - 版本属性：普通可用
 
 介绍
-ListDrivers 是 JackalClient 的 未分类 分类模块。启用后会围绕 枚举驱动 这一能力工作，核心行为是：暂无描述
+ListDrivers（枚举驱动）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Async、Auto Console、Verify。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
-- Verify：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Verify（中文：验证）：类型=布尔，默认=true
 
 历史更新
 - 26. 由于 ListDrivers 模块会导致崩溃，现已加入正在维修的模块列表。
@@ -33,3 +36,4 @@ ListDrivers 是 JackalClient 的 未分类 分类模块。启用后会围绕 枚
 
 相关资料
 无
+

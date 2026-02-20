@@ -12,15 +12,19 @@ RegMonitor
 - 版本属性：普通可用
 
 介绍
-RegMonitor 是 JackalClient 的 未分类 分类模块。启用后会围绕 注册表监视 这一能力工作，核心行为是：监视注册表变化。（维护中）
+RegMonitor（注册表监视）用于监视注册表变化。（维护中）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Item Filter RegExp、Key Filter RegExp、Value Filter RegExp。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
-- Key Filter RegExp：类型=通用，默认=""s
-- Value Filter RegExp：类型=通用，默认=""s
-- Cooldown (ms)：类型=数值，默认=1000U
-- Path：类型=通用，默认=""s
-- Item Filter RegExp：类型=通用，默认=""s
-- HKEY：类型=枚举，默认="HKEY_LOCAL_MACHINE"
+- Item Filter RegExp（中文：项筛选正则表达式）：类型=通用，默认=""s
+- Path（中文：路径）：类型=通用，默认=""s
+- Key Filter RegExp（中文：键筛选正则表达式）：类型=通用，默认=""s
+- Value Filter RegExp（中文：值筛选正则表达式）：类型=通用，默认=""s
+- Cooldown (ms)（中文：冷却 (毫秒)）：类型=数值，默认=1000U
+- HKEY（中文：主键：）：类型=枚举，默认="HKEY_LOCAL_MACHINE"
+  可选：HKEY_LOCAL_MACHINE（主键：_本地_MACHINE）；HKEY_CURRENT_USER（主键：_当前_用户）；HKEY_CLASSES_ROOT（主键：_CLASSES_ROOT）；HKEY_CURRENT_CONFIG（主键：_当前_配置）；HKEY_USERS（主键：_USERS）
 
 历史更新
 - 28. 添加模块：RegMonitor，注册表监视。还没有做的很好。
@@ -36,3 +40,4 @@ RegMonitor 是 JackalClient 的 未分类 分类模块。启用后会围绕 注�
 
 相关资料
 无
+

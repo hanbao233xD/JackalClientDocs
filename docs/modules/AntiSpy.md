@@ -12,26 +12,29 @@ AntiSpy
 - 版本属性：普通可用
 
 介绍
-AntiSpy 是 JackalClient 的 Combat 分类模块。启用后会围绕 反间谍 这一能力工作，核心行为是：暂无描述
+AntiSpy（反间谍）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify、Anti Prefetch Check Cooldown (ms)、Check Cooldown (ms)。
 
 配置项
-- Clear Recent File History：类型=布尔，默认=true
-- Clear Recent Office History：类型=布尔，默认=true
-- Clear Run History (PRO)：类型=布尔，默认=true
-- Check Cooldown (ms)：类型=数值，默认=1000U
-- Disable Clipboard History：类型=布尔，默认=true
-- Anti Prefetch Blacklist Processes Enabled：类型=布尔，默认=false
-- Anti Prefetch Deletion Notify：类型=布尔，默认=false
-- Clear Recent Activity Timeline (PRO)：类型=布尔，默认=true
-- Anti Prefetch Whitelist Processes (Sep With Semicolon)：类型=文本，默认="JackalClient.exe;loader.exe;Inject.exe;Injector.exe;liquidlauncher.exe;Vape_V4. ...
-- Anti Prefetch Blacklist Processes (Sep With Semicolon)：类型=文本，默认=""
-- Anti Prefetch Check Cooldown (ms)：类型=数值，默认=50000L
-- Async：类型=布尔，默认=true
-- Clear Explorer Search History (PRO)：类型=布尔，默认=true
-- Anti Prefetch (PRO)：类型=枚举，默认="Filtered"
-- Notify：类型=布尔，默认=true
-- Toggle Anti Microphone：类型=布尔，默认=false
-- Anti Prefetch Whitelist Processes Enabled：类型=布尔，默认=true
+- Anti Prefetch (PRO)（中文：反预取（专业版））：类型=枚举，默认="Filtered"
+  可选：Off（关闭）；Filtered（已过滤）；All（所有）
+- Clear Run History (PRO)（中文：清空运行历史（专业版））：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Notify（中文：通知）：类型=布尔，默认=true
+- Anti Prefetch Whitelist Processes (Sep With Semicolon)（中文：反预取进程白名单（用分号分隔））：类型=文本，默认="JackalClient.exe;loader.exe;Inject.exe;Injector.exe;liquidlauncher.exe;Vape_V4. ...
+- Anti Prefetch Whitelist Processes Enabled（中文：反预取启用进程白名单）：类型=布尔，默认=true
+- Anti Prefetch Blacklist Processes (Sep With Semicolon)（中文：反预取进程黑名单（用分号分隔））：类型=文本，默认=""
+- Clear Recent Office History（中文：清空近期Office历史）：类型=布尔，默认=true
+- Clear Recent Activity Timeline (PRO)（中文：清空最近活动时间轴（专业版））：类型=布尔，默认=true
+- Toggle Anti Microphone（中文：联动反麦克风）：类型=布尔，默认=false
+- Anti Prefetch Check Cooldown (ms)（中文：Anti Prefetch Check 冷却 (ms)）：类型=数值，默认=50000L
+- Clear Recent File History（中文：清空近期文件历史）：类型=布尔，默认=true
+- Disable Clipboard History（中文：禁用剪贴板历史）：类型=布尔，默认=true
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=1000U
+- Clear Explorer Search History (PRO)（中文：清空资源管理器搜索历史（专业版））：类型=布尔，默认=true
+- Anti Prefetch Deletion Notify（中文：反预取删除通知）：类型=布尔，默认=false
+- Anti Prefetch Blacklist Processes Enabled（中文：反预取启用进程黑名单）：类型=布尔，默认=false
 
 历史更新
 - 79. 为 Anti Spy 添加配置项：
@@ -56,3 +59,4 @@ AntiSpy 是 JackalClient 的 Combat 分类模块。启用后会围绕 反间谍 
 
 相关资料
 无
+

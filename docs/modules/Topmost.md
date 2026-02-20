@@ -12,12 +12,16 @@ Topmost
 - 版本属性：普通可用
 
 介绍
-Topmost 是 JackalClient 的 Window 分类模块。启用后会围绕 窗口置顶 这一能力工作，核心行为是：立即置顶前端窗口。你需要分配一个快捷键。
+Topmost（窗口置顶）用于立即置顶前端窗口。你需要分配一个快捷键。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Notify、Target。
 
 配置项
-- Target：类型=枚举，默认="Foreground"
-- Notify：类型=布尔，默认=true
-- Operation：类型=枚举，默认="Auto"
+- Notify（中文：通知）：类型=布尔，默认=true
+- Target（中文：目标）：类型=枚举，默认="Foreground"
+  可选：Foreground（前端）；PointAt（指向）
+- Operation（中文：操作）：类型=枚举，默认="Auto"
+  可选：Auto（自动）；Topmost（置顶）；Untopmost（取消置顶）
 
 历史更新
 - 23. 添加一个设定：如果 GUI 中的更好的置顶（Better Topmost）启用，按下 Win+D 快捷键后客户端会自动获得焦点以免置顶了却被最小化。
@@ -42,3 +46,4 @@ Topmost 是 JackalClient 的 Window 分类模块。启用后会围绕 窗口置�
 
 相关资料
 无
+

@@ -12,15 +12,17 @@ ForceTerminator
 - 版本属性：普通可用
 
 介绍
-ForceTerminator 是 JackalClient 的 Process 分类模块。启用后会围绕 暴力送终 这一能力工作，核心行为是：使用驱动程序帮你强制终止目标进程。
+ForceTerminator（暴力送终）用于使用驱动程序帮你强制终止目标进程。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Close Menu、Process Name (Empty For Any)、Max Process Count。
 
 配置项
-- Confirm Before Termination：类型=布尔，默认=false
-- Process Name (Empty For Any)：类型=文本，默认="JackalClient.exe"
-- Max Process Count：类型=数值，默认=8
-- Async：类型=布尔，默认=true
-- Close Menu：类型=布尔，默认=false
-- Process Id (Zero For Any)：类型=数值，默认=0
+- Close Menu（中文：关闭菜单）：类型=布尔，默认=false
+- Process Name (Empty For Any)（中文：进程名 (用空指代任何)）：类型=文本，默认="JackalClient.exe"
+- Max Process Count（中文：最大进程数量）：类型=数值，默认=8
+- Async（中文：异步）：类型=布尔，默认=true
+- Confirm Before Termination（中文：终止前确认）：类型=布尔，默认=false
+- Process Id (Zero For Any)（中文：进程ID (用0指代任何)）：类型=数值，默认=0
 
 历史更新
 - 25. 新增模块 Force Terminator：使用驱动程序强制终止目标进程。
@@ -43,3 +45,4 @@ ForceTerminator 是 JackalClient 的 Process 分类模块。启用后会围绕 �
 
 相关资料
 无
+

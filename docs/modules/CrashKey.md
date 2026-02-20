@@ -12,10 +12,14 @@ CrashKey
 - 版本属性：普通可用
 
 介绍
-CrashKey 是 JackalClient 的 Registry 分类模块。启用后会围绕 快捷蓝屏 这一能力工作，核心行为是：开启蓝屏快捷键（按两次 右Ctrl + ScrollLock）。
+CrashKey（快捷蓝屏）用于开启蓝屏快捷键（按两次 右Ctrl + ScrollLock）。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Keyboard Device。
 
 配置项
-- Keyboard Device：类型=枚举，默认="All"
+- Keyboard Device（中文：键盘设备）：类型=枚举，默认="All"
+  可选：All（所有）；PS/2（未收录）；USB（未收录）；Hyper-V（未收录）
 
 历史更新
 - 8. 将 Crash Key 从 Combat 改到 Registry 下。
@@ -39,3 +43,4 @@ CrashKey 是 JackalClient 的 Registry 分类模块。启用后会围绕 快捷�
 
 相关资料
 无
+

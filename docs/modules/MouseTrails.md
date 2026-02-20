@@ -12,10 +12,12 @@ MouseTrails
 - 版本属性：普通可用
 
 介绍
-MouseTrails 是 JackalClient 的 Control 分类模块。启用后会围绕 鼠标轨迹 这一能力工作，核心行为是：暂无描述
+MouseTrails（鼠标轨迹）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Trails。
 
 配置项
-- Trails：类型=数值，默认=5
+- Trails（中文：轨迹）：类型=数值，默认=5
 
 历史更新
 - 68. 删除 NoAnimation & MouseTrails 之前无意义的配置项。
@@ -40,3 +42,4 @@ MouseTrails 是 JackalClient 的 Control 分类模块。启用后会围绕 鼠�
 
 相关资料
 无
+

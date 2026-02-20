@@ -12,10 +12,14 @@ SelfUninstall
 - 版本属性：普通可用
 
 介绍
-SelfUninstall 是 JackalClient 的 未分类 分类模块。启用后会围绕 自我卸载 这一能力工作，核心行为是：立即卸载整个客户端。
+SelfUninstall（自我卸载）用于立即卸载整个客户端。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Batch Terminal。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Batch Terminal：类型=枚举，默认="Hide"
+- Batch Terminal（中文：批处理文件终端）：类型=枚举，默认="Hide"
+  可选：Show（显示）；Minimize（最小化）；Hide（隐藏）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -31,3 +35,4 @@ SelfUninstall 是 JackalClient 的 未分类 分类模块。启用后会围绕 �
 
 相关资料
 无
+

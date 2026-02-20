@@ -12,10 +12,12 @@ KillAuraLegit
 - 版本属性：普通可用
 
 介绍
-KillAuraLegit 是 JackalClient 的 未分类 分类模块。启用后会围绕 合法杀戮光环 这一能力工作，核心行为是：暂无描述
+KillAuraLegit（合法杀戮光环）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Smoothness。
 
 配置项
-- Smoothness：类型=数值，默认=0.8f
+- Smoothness（中文：平滑度）：类型=数值，默认=0.8f
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -31,3 +33,4 @@ KillAuraLegit 是 JackalClient 的 未分类 分类模块。启用后会围绕 �
 
 相关资料
 无
+

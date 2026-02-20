@@ -12,10 +12,12 @@ Active
 - 版本属性：普通可用
 
 介绍
-Active 是 JackalClient 的 Misc 分类模块。启用后会围绕 活动 这一能力工作，核心行为是：暂无描述
+Active（活动）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Cooldown。
 
 配置项
-- Cooldown：类型=数值，默认=0
+- Cooldown（中文：冷却）：类型=数值，默认=0
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +40,4 @@ Active 是 JackalClient 的 Misc 分类模块。启用后会围绕 活动 这一
 
 相关资料
 无
+

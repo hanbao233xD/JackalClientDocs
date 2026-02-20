@@ -12,15 +12,22 @@ RootProgram
 - 版本属性：普通可用
 
 介绍
-RootProgram 是 JackalClient 的 File 分类模块。启用后会围绕 根目录程序 这一能力工作，核心行为是：暂无描述
+RootProgram（根目录程序）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Policy、Monitor Reaction。
 
 配置项
-- Settle Program：类型=枚举，默认="Cmd"
-- Prevention Format：类型=枚举，默认="Both"
-- Monitor Reaction：类型=枚举，默认="Notify Delete"
-- Policy：类型=枚举，默认="Monitor"
-- Settle Format：类型=枚举，默认=".exe"
-- Settle Custom Source Path：类型=文本，默认=""
+- Prevention Format（中文：预防格式）：类型=枚举，默认="Both"
+  可选：.exe（未收录）；.com（未收录）；Both（两者）
+- Settle Format（中文：定居格式）：类型=枚举，默认=".exe"
+  可选：.exe（未收录）；.com（未收录）
+- Settle Program（中文：定居程序）：类型=枚举，默认="Cmd"
+  可选：Cmd（未收录）；Client（客户端）；PowerShell（未收录）；Custom（自定义）
+- Settle Custom Source Path（中文：自定义定居源路径）：类型=文本，默认=""
+- Policy（中文：策略）：类型=枚举，默认="Monitor"
+  可选：Monitor（监视）；Prevention（预防）；Settle（定居）
+- Monitor Reaction（中文：监视反应）：类型=枚举，默认="Notify Delete"
+  可选：Notify（通知）；Delete（删除）；Notify Delete（通知删除）
 
 历史更新
 - 30. 修复模块 RootProgram 通知里的一个字符串类型错误。
@@ -43,3 +50,4 @@ RootProgram 是 JackalClient 的 File 分类模块。启用后会围绕 根目�
 
 相关资料
 无
+

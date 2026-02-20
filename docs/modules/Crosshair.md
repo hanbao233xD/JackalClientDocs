@@ -12,26 +12,30 @@ Crosshair
 - 版本属性：普通可用
 
 介绍
-Crosshair 是 JackalClient 的 Control 分类模块。启用后会围绕 准星线 这一能力工作，核心行为是：暂无描述
+Crosshair（准星线）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Advanced Mode Hotkey、Advanced Mode、Advanced Mode Allow No Focus。
 
 配置项
-- Advanced Mode Allow No Focus：类型=布尔，默认=false
-- Crosshair Line Color：类型=枚举，默认="Rainbow"
-- Crosshair Line Combination Type：类型=枚举，默认="Plus"
-- HUD Line Gap：类型=数值，默认=5
-- Advanced Mode：类型=布尔，默认=false
-- HUD Font Size：类型=数值，默认=25
-- Crosshair Line Opacity (0~1)：类型=数值，默认=0.9f
-- HUD Opacity (0~1)：类型=数值，默认=0.9f
-- Crosshair Hollow Radius：类型=数值，默认=80
-- Crosshair Hollow Enabled：类型=布尔，默认=true
-- Advanced Mode Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LMENU, VK_RMENU}}}
-- Hide When Menu On：类型=布尔，默认=false
-- Crosshair Line Width：类型=数值，默认=2
-- Crosshair Line Wave Color：类型=布尔，默认=true
-- Advanced Mode Show HUD：类型=布尔，默认=true
-- Coord Font Size：类型=数值，默认=30
-- Horizontal：类型=文本，默认="Vertical", "Plus", "X", "Plus & X"
+- Crosshair Line Wave Color（中文：准星线颜色闪烁）：类型=布尔，默认=true
+- Advanced Mode Hotkey（中文：高级模式快捷键）：类型=按键/复合，默认={{"Keybind", {VK_LMENU, VK_RMENU}}}
+- Advanced Mode（中文：高级模式）：类型=布尔，默认=false
+- Advanced Mode Allow No Focus（中文：高级模式允许没有焦点）：类型=布尔，默认=false
+- HUD Font Size（中文：HUD 字号）：类型=数值，默认=25
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=false
+- Crosshair Line Width（中文：准星线宽）：类型=数值，默认=2
+- Crosshair Line Opacity (0~1)（中文：准星线不透明度）：类型=数值，默认=0.9f
+- Crosshair Line Color（中文：准星线颜色）：类型=枚举，默认="Rainbow"
+  可选：White（白色）；Red（红色）；Green（绿色）；Blue（蓝色）；Magenta（品红色）；Colorful（缤纷）；Rainbow（彩虹色）
+- HUD Line Gap（中文：HUD 行距）：类型=数值，默认=5
+- HUD Opacity (0~1)（中文：HUD 不透明度）：类型=数值，默认=0.9f
+- Horizontal（中文：横向）：类型=文本，默认="Vertical", "Plus", "X", "Plus & X"
+- Advanced Mode Show HUD（中文：高级模式显示文本）：类型=布尔，默认=true
+- Coord Font Size（中文：坐标字号）：类型=数值，默认=30
+- Crosshair Hollow Radius（中文：鼠标周围准星不绘制的半径）：类型=数值，默认=80
+- Crosshair Line Combination Type（中文：准星线组合类型）：类型=枚举，默认="Plus"
+  可选：Horizontal（横向）；Vertical（纵向）；Plus（加号）；X（未收录）；Plus & X（米字型）
+- Crosshair Hollow Enabled（中文：鼠标周围不绘制准星线）：类型=布尔，默认=true
 
 历史更新
 - 2. 为 Crosshair 准星模块添加：
@@ -56,3 +60,4 @@ Crosshair 是 JackalClient 的 Control 分类模块。启用后会围绕 准星�
 
 相关资料
 无
+

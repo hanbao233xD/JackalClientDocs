@@ -12,28 +12,31 @@ MacroPlayer
 - 版本属性：普通可用
 
 介绍
-MacroPlayer 是 JackalClient 的 Control 分类模块。启用后会围绕 宏播放 这一能力工作，核心行为是：播放键盘和鼠标操作的宏。
+MacroPlayer（宏播放）用于播放键盘和鼠标操作的宏。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Notify、Playing HUD Font Size、Playing HUD X Rate。
 
 配置项
-- Start Delay (ms)：类型=数值，默认=3000L
-- Actionbar Display Mouse Wheel：类型=布尔，默认=true
-- Perform Window Assertions：类型=布尔，默认=true
-- Playing HUD：类型=枚举，默认="Off"
-- Close Menu：类型=布尔，默认=true
-- Playing HUD X Rate：类型=数值，默认=0.05f
-- bind (Enable)：类型=按键/复合，默认={{"Keybind", {0}}}
-- adjust offset (Earlier)：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_UP}}}
-- bind (Disable)：类型=按键/复合，默认={{"Keybind", {0}}}
-- Actionbar Display Mouse Move：类型=布尔，默认=true
-- Adjust Offset Step (ms)：类型=数值，默认=50L
-- Actionbar Display Key Press：类型=布尔，默认=true
-- Playing HUD Font Size：类型=数值，默认=50
-- Macro Path：类型=文本，默认=""
-- Reset Keyboard When Disable：类型=布尔，默认=true
-- Notify：类型=布尔，默认=true
-- Auto Loop：类型=布尔，默认=false
-- Playing HUD Y Rate：类型=数值，默认=0.12f
-- adjust offset (Later)：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_DOWN}}}
+- Notify（中文：通知）：类型=布尔，默认=true
+- Close Menu（中文：关闭菜单）：类型=布尔，默认=true
+- bind (Enable)（中文：绑定 (启用)）：类型=按键/复合，默认={{"Keybind", {0}}}
+- bind (Disable)（中文：绑定 (关闭)）：类型=按键/复合，默认={{"Keybind", {0}}}
+- Macro Path（中文：宏路径）：类型=文本，默认=""
+- Playing HUD Font Size（中文：播放中HUD字号）：类型=数值，默认=50
+- adjust offset (Later)（中文：调整偏移 (晚一点)）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_DOWN}}}
+- Auto Loop（中文：自动循环）：类型=布尔，默认=false
+- Playing HUD X Rate（中文：播放中HUD X比例）：类型=数值，默认=0.05f
+- Start Delay (ms)（中文：开始延迟 (毫秒)）：类型=数值，默认=3000L
+- Perform Window Assertions（中文：执行窗口断言）：类型=布尔，默认=true
+- Playing HUD Y Rate（中文：播放中HUD Y比例）：类型=数值，默认=0.12f
+- Adjust Offset Step (ms)（中文：偏移调整差值 (毫秒)）：类型=数值，默认=50L
+- Actionbar Display Mouse Move（中文：行为栏展示鼠标移动）：类型=布尔，默认=true
+- Playing HUD（中文：播放中HUD）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Replay（未收录）；Blue Rectangle（红色矩形）
+- Actionbar Display Mouse Wheel（中文：行为栏展示鼠标滚轮）：类型=布尔，默认=true
+- Reset Keyboard When Disable（中文：关闭时重置键盘）：类型=布尔，默认=true
+- Actionbar Display Key Press（中文：行为栏展示按下的键）：类型=布尔，默认=true
+- adjust offset (Earlier)（中文：调整偏移 (早一点)）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_UP}}}
 
 历史更新
 - 27. 为 Macro Player 添加配置：
@@ -57,3 +60,4 @@ MacroPlayer 是 JackalClient 的 Control 分类模块。启用后会围绕 宏�
 
 相关资料
 无
+

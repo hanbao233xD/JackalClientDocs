@@ -12,7 +12,8 @@ Flight
 - 版本属性：普通可用
 
 介绍
-Flight 是 JackalClient 的 Web 分类模块。启用后会围绕 飞行 这一能力工作，核心行为是：打开/关闭飞行模式。
+Flight（飞行）用于打开/关闭飞行模式。
+适合联网信息获取、账号联动和在线交互场景。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ Flight 是 JackalClient 的 Web 分类模块。启用后会围绕 飞行 这一�
 
 相关资料
 无
+

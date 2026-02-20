@@ -12,16 +12,19 @@ AntiInject
 - 版本属性：普通可用
 
 介绍
-AntiInject 是 JackalClient 的 未分类 分类模块。启用后会围绕 反注入 这一能力工作，核心行为是：防止客户端进程被注入。
+AntiInject（反注入）用于防止客户端进程被注入。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Check Cooldown。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Exit If Unload Failed：类型=布尔，默认=false
-- Async：类型=布尔，默认=true
-- Monitor Modules：类型=布尔，默认=true
-- Auto Unload：类型=布尔，默认=false
-- Check Cooldown：类型=数值，默认=2000U
-- Exclude Verified：类型=布尔，默认=false
-- Exclude DLLs in Release：类型=布尔，默认=true
+- Auto Unload（中文：自动卸载）：类型=布尔，默认=false
+- Check Cooldown（中文：检查冷却）：类型=数值，默认=2000U
+- Exclude DLLs in Release（中文：排除Release文件夹里的DLL）：类型=布尔，默认=true
+- Monitor Modules（中文：监视模块）：类型=布尔，默认=true
+- Exclude Verified（中文：排除通过验证的）：类型=布尔，默认=false
+- Async（中文：异步）：类型=布尔，默认=true
+- Exit If Unload Failed（中文：卸载失败则退出）：类型=布尔，默认=false
 
 历史更新
 - 8. 为 AntiInject 添加配置：
@@ -37,3 +40,4 @@ AntiInject 是 JackalClient 的 未分类 分类模块。启用后会围绕 反�
 
 相关资料
 无
+

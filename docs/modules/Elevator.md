@@ -12,12 +12,14 @@ Elevator
 - 版本属性：普通可用
 
 介绍
-Elevator 是 JackalClient 的 Process 分类模块。启用后会围绕 电梯 这一能力工作，核心行为是：使用驱动程序提升进程权限，无需重启它。
+Elevator（电梯）用于使用驱动程序提升进程权限，无需重启它。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Process Id (Zero For Any)、Process Name (Empty For Any)、Max Process Count。
 
 配置项
-- Max Process Count：类型=数值，默认=8
-- Process Name (Empty For Any)：类型=文本，默认="JackalClient.exe"
-- Process Id (Zero For Any)：类型=数值，默认=0
+- Process Id (Zero For Any)（中文：进程ID (用0指代任何)）：类型=数值，默认=0
+- Process Name (Empty For Any)（中文：进程名 (用空指代任何)）：类型=文本，默认="JackalClient.exe"
+- Max Process Count（中文：最大进程数量）：类型=数值，默认=8
 
 历史更新
 - 23. 添加使用驱动的模块：Elevator，使用驱动程序提升目标进程权限。
@@ -40,3 +42,4 @@ Elevator 是 JackalClient 的 Process 分类模块。启用后会围绕 电梯 �
 
 相关资料
 无
+

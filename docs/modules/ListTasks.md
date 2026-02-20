@@ -12,12 +12,15 @@ ListTasks
 - 版本属性：普通可用
 
 介绍
-ListTasks 是 JackalClient 的 Process 分类模块。启用后会围绕 枚举计划任务 这一能力工作，核心行为是：暂无描述
+ListTasks（枚举计划任务）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Style。
 
 配置项
-- Style：类型=枚举，默认="Normal"
-- Async：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Style（中文：风格）：类型=枚举，默认="Normal"
+  可选：Normal（普通）；Vanilla (List)（原版 (列表)）；Vanilla (XML)（原版 (XML)）；Vanilla (CSV)（原版 (CSV)）
 
 历史更新
 - 8. 添加模块 ListTasks, 枚举所有计划任务信息。
@@ -40,3 +43,4 @@ ListTasks 是 JackalClient 的 Process 分类模块。启用后会围绕 枚举�
 
 相关资料
 无
+

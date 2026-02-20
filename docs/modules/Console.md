@@ -12,24 +12,31 @@ Console
 - 版本属性：普通可用
 
 介绍
-Console 是 JackalClient 的 Misc 分类模块。启用后会围绕 控制台 这一能力工作，核心行为是：暂无描述
+Console（控制台）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Dark Mode、Advanced Background Style、Module Toggle Mode。
 
 配置项
-- Random Title：类型=布尔，默认=true
-- Caption Color：类型=文本，默认=""
-- Disable Quick Edit：类型=布尔，默认=true
-- Font Name：类型=枚举，默认="Consolas"
-- Dark Mode：类型=枚举，默认="On"
-- Border Color：类型=文本，默认=""
-- Caption Text Color：类型=文本，默认=""
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'C'}}}
-- Round Corner：类型=布尔，默认=true
-- Module Toggle Mode：类型=枚举，默认="Visibility"
-- Font Size：类型=数值，默认=18
-- Disable Mouse Input：类型=布尔，默认=true
-- Non-client Rendering Policy：类型=布尔，默认=false
-- Disable Insert Mode：类型=布尔，默认=false
-- Disable Close：类型=布尔，默认=true
+- Round Corner（中文：圆角）：类型=布尔，默认=true
+- Dark Mode（中文：深色模式）：类型=枚举，默认="On"
+  可选：Off（关闭）；On（开启）；Auto（自动）
+- Advanced Background Style（中文：高级背景样式）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Mica（云母）；Acrylic（亚克力）；Test（未收录）
+- Disable Close（中文：禁用关闭）：类型=布尔，默认=true
+- Random Title（中文：随机标题）：类型=布尔，默认=true
+- Disable Quick Edit（中文：禁用快速编辑）：类型=布尔，默认=true
+- Caption Text Color（中文：标题颜色）：类型=文本，默认=""
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'C'}}}
+- Border Color（中文：边界颜色）：类型=文本，默认=""
+- Font Name（中文：字体名称）：类型=枚举，默认="Consolas"
+  可选：新宋体（未收录）；宋体（未收录）；黑体（未收录）；楷体（未收录）；等线（未收录）；Candara（未收录）；Consolas（未收录）；Lucida Console（Lucida 控制台）；Segoe UI（未收录）；Tahoma（未收录）
+- Font Size（中文：字号）：类型=数值，默认=18
+- Module Toggle Mode（中文：模块切换模式）：类型=枚举，默认="Visibility"
+  可选：Visibility（能见度）；Existence（未收录）
+- Non-client Rendering Policy（中文：非客户区渲染策略）：类型=布尔，默认=false
+- Caption Color（中文：标题栏颜色）：类型=文本，默认=""
+- Disable Mouse Input（中文：禁用鼠标输入）：类型=布尔，默认=true
+- Disable Insert Mode（中文：禁用插入模式）：类型=布尔，默认=false
 
 历史更新
 - 48. 为 Console 控制台模块添加配置：
@@ -54,3 +61,4 @@ Console 是 JackalClient 的 Misc 分类模块。启用后会围绕 控制台 �
 
 相关资料
 无
+

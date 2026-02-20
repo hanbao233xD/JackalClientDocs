@@ -12,10 +12,14 @@ KillAV
 - 版本属性：普通可用
 
 介绍
-KillAV 是 JackalClient 的 Process 分类模块。启用后会围绕 击杀杀软 这一能力工作，核心行为是：暂无描述
+KillAV（击杀杀软）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Method。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- Method：类型=枚举，默认="Driver"
+- Method（中文：方法）：类型=枚举，默认="Driver"
+  可选：Normal（普通）；Driver（未收录）
 
 历史更新
 - 28. 修改 KillAV 模块为驱动模式，添加配置：
@@ -38,3 +42,4 @@ KillAV 是 JackalClient 的 Process 分类模块。启用后会围绕 击杀杀�
 
 相关资料
 无
+

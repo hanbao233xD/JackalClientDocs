@@ -12,26 +12,29 @@ Gatekeeper
 - 版本属性：普通可用
 
 介绍
-Gatekeeper 是 JackalClient 的 Combat 分类模块。启用后会围绕 看门人 这一能力工作，核心行为是：通过注入动态链接库，拦截 Winlogon 事件（需要管理员和特权）
+Gatekeeper（看门人）用于通过注入动态链接库，拦截 Winlogon 事件（需要管理员和特权）。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Check Working Cooldown、Filter Keys、Comm File Check Cooldown (ms)。
 
 配置项
-- Disable When Quit：类型=布尔，默认=true
-- Shutdown：类型=枚举，默认="Query"
-- Use Loader to Inject (Suggested)：类型=布尔，默认=true
-- Magnifier：类型=枚举，默认="Query"
-- Comm File Check Cooldown (ms)：类型=数值，默认=200L
-- Win + L：类型=枚举，默认="Query"
-- Narrator：类型=枚举，默认="Query"
-- Ctrl + Alt + Del：类型=枚举，默认="Query"
-- Ctrl + Shift + Esc：类型=枚举，默认="Allow"
-- Admin：类型=枚举，默认="Allow"
-- Sticky Keys：类型=枚举，默认="Query"
-- Reboot：类型=枚举，默认="Query"
-- Accessibility：类型=枚举，默认="Query"
-- Check Working Cooldown：类型=数值，默认=5000U
-- Filter Keys：类型=枚举，默认="Query"
-- Projection Menu：类型=枚举，默认="Query"
-- Logoff：类型=枚举，默认="Query"
+- Ctrl + Shift + Esc（中文：未收录）：类型=枚举，默认="Allow"
+- Disable When Quit（中文：退出时关闭）：类型=布尔，默认=true
+- Narrator（中文：讲述人）：类型=枚举，默认="Query"
+- Use Loader to Inject (Suggested)（中文：使用加载器注入（推荐））：类型=布尔，默认=true
+- Admin（中文：管理员）：类型=枚举，默认="Allow"
+- Accessibility（中文：辅助功能）：类型=枚举，默认="Query"
+- Check Working Cooldown（中文：检查工作状态冷却）：类型=数值，默认=5000U
+- Reboot（中文：重启）：类型=枚举，默认="Query"
+- Logoff（中文：注销）：类型=枚举，默认="Query"
+- Ctrl + Alt + Del（中文：未收录）：类型=枚举，默认="Query"
+- Shutdown（中文：关机）：类型=枚举，默认="Query"
+- Filter Keys（中文：筛选键）：类型=枚举，默认="Query"
+- Win + L（中文：未收录）：类型=枚举，默认="Query"
+- Comm File Check Cooldown (ms)（中文：通信文件检查冷却 (毫秒)）：类型=数值，默认=200L
+- Sticky Keys（中文：粘滞键）：类型=枚举，默认="Query"
+- Projection Menu（中文：投影菜单）：类型=枚举，默认="Query"
+- Magnifier（中文：放大镜）：类型=枚举，默认="Query"
 
 历史更新
 - 7. 为 JDGatekeeper.dll 添加了新的注销（一个）、关机（两个）和重启（一个）筛选。
@@ -56,3 +59,4 @@ Gatekeeper 是 JackalClient 的 Combat 分类模块。启用后会围绕 看门�
 
 相关资料
 无
+

@@ -12,13 +12,16 @@ QuickCommand
 - 版本属性：普通可用
 
 介绍
-QuickCommand 是 JackalClient 的 Misc 分类模块。启用后会围绕 快速命令 这一能力工作，核心行为是：按快捷键打开输入框，输入后快速执行一些命令。
+QuickCommand（快速命令）用于按快捷键打开输入框，输入后快速执行一些命令。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Input Method。
 
 配置项
-- Trigger Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_3}}}
-- Single Instance：类型=布尔，默认=true
-- Input Method：类型=枚举，默认="Input Box"
-- Async：类型=布尔，默认=true
+- Trigger Hotkey（中文：触发快捷键）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_3}}}
+- Input Method（中文：输入方法）：类型=枚举，默认="Input Box"
+  可选：Input Box（输入框）；Chat Box（聊天框）
+- Single Instance（中文：单例模式）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 - 38. 修复 QuickCommand 单例模式下 Chat Box 创建一次后无法再次创建的问题；单例模式关闭时无限创建的问题。
@@ -42,3 +45,4 @@ QuickCommand 是 JackalClient 的 Misc 分类模块。启用后会围绕 快速�
 
 相关资料
 无
+

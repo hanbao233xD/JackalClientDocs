@@ -12,10 +12,12 @@ HideTaskbar
 - 版本属性：普通可用
 
 介绍
-HideTaskbar 是 JackalClient 的 Window 分类模块。启用后会围绕 隐藏任务栏 这一能力工作，核心行为是：暂无描述
+HideTaskbar（隐藏任务栏）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Notify。
 
 配置项
-- Notify：类型=布尔，默认=false
+- Notify（中文：通知）：类型=布尔，默认=false
 
 历史更新
 - 55. 为 HideTaskbar 添加配置：
@@ -38,3 +40,4 @@ HideTaskbar 是 JackalClient 的 Window 分类模块。启用后会围绕 隐藏
 
 相关资料
 无
+

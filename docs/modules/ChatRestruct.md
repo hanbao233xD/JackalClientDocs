@@ -12,10 +12,13 @@ AI重构
 - 版本属性：普通可用
 
 介绍
-ChatRestruct 是 JackalClient 的 未分类 分类模块。启用后会围绕 AI重构 这一能力工作，核心行为是：暂无描述
+ChatRestruct（AI重构）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Pattern。
 
 配置项
-- Pattern：类型=枚举，默认="AddSpace"
+- Pattern（中文：样式）：类型=枚举，默认="AddSpace"
+  可选：AddSpace（添加空格）；Reverse（颠倒）；Shuffle（打乱）；ExpandSentence（扩句）；Abbreviate（缩句）；MachineTranslative（机翻）；Stammer（结巴）；Childlike（跟小孩似的）；Spoken（口语）；Emojis（表情符号）
 
 历史更新
 - 27. 为 Chat Restruct 添加配置项，以便调整样式。样式有：
@@ -31,3 +34,4 @@ ChatRestruct 是 JackalClient 的 未分类 分类模块。启用后会围绕 AI
 
 相关资料
 无
+

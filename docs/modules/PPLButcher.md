@@ -12,10 +12,13 @@ PPLButcher
 - 版本属性：普通可用
 
 介绍
-PPLButcher 是 JackalClient 的 未分类 分类模块。启用后会围绕 解除进程保护 这一能力工作，核心行为是：尝试解除每一个受保护进程的保护。（需要 RTCore64 驱动，不推荐）
+PPLButcher（解除进程保护）用于尝试解除每一个受保护进程的保护。（需要 RTCore64 驱动，不推荐）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Only Kill Invalid。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- Only Kill Invalid：类型=布尔，默认=false
+- Only Kill Invalid（中文：只杀无效的）：类型=布尔，默认=false
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -31,3 +34,4 @@ PPLButcher 是 JackalClient 的 未分类 分类模块。启用后会围绕 解�
 
 相关资料
 无
+

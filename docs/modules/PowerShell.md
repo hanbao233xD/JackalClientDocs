@@ -12,11 +12,13 @@ PowerShell
 - 版本属性：普通可用
 
 介绍
-PowerShell 是 JackalClient 的 Process 分类模块。启用后会围绕 PowerShell 这一能力工作，核心行为是：打开 PowerShell。
+PowerShell（PowerShell）用于打开 PowerShell。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Run As Admin、No Wow64 Redirection。
 
 配置项
-- Run As Admin：类型=布尔，默认=false
-- No Wow64 Redirection：类型=布尔，默认=true
+- Run As Admin（中文：以管理员身份运行）：类型=布尔，默认=false
+- No Wow64 Redirection（中文：禁用 Wow64 重定向）：类型=布尔，默认=true
 
 历史更新
 - 2. 修复了 NoCmd, NoPowerShell, NoTaskmgr, NoRegedit 无效的问题。
@@ -39,3 +41,4 @@ PowerShell 是 JackalClient 的 Process 分类模块。启用后会围绕 PowerS
 
 相关资料
 无
+

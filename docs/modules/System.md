@@ -12,12 +12,16 @@ System
 - 版本属性：普通可用
 
 介绍
-System 是 JackalClient 的 Combat 分类模块。启用后会围绕 系统 这一能力工作，核心行为是：重启客户端窃取系统权限。
+System（系统）用于重启客户端窃取系统权限。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：System Privilege Check Method。
 
 配置项
-- Use NSudo：类型=布尔，默认=false
-- Exit After Run：类型=布尔，默认=true
-- System Privilege Check Method：类型=枚举，默认="Whoami"
+- System Privilege Check Method（中文：系统权限检查方式）：类型=枚举，默认="Whoami"
+  可选：Membership（成员资格）；Whoami（俺是谁）
+- Use NSudo（中文：使用 NSudo）：类型=布尔，默认=false
+- Exit After Run（中文：运行后退出）：类型=布尔，默认=true
 
 历史更新
 - 36. 修改所有的 _wsystem 调用改为自定义的 CreateProcess，其中 bInheritHandle为FALSE，避免自保护下的拒绝访问。
@@ -42,3 +46,4 @@ System 是 JackalClient 的 Combat 分类模块。启用后会围绕 系统 这�
 
 相关资料
 无
+

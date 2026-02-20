@@ -12,13 +12,15 @@ AntiTaskkill
 - 版本属性：普通可用
 
 介绍
-AntiTaskkill 是 JackalClient 的 Combat 分类模块。启用后会围绕 反进程杀手 这一能力工作，核心行为是：阻止所有对客户端有威胁的taskkill命令。
+AntiTaskkill（反进程杀手）用于阻止所有对客户端有威胁的taskkill命令。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify Failure、Notify Success。
 
 配置项
-- Notify Failure：类型=布尔，默认=true
-- Check Tskill.exe：类型=布尔，默认=false
-- Notify Success：类型=布尔，默认=true
-- Only Threat For Client：类型=布尔，默认=true
+- Only Threat For Client（中文：只处理对客户端有威胁的）：类型=布尔，默认=true
+- Notify Failure（中文：通知失败）：类型=布尔，默认=true
+- Check Tskill.exe（中文：检查 Tskill.exe）：类型=布尔，默认=false
+- Notify Success（中文：通知成功）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -41,3 +43,4 @@ AntiTaskkill 是 JackalClient 的 Combat 分类模块。启用后会围绕 反�
 
 相关资料
 无
+

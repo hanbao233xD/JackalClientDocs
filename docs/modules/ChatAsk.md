@@ -12,11 +12,13 @@ AI回答
 - 版本属性：普通可用
 
 介绍
-ChatAsk 是 JackalClient 的 未分类 分类模块。启用后会围绕 AI回答 这一能力工作，核心行为是：暂无描述
+ChatAsk（AI回答）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Remove Markdown Format、Async。
 
 配置项
-- Async：类型=布尔，默认=true
-- Remove Markdown Format：类型=布尔，默认=true
+- Remove Markdown Format（中文：移除 Markdown 格式）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 - 52. 添加模块：AI Settings，将之前的 Chat Ask 的 API Key 等配置移动到这里。
@@ -32,3 +34,4 @@ ChatAsk 是 JackalClient 的 未分类 分类模块。启用后会围绕 AI回�
 
 相关资料
 无
+

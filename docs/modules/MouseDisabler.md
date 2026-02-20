@@ -12,11 +12,13 @@ MouseDisabler
 - 版本属性：普通可用
 
 介绍
-MouseDisabler 是 JackalClient 的 Control 分类模块。启用后会围绕 禁用鼠标 这一能力工作，核心行为是：暂无描述
+MouseDisabler（禁用鼠标）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：ALLOW NO KEYBIND、Allow Move。
 
 配置项
-- Allow Move：类型=布尔，默认=false
-- ALLOW NO KEYBIND：类型=布尔，默认=false
+- ALLOW NO KEYBIND（中文：允许不绑定按键）：类型=布尔，默认=false
+- Allow Move（中文：允许移动）：类型=布尔，默认=false
 
 历史更新
 - 27. 为 MouseDisabler 添加配置：
@@ -40,3 +42,4 @@ MouseDisabler 是 JackalClient 的 Control 分类模块。启用后会围绕 禁
 
 相关资料
 无
+

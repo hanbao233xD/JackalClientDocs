@@ -12,15 +12,17 @@ AudioIsolation
 - 版本属性：普通可用
 
 介绍
-AudioIsolation 是 JackalClient 的 Misc 分类模块。启用后会围绕 音频隔离 这一能力工作，核心行为是：只有一个进程可以发出声音。
+AudioIsolation（音频隔离）用于只有一个进程可以发出声音。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Fade Duration (ms)、Highlight Process Volume (%%)、Process Name (Empty For Any)。
 
 配置项
-- Other Process Volume (%%)：类型=数值，默认=10
-- Process Name (Empty For Any)：类型=文本，默认="JackalClient.exe"
-- Fade Duration (ms)：类型=数值，默认=1000L
-- Set Highlight Process Volume：类型=布尔，默认=false
-- Highlight Process Volume (%%)：类型=数值，默认=80
-- Process Id (Zero For Any)：类型=数值，默认=0
+- Fade Duration (ms)（中文：淡入淡出时长 (毫秒)）：类型=数值，默认=1000L
+- Highlight Process Volume (%%)（中文：高亮进程音量 (%%)）：类型=数值，默认=80
+- Process Name (Empty For Any)（中文：进程名 (用空指代任何)）：类型=文本，默认="JackalClient.exe"
+- Other Process Volume (%%)（中文：其他进程音量 (%%)）：类型=数值，默认=10
+- Process Id (Zero For Any)（中文：进程ID (用0指代任何)）：类型=数值，默认=0
+- Set Highlight Process Volume（中文：设置高亮进程音量）：类型=布尔，默认=false
 
 历史更新
 - 67. 修复 Audio Isolation 在程序启动时启用后无法恢复原来音量的问题。
@@ -44,3 +46,4 @@ AudioIsolation 是 JackalClient 的 Misc 分类模块。启用后会围绕 音�
 
 相关资料
 无
+

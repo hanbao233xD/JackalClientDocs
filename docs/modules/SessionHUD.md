@@ -12,29 +12,34 @@ SessionHUD
 - 版本属性：普通可用
 
 介绍
-SessionHUD 是 JackalClient 的 Render 分类模块。启用后会围绕 会话显示 这一能力工作，核心行为是：显示当前用户的信息。
+SessionHUD（会话显示）用于显示当前用户的信息。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Y Rate、Background Roundness、Background Round Corners。
 
 配置项
-- Width：类型=数值，默认=300
-- Text Font Size：类型=数值，默认=30
-- Background Roundness：类型=数值，默认=0.6f
-- Background：类型=布尔，默认=true
-- Avatar Scale：类型=数值，默认=1.0f
-- Background Shadow Color：类型=枚举，默认="Black"
-- Avatar Opacity (0~1)：类型=数值，默认=1.0f
-- Background Shadow Opacity (0~1)：类型=数值，默认=0.6f
-- Background Shadow Thickness：类型=数值，默认=60.0f
-- Background Opacity (0~1)：类型=数值，默认=0.5f
-- Background Round Corners：类型=布尔，默认=true
-- Hide When Menu On：类型=布尔，默认=false
-- Text Color：类型=枚举，默认="White"
-- Time Info：类型=布尔，默认=true
-- Background Color：类型=枚举，默认="Flow"
-- Y Rate：类型=数值，默认=0.2f
-- Give Way to Mouse：类型=布尔，默认=true
-- Avatar Circle：类型=布尔，默认=true
-- Background Shadow：类型=布尔，默认=true
-- X Rate：类型=数值，默认=0.1f
+- Y Rate（中文：纵坐标比例）：类型=数值，默认=0.2f
+- Background Roundness（中文：背景圆滑程度）：类型=数值，默认=0.6f
+- Background Round Corners（中文：背景圆角）：类型=布尔，默认=true
+- Background Shadow Color（中文：背景阴影颜色）：类型=枚举，默认="Black"
+  可选：Transparent（透明）；Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Time Info（中文：时间信息）：类型=布尔，默认=true
+- Background Opacity (0~1)（中文：背景不透明度 (0~1)）：类型=数值，默认=0.5f
+- Background Shadow Thickness（中文：背景阴影厚度）：类型=数值，默认=60.0f
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=false
+- Give Way to Mouse（中文：给鼠标让道）：类型=布尔，默认=true
+- Text Color（中文：文本颜色）：类型=枚举，默认="White"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Width（中文：宽度）：类型=数值，默认=300
+- Avatar Opacity (0~1)（中文：头像不透明度 (0~1)）：类型=数值，默认=1.0f
+- Avatar Circle（中文：圆形头像）：类型=布尔，默认=true
+- Background Color（中文：背景颜色）：类型=枚举，默认="Flow"
+  可选：Transparent（透明）；Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Text Font Size（中文：文本字号）：类型=数值，默认=30
+- Background Shadow（中文：背景阴影）：类型=布尔，默认=true
+- Background Shadow Opacity (0~1)（中文：背景阴影不透明度 (0~1)）：类型=数值，默认=0.6f
+- Avatar Scale（中文：头像缩放）：类型=数值，默认=1.0f
+- X Rate（中文：横坐标比例）：类型=数值，默认=0.1f
+- Background（中文：背景）：类型=布尔，默认=true
 
 历史更新
 - 19. 修复了 SessionHUD 在 HudEditor 启用时仍能为鼠标让位的问题。
@@ -58,3 +63,4 @@ SessionHUD 是 JackalClient 的 Render 分类模块。启用后会围绕 会话�
 
 相关资料
 无
+

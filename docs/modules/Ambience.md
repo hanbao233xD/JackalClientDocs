@@ -12,28 +12,34 @@ Ambience
 - 版本属性：普通可用
 
 介绍
-Ambience 是 JackalClient 的 Render 分类模块。启用后会围绕 环境气氛 这一能力工作，核心行为是：模拟环境，如天气和光照。
+Ambience（环境气氛）用于模拟环境，如天气和光照。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Mouse Camera Mode。
 
 配置项
-- Mouse Camera Mode：类型=布尔，默认=false
-- Lightning Display Duration (ms)：类型=数值，默认=5000L
-- Precipitation Angle (rad)：类型=数值，默认=8.168f
-- Thunder Sound Volume：类型=数值，默认=100
-- Weather：类型=枚举，默认="Rainy"
-- Precipitation Increase Speed：类型=数值，默认=10.0f
-- Precipitation Fall Speed：类型=数值，默认=1.0f
-- Precipitation Decrease Speed：类型=数值，默认=5.0f
-- Mouse Camera X Rate：类型=数值，默认=1.0f
-- Precipitation Mouse Circle：类型=枚举，默认="Off"
-- Precipitation Mouse Circle Radius：类型=数值，默认=200.0f
-- Precipitation Sound Volume：类型=数值，默认=30
-- Mouse Camera Y Rate：类型=数值，默认=1.0f
-- Rain Shape：类型=文本，默认="/"
-- Rain Color：类型=枚举，默认="Blue"
-- Lightning Display：类型=布尔，默认=true
-- Precipitation Amount Scale：类型=数值，默认=1.0f
-- Precipitation Display Position：类型=枚举，默认="Screen"
-- Weather Cycle：类型=布尔，默认=true
+- Thunder Sound Volume（中文：雷声音量）：类型=数值，默认=100
+- Precipitation Display Position（中文：降水展示位置）：类型=枚举，默认="Screen"
+  可选：Screen（屏幕）；Foreground（前端）；Background（背景）
+- Lightning Display（中文：闪电展示）：类型=布尔，默认=true
+- Precipitation Increase Speed（中文：降水增多速率）：类型=数值，默认=10.0f
+- Rain Shape（中文：雨形状）：类型=文本，默认="/"
+- Lightning Display Duration (ms)（中文：闪电展示时长（毫秒））：类型=数值，默认=5000L
+- Mouse Camera Mode（中文：鼠标相机模式）：类型=布尔，默认=false
+- Precipitation Mouse Circle Radius（中文：降水鼠标圆圈半径）：类型=数值，默认=200.0f
+- Precipitation Amount Scale（中文：降水量比例）：类型=数值，默认=1.0f
+- Precipitation Angle (rad)（中文：降水角（弧度））：类型=数值，默认=8.168f
+- Rain Color（中文：雨颜色）：类型=枚举，默认="Blue"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Weather Cycle（中文：天气循环）：类型=布尔，默认=true
+- Precipitation Decrease Speed（中文：降水减少速率）：类型=数值，默认=5.0f
+- Mouse Camera Y Rate（中文：鼠标相机 Y 比率）：类型=数值，默认=1.0f
+- Precipitation Fall Speed（中文：降水下落速率）：类型=数值，默认=1.0f
+- Precipitation Mouse Circle（中文：降水鼠标圆圈）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Hide（隐藏）；Fade（淡入淡出）；Lighten（未收录）；Darken（未收录）
+- Weather（中文：天气）：类型=枚举，默认="Rainy"
+  可选：Off（关闭）；Rainy（雨天）；Thundery（雷雨天）
+- Mouse Camera X Rate（中文：鼠标相机 X 比率）：类型=数值，默认=1.0f
+- Precipitation Sound Volume（中文：降水音效音量）：类型=数值，默认=30
 
 历史更新
 - 50. 添加模块：Ambience。
@@ -56,3 +62,4 @@ Ambience 是 JackalClient 的 Render 分类模块。启用后会围绕 环境气
 
 相关资料
 无
+

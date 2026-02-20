@@ -12,11 +12,13 @@ TesseractOCR
 - 版本属性：普通可用
 
 介绍
-TesseractOCR 是 JackalClient 的 Misc 分类模块。启用后会围绕 TesseractOCR 这一能力工作，核心行为是：Tesseract 文字识别设置。
+TesseractOCR（TesseractOCR）用于Tesseract 文字识别设置。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Executable Path、Language。
 
 配置项
-- Executable Path：类型=文本，默认=""
-- Language：类型=文本，默认="chi_sim"
+- Executable Path（中文：可执行文件路径）：类型=文本，默认=""
+- Language（中文：语言）：类型=文本，默认="chi_sim"
 
 历史更新
 - 37. 给 TesseractOCR 识别函数添加了自动扫描路径（在Program Files /Program Files (x86)中自动查找）
@@ -40,3 +42,4 @@ TesseractOCR 是 JackalClient 的 Misc 分类模块。启用后会围绕 Tessera
 
 相关资料
 无
+

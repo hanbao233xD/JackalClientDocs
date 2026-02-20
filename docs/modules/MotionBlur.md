@@ -12,27 +12,32 @@ MotionBlur
 - 版本属性：普通可用
 
 介绍
-MotionBlur 是 JackalClient 的 Render 分类模块。启用后会围绕 动态模糊 这一能力工作，核心行为是：在屏幕上应用动态模糊。
+MotionBlur（动态模糊）用于在屏幕上应用动态模糊。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Update Cooldown、Apply Model。
 
 配置项
-- Blur Enabled：类型=布尔，默认=false
-- Blur Samples：类型=数值，默认=5
-- Exponential Lambda：类型=数值，默认=0.5f
-- Blur Brightness Boost (0~1)：类型=数值，默认=0.3f
-- Apply Model：类型=枚举，默认="Exponential"
-- Gaussian Sigma：类型=数值，默认=0.9f
-- Redraw Client Texture：类型=布尔，默认=true
-- Blur Alpha Boost (0~1)：类型=数值，默认=0.0f
-- Blur Direction：类型=枚举，默认="Both"
-- Blur Once：类型=布尔，默认=true
-- Blur Strength：类型=数值，默认=2.0f
-- Update Cooldown：类型=数值，默认=40
-- Apply Area：类型=枚举，默认="Screen"
-- Exponential Darken Amount (0~1)：类型=数值，默认=0.45f
-- Gaussian Darken Amount (0~1)：类型=数值，默认=0.4f
-- Test 1：类型=布尔，默认=false
-- Darken When Blur：类型=布尔，默认=true
-- Frame Count：类型=数值，默认=5
+- Blur Samples（中文：模糊取样数）：类型=数值，默认=5
+- Frame Count（中文：帧数量）：类型=数值，默认=5
+- Blur Direction（中文：模糊方向）：类型=枚举，默认="Both"
+  可选：Off（关闭）；Horizontal（横向）；Vertical（纵向）；Both（两者）
+- Test 1（中文：未收录）：类型=布尔，默认=false
+- Exponential Lambda（中文：指数拉姆达）：类型=数值，默认=0.5f
+- Apply Area（中文：应用区域）：类型=枚举，默认="Screen"
+  可选：Client Only（仅客户端）；Screen（屏幕）
+- Redraw Client Texture（中文：重绘客户端贴图）：类型=布尔，默认=true
+- Gaussian Sigma（中文：高斯西格玛）：类型=数值，默认=0.9f
+- Gaussian Darken Amount (0~1)（中文：高斯变暗大小 (0~1)）：类型=数值，默认=0.4f
+- Blur Brightness Boost (0~1)（中文：模糊亮度增强 (0~1)）：类型=数值，默认=0.3f
+- Darken When Blur（中文：模糊时变暗）：类型=布尔，默认=true
+- Blur Once（中文：只模糊一次）：类型=布尔，默认=true
+- Blur Alpha Boost (0~1)（中文：模糊不透明度增强 (0~1)）：类型=数值，默认=0.0f
+- Update Cooldown（中文：更新冷却）：类型=数值，默认=40
+- Exponential Darken Amount (0~1)（中文：指数变暗大小 (0~1)）：类型=数值，默认=0.45f
+- Apply Model（中文：应用模型）：类型=枚举，默认="Exponential"
+  可选：Gaussian（高斯）；Exponential（指数）
+- Blur Enabled（中文：启用模糊）：类型=布尔，默认=false
+- Blur Strength（中文：模糊强度）：类型=数值，默认=2.0f
 
 历史更新
 - 30. 改良了 Motion Blur 模块：
@@ -56,3 +61,4 @@ MotionBlur 是 JackalClient 的 Render 分类模块。启用后会围绕 动态�
 
 相关资料
 无
+

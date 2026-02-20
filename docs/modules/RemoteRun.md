@@ -12,17 +12,23 @@ RemoteRun
 - 版本属性：普通可用
 
 介绍
-RemoteRun 是 JackalClient 的 Process 分类模块。启用后会围绕 远程执行 这一能力工作，核心行为是：暂无描述
+RemoteRun（远程执行）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Execution Policy。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Command Line：类型=文本，默认="cmd.exe /c echo Jackal On Crack! && pause"
-- Process Name (Empty For Any)：类型=文本，默认="cmd.exe"
-- Max Process Count：类型=数值，默认=8
-- Process Architecture：类型=枚举，默认="Both"
-- Injection Architecture：类型=枚举，默认="Auto"
-- Exclude Self：类型=布尔，默认=true
-- Process Id (Zero For Any)：类型=数值，默认=0
-- Execution Policy：类型=枚举，默认="Async"
+- Injection Architecture（中文：注入架构）：类型=枚举，默认="Auto"
+  可选：Auto（自动）；x64（x64）；x86（x86）
+- Process Name (Empty For Any)（中文：进程名 (用空指代任何)）：类型=文本，默认="cmd.exe"
+- Max Process Count（中文：最大进程数量）：类型=数值，默认=8
+- Command Line（中文：命令行）：类型=文本，默认="cmd.exe /c echo Jackal On Crack! && pause"
+- Process Id (Zero For Any)（中文：进程ID (用0指代任何)）：类型=数值，默认=0
+- Exclude Self（中文：排除自身）：类型=布尔，默认=true
+- Process Architecture（中文：进程架构）：类型=枚举，默认="Both"
+  可选：Both（两者）；x64（x64）；x86（x86）
+- Execution Policy（中文：执行策略）：类型=枚举，默认="Async"
+  可选：Sync（同步）；Async（异步）；Async NoWait（异步不等待）
 
 历史更新
 - 9. 为 RemoteRun 添加配置：
@@ -46,3 +52,4 @@ RemoteRun 是 JackalClient 的 Process 分类模块。启用后会围绕 远程�
 
 相关资料
 无
+

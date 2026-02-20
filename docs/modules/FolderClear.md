@@ -12,16 +12,18 @@ FolderClear
 - 版本属性：普通可用
 
 介绍
-FolderClear 是 JackalClient 的 File 分类模块。启用后会围绕 目录清空 这一能力工作，核心行为是：暂无描述
+FolderClear（目录清空）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Filter、Notify Errors、Notify Result。
 
 配置项
-- Confirm Once：类型=布尔，默认=true
-- Filter：类型=文本，默认="*.*"
-- Notify Result：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Path：类型=文本，默认="null"
-- Keep：类型=布尔，默认=false
-- Notify Errors：类型=布尔，默认=true
+- Path（中文：路径）：类型=文本，默认="null"
+- Keep（中文：保持）：类型=布尔，默认=false
+- Async（中文：异步）：类型=布尔，默认=true
+- Filter（中文：筛选器）：类型=文本，默认="*.*"
+- Notify Errors（中文：通知错误）：类型=布尔，默认=true
+- Notify Result（中文：通知结果）：类型=布尔，默认=true
+- Confirm Once（中文：确认一次）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -44,3 +46,4 @@ FolderClear 是 JackalClient 的 File 分类模块。启用后会围绕 目录�
 
 相关资料
 无
+

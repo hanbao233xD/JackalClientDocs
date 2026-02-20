@@ -12,18 +12,20 @@ MemeTrigger
 - 版本属性：普通可用
 
 介绍
-MemeTrigger 是 JackalClient 的 Misc 分类模块。启用后会围绕 梗触发 这一能力工作，核心行为是：暂无描述
+MemeTrigger（梗触发）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify、Disable Client Other HUD。
 
 配置项
-- Disable Client Other HUD：类型=布尔，默认=true
-- what：类型=按键/复合，默认={{"Keybind", {0}}}
-- hyw Folder Path：类型=文本，默认=""
-- zmq Folder Path：类型=文本，默认=""
-- hyw：类型=按键/复合，默认={{"Keybind", {0}}}
-- no_signal：类型=按键/复合，默认={{"Keybind", {0}}}
-- zmq：类型=按键/复合，默认={{"Keybind", {0}}}
-- Notify：类型=布尔，默认=false
-- genshin_impact：类型=按键/复合，默认={{"Keybind", {0}}}
+- what（中文：未收录）：类型=按键/复合，默认={{"Keybind", {0}}}
+- hyw Folder Path（中文：hyw 文件夹 路径）：类型=文本，默认=""
+- hyw（中文：未收录）：类型=按键/复合，默认={{"Keybind", {0}}}
+- genshin_impact（中文：未收录）：类型=按键/复合，默认={{"Keybind", {0}}}
+- Notify（中文：通知）：类型=布尔，默认=false
+- zmq Folder Path（中文：zmq 文件夹 路径）：类型=文本，默认=""
+- no_signal（中文：否_signal）：类型=按键/复合，默认={{"Keybind", {0}}}
+- zmq（中文：未收录）：类型=按键/复合，默认={{"Keybind", {0}}}
+- Disable Client Other HUD（中文：禁用客户端其他HUD）：类型=布尔，默认=true
 
 历史更新
 - 32. 将 Meme Trigger 整合进客户端本体。添加了多个配置项，你可以为不同的梗分开分配快捷键
@@ -47,3 +49,4 @@ MemeTrigger 是 JackalClient 的 Misc 分类模块。启用后会围绕 梗触�
 
 相关资料
 无
+

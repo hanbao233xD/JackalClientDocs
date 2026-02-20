@@ -12,12 +12,16 @@ Shutdown
 - 版本属性：普通可用
 
 介绍
-Shutdown 是 JackalClient 的 Combat 分类模块。启用后会围绕 关机 这一能力工作，核心行为是：立即关机。
+Shutdown（关机）用于立即关机。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Method。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Method：类型=枚举，默认="WINAPI"
-- Force：类型=布尔，默认=false
-- Power Off：类型=布尔，默认=true
+- Method（中文：方法）：类型=枚举，默认="WINAPI"
+  可选：Command（命令）；WINAPI（未收录）；NTAPI（未收录）
+- Force（中文：强制）：类型=布尔，默认=false
+- Power Off（中文：关闭电源）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -40,3 +44,4 @@ Shutdown 是 JackalClient 的 Combat 分类模块。启用后会围绕 关机 �
 
 相关资料
 无
+

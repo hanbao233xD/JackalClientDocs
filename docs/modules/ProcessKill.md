@@ -12,15 +12,18 @@ ProcessKill
 - 版本属性：普通可用
 
 介绍
-ProcessKill 是 JackalClient 的 Process 分类模块。启用后会围绕 进程击杀 这一能力工作，核心行为是：暂无描述
+ProcessKill（进程击杀）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Notify Kill、Method。
 
 配置项
-- Disable After Attempt：类型=布尔，默认=true
-- Kill PID：类型=数值，默认=0
-- Kill Names (Sep with Semicolon)：类型=文本，默认="dwm.exe"
-- Method：类型=枚举，默认="Chain"
-- Notify Kill：类型=布尔，默认=true
-- Keep：类型=布尔，默认=false
+- Kill PID（中文：杀PID）：类型=数值，默认=0
+- Keep（中文：保持）：类型=布尔，默认=false
+- Notify Kill（中文：通知击杀）：类型=布尔，默认=true
+- Kill Names (Sep with Semicolon)（中文：杀名称 (用分号分隔)）：类型=文本，默认="dwm.exe"
+- Disable After Attempt（中文：尝试之后关闭）：类型=布尔，默认=true
+- Method（中文：方法）：类型=枚举，默认="Chain"
+  可选：Chain（链式）；Normal（普通）；Thread Killer（线程杀手）；Thread Patcher（线程补丁）；Winsta（未收录）；Debugger（未收录）；Job（未收录）；WMI（未收录）；Kernel（未收录）
 
 历史更新
 - 32. 为模块 ProcessKill 添加配置：
@@ -45,3 +48,4 @@ ProcessKill 是 JackalClient 的 Process 分类模块。启用后会围绕 进�
 
 相关资料
 无
+

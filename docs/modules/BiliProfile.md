@@ -12,22 +12,25 @@ B友档案
 - 版本属性：普通可用
 
 介绍
-BiliProfile 是 JackalClient 的 Web 分类模块。启用后会围绕 B友档案 这一能力工作，核心行为是：为指定的B站用户生成一个档案。
+BiliProfile（B友档案）用于为指定的B站用户生成一个档案。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Masterpieces Max Shown、Async、Show Like Videos。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Masterpieces Max Shown：类型=数值，默认=3
-- Show Space Notice：类型=布尔，默认=true
-- Like Videos Max Shown：类型=数值，默认=3
-- Show Coin Videos：类型=布尔，默认=true
-- User ID：类型=通用，默认=WORMWAKER_MID
-- Connect Timeout (s)：类型=数值，默认=5L
-- Show Masterpieces：类型=布尔，默认=true
-- Show Top Video：类型=布尔，默认=true
-- Coin Videos Max Shown：类型=数值，默认=3
-- Show Favourite Folders：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
-- Show Like Videos：类型=布尔，默认=true
+- Masterpieces Max Shown（中文：代表作最多显示几个）：类型=数值，默认=3
+- Async（中文：异步）：类型=布尔，默认=true
+- Show Like Videos（中文：显示点赞的视频）：类型=布尔，默认=true
+- Show Coin Videos（中文：显示投币的视频）：类型=布尔，默认=true
+- Like Videos Max Shown（中文：点赞视频最多显示几个）：类型=数值，默认=3
+- Show Favourite Folders（中文：显示创建的收藏夹）：类型=布尔，默认=true
+- Show Masterpieces（中文：显示代表作）：类型=布尔，默认=true
+- User ID（中文：用户ID）：类型=通用，默认=WORMWAKER_MID
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Coin Videos Max Shown（中文：投币视频最多显示几个）：类型=数值，默认=3
+- Show Space Notice（中文：显示主页公告）：类型=布尔，默认=true
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=5L
+- Show Top Video（中文：显示热门视频）：类型=布尔，默认=true
 
 历史更新
 - 11. 为 Bili Profile 添加对昵称的获取和输出。 （使用前端方法）
@@ -51,3 +54,4 @@ BiliProfile 是 JackalClient 的 Web 分类模块。启用后会围绕 B友档�
 
 相关资料
 无
+

@@ -12,7 +12,8 @@ Protection
 - 版本属性：普通可用
 
 介绍
-Protection 是 JackalClient 的 Combat 分类模块。启用后会围绕 自保护 这一能力工作，核心行为是：为客户端启用进程保护，可以阻止一切用户层的终止进程函数。（需要 RTCore64 驱动）
+Protection（自保护）用于为客户端启用进程保护，可以阻止一切用户层的终止进程函数。（需要 RTCore64 驱动）。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ Protection 是 JackalClient 的 Combat 分类模块。启用后会围绕 自保�
 
 相关资料
 无
+

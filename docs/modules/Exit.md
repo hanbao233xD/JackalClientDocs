@@ -12,10 +12,12 @@ Exit
 - 版本属性：普通可用
 
 介绍
-Exit 是 JackalClient 的 Misc 分类模块。启用后会围绕 退出 这一能力工作，核心行为是：暂无描述
+Exit（退出）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：bind。
 
 配置项
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, VK_DELETE}}}
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, VK_DELETE}}}
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +40,4 @@ Exit 是 JackalClient 的 Misc 分类模块。启用后会围绕 退出 这一�
 
 相关资料
 无
+

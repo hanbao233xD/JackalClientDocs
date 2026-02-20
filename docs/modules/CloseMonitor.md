@@ -12,7 +12,8 @@ CloseMonitor
 - 版本属性：普通可用
 
 介绍
-CloseMonitor 是 JackalClient 的 Render 分类模块。启用后会围绕 关闭显示器 这一能力工作，核心行为是：暂无描述
+CloseMonitor（关闭显示器）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ CloseMonitor 是 JackalClient 的 Render 分类模块。启用后会围绕 关�
 
 相关资料
 无
+

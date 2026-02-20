@@ -12,10 +12,12 @@ SelfBackup
 - 版本属性：普通可用
 
 介绍
-SelfBackup 是 JackalClient 的 File 分类模块。启用后会围绕 自我备份 这一能力工作，核心行为是：把所有资产备份到backup文件夹。
+SelfBackup（自我备份）用于把所有资产备份到backup文件夹。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Async。
 
 配置项
-- Async：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 - 18. 修复了 Self Backup 错误更新备份列表的问题。
@@ -39,3 +41,4 @@ SelfBackup 是 JackalClient 的 File 分类模块。启用后会围绕 自我备
 
 相关资料
 无
+

@@ -12,20 +12,22 @@ ToggleKey
 - 版本属性：普通可用
 
 介绍
-ToggleKey 是 JackalClient 的 Control 分类模块。启用后会围绕 切换键 这一能力工作，核心行为是：帮助你持续按住一些键，直到你再次按下它。
+ToggleKey（切换键）用于帮助你持续按住一些键，直到你再次按下它。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Minecraft Window Check、Left Mouse Button、Arrow Keys。
 
 配置项
-- Alpha Keys：类型=布尔，默认=false
-- Minecraft Window Check：类型=布尔，默认=false
-- A, W, S, D Opposite Stop：类型=布尔，默认=true
-- Left Modifier Keys：类型=布尔，默认=false
-- Num Keys：类型=布尔，默认=false
-- A, W, S, D：类型=布尔，默认=false
-- Right Mouse Button：类型=布尔，默认=false
-- Left Mouse Button：类型=布尔，默认=false
-- Arrow Keys：类型=布尔，默认=false
-- Arrow Keys Opposite Stop：类型=布尔，默认=true
-- Additional Custom Keys (Code Sep with Semicolon)：类型=文本，默认=""
+- Minecraft Window Check（中文：Minecraft 窗口检查）：类型=布尔，默认=false
+- Left Mouse Button（中文：鼠标左键）：类型=布尔，默认=false
+- Arrow Keys（中文：箭头键）：类型=布尔，默认=false
+- A, W, S, D Opposite Stop（中文：AWSD 反向键停止）：类型=布尔，默认=true
+- Arrow Keys Opposite Stop（中文：箭头键反向键停止）：类型=布尔，默认=true
+- Num Keys（中文：数字键）：类型=布尔，默认=false
+- Alpha Keys（中文：字母键）：类型=布尔，默认=false
+- A, W, S, D（中文：未收录）：类型=布尔，默认=false
+- Right Mouse Button（中文：鼠标右键）：类型=布尔，默认=false
+- Additional Custom Keys (Code Sep with Semicolon)（中文：额外自定义按键（键码，用分号分隔））：类型=文本，默认=""
+- Left Modifier Keys（中文：左侧Shift, Ctrl, Win, Alt）：类型=布尔，默认=false
 
 历史更新
 - 8. 为模块 Toggle Key 添加配置：
@@ -49,3 +51,4 @@ ToggleKey 是 JackalClient 的 Control 分类模块。启用后会围绕 切换�
 
 相关资料
 无
+

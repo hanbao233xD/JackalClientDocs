@@ -12,7 +12,9 @@ SethcBackdoor
 - 版本属性：普通可用
 
 介绍
-SethcBackdoor 是 JackalClient 的 未分类 分类模块。启用后会围绕 粘滞键后门 这一能力工作，核心行为是：用本客户端的启动器替换系统粘滞键。按下五下 LShift 快捷启动。（需要管理员）
+SethcBackdoor（粘滞键后门）用于用本客户端的启动器替换系统粘滞键。按下五下 LShift 快捷启动。（需要管理员）。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +33,4 @@ SethcBackdoor 是 JackalClient 的 未分类 分类模块。启用后会围绕 �
 
 相关资料
 无
+

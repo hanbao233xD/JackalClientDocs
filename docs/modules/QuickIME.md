@@ -12,12 +12,16 @@ QuickIME
 - 版本属性：普通可用
 
 介绍
-QuickIME 是 JackalClient 的 Control 分类模块。启用后会围绕 快捷输入法 这一能力工作，核心行为是：用一个按键去切换全局输入法。
+QuickIME（快捷输入法）用于用一个按键去切换全局输入法。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Basic Mode、Toggle Mode。
 
 配置项
-- Toggle Hotkey：类型=按键/复合，默认={{"Keybind", {VK_CAPITAL}}}
-- Toggle Mode：类型=枚举，默认="Single"
-- Basic Mode：类型=枚举，默认="Tool"
+- Basic Mode（中文：基本模式）：类型=枚举，默认="Tool"
+  可选：Once（未收录）；Tool（工具）
+- Toggle Mode（中文：切换模式）：类型=枚举，默认="Single"
+  可选：Next（未收录）；Single（单个）
+- Toggle Hotkey（中文：切换快捷键）：类型=按键/复合，默认={{"Keybind", {VK_CAPITAL}}}
 
 历史更新
 - 55. 添加模块：Quick IME，按一个键切换输入法。有些窗口由于本身限制可能无法灵敏检测。
@@ -40,3 +44,4 @@ QuickIME 是 JackalClient 的 Control 分类模块。启用后会围绕 快捷�
 
 相关资料
 无
+

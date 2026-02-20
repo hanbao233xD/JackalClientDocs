@@ -12,11 +12,13 @@ NoScreenSaver
 - 版本属性：普通可用
 
 介绍
-NoScreenSaver 是 JackalClient 的 Render 分类模块。启用后会围绕 关闭屏保 这一能力工作，核心行为是：暂无描述
+NoScreenSaver（关闭屏保）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Check Process、Kill Process。
 
 配置项
-- Check Process：类型=布尔，默认=true
-- Kill Process：类型=布尔，默认=false
+- Check Process（中文：检查进程）：类型=布尔，默认=true
+- Kill Process（中文：结束进程）：类型=布尔，默认=false
 
 历史更新
 - 31. 为 NoScreenSaver 添加对相关系统参数的设置。
@@ -39,3 +41,4 @@ NoScreenSaver 是 JackalClient 的 Render 分类模块。启用后会围绕 关�
 
 相关资料
 无
+

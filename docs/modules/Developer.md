@@ -12,39 +12,41 @@ Developer
 - 版本属性：普通可用
 
 介绍
-Developer 是 JackalClient 的 Misc 分类模块。启用后会围绕 开发者 这一能力工作，核心行为是：开发者模式。
+Developer（开发者）用于开发者模式。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Level System Profiles HUD。
 
 配置项
-- Better Lyrics AI Decision：类型=布尔，默认=true
-- Verification：类型=布尔，默认=false
-- Query IP Location：类型=布尔，默认=true
-- system2：类型=布尔，默认=true
-- Better Lyrics AI Decide Prompt：类型=布尔，默认=false
-- Neverlose GUI：类型=布尔，默认=false
-- Music Overlay Ratio：类型=布尔，默认=false
-- Music Overlay：类型=布尔，默认=true
-- Quake Warning：类型=布尔，默认=true
-- Live Chatter Time Diff：类型=布尔，默认=false
-- Better Lyrics Result：类型=布尔，默认=false
-- Disable MC Check：类型=布尔，默认=false
-- Web Request：类型=布尔，默认=false
-- Debug Break Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, VK_SUBTRACT}}}
-- MC AI Speak Detect Result：类型=布尔，默认=true
-- Level System Profiles HUD：类型=布尔，默认=false
-- Fancy Text：类型=布尔，默认=false
-- Execute OCR：类型=布尔，默认=false
-- Chinese Translation：类型=布尔，默认=false
-- Better Lyrics Lines：类型=布尔，默认=false
-- Cloud Music：类型=布尔，默认=true
-- MC Log Lines：类型=布尔，默认=false
-- Not Responding Fix：类型=布尔，默认=true
-- Level System：类型=布尔，默认=false
-- Download Manager：类型=布尔，默认=false
-- RunWormwakeCommand：类型=布尔，默认=true
-- Force Live Stream AI (Context) Prompt：类型=布尔，默认=false
-- Speak：类型=布尔，默认=true
-- AI Context：类型=布尔，默认=false
-- Live Gift Check：类型=布尔，默认=false
+- system2（中文：未收录）：类型=布尔，默认=true
+- Neverlose GUI（中文：未收录）：类型=布尔，默认=false
+- Music Overlay（中文：Music 覆盖膜）：类型=布尔，默认=true
+- Live Chatter Time Diff（中文：直播中 弹幕 Time Diff）：类型=布尔，默认=false
+- Fancy Text（中文：优美 文本）：类型=布尔，默认=false
+- Cloud Music（中文：未收录）：类型=布尔，默认=true
+- Quake Warning（中文：Quake 警告）：类型=布尔，默认=true
+- Better Lyrics Result（中文：Better Lyrics 结果）：类型=布尔，默认=false
+- Debug Break Hotkey（中文：Debug Break 快捷键）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LMENU, VK_SUBTRACT}}}
+- Speak（中文：讲述）：类型=布尔，默认=true
+- Query IP Location（中文：询问 IP Location）：类型=布尔，默认=true
+- Download Manager（中文：未收录）：类型=布尔，默认=false
+- RunWormwakeCommand（中文：未收录）：类型=布尔，默认=true
+- Web Request（中文：网络 Request）：类型=布尔，默认=false
+- Verification（中文：未收录）：类型=布尔，默认=false
+- Chinese Translation（中文：中文 翻译）：类型=布尔，默认=false
+- Not Responding Fix（中文：Not Responding 修复）：类型=布尔，默认=true
+- Live Gift Check（中文：直播中 Gift Check）：类型=布尔，默认=false
+- Force Live Stream AI (Context) Prompt（中文：强制 直播中 Stream 人工智能 (Context) Prompt）：类型=布尔，默认=false
+- Disable MC Check（中文：禁用 MC Check）：类型=布尔，默认=false
+- MC AI Speak Detect Result（中文：MC 人工智能 讲述 Detect 结果）：类型=布尔，默认=true
+- Better Lyrics Lines（中文：Better Lyrics 行数）：类型=布尔，默认=false
+- Music Overlay Ratio（中文：Music 覆盖膜 Ratio）：类型=布尔，默认=false
+- AI Context（中文：人工智能 Context）：类型=布尔，默认=false
+- Level System（中文：等级系统）：类型=布尔，默认=false
+- Level System Profiles HUD（中文：等级 系统 档案 是否显示HUD。）：类型=布尔，默认=false
+- Better Lyrics AI Decision（中文：Better Lyrics 人工智能 Decision）：类型=布尔，默认=true
+- MC Log Lines（中文：MC Log 行数）：类型=布尔，默认=false
+- Execute OCR（中文：执行 OCR）：类型=布尔，默认=false
+- Better Lyrics AI Decide Prompt（中文：Better Lyrics 人工智能 Decide Prompt）：类型=布尔，默认=false
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -67,3 +69,4 @@ Developer 是 JackalClient 的 Misc 分类模块。启用后会围绕 开发者 
 
 相关资料
 无
+

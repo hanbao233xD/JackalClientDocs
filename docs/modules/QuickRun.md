@@ -12,19 +12,24 @@ QuickRun
 - 版本属性：普通可用
 
 介绍
-QuickRun 是 JackalClient 的 未分类 分类模块。启用后会围绕 快捷运行 这一能力工作，核心行为是：暂无描述
+QuickRun（快捷运行）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Scan Policy。
 
 配置项
-- Confirm Before Scanning：类型=布尔，默认=true
-- Scan Skip System Files：类型=布尔，默认=false
-- Scan Policy：类型=枚举，默认="Lazy"
-- Scan Skip Readonly Files：类型=布尔，默认=false
-- Output Error：类型=布尔，默认=false
-- Scan Skip Hidden Files：类型=布尔，默认=false
-- Output While Scanning：类型=布尔，默认=true
-- Execution：类型=枚举，默认="system & pause"
-- Unknown Command Auto Resolve：类型=枚举，默认="Off"
-- Remember Multi-Result Selection：类型=布尔，默认=true
+- Output Error（中文：输出错误）：类型=布尔，默认=false
+- Scan Policy（中文：扫描策略）：类型=枚举，默认="Lazy"
+  可选：Lazy（懒散）；Launch（未收录）；Daily（未收录）
+- Remember Multi-Result Selection（中文：记忆多结果选择）：类型=布尔，默认=true
+- Scan Skip System Files（中文：扫描时跳过系统文件）：类型=布尔，默认=false
+- Confirm Before Scanning（中文：扫描前确认）：类型=布尔，默认=true
+- Execution（中文：执行）：类型=枚举，默认="system & pause"
+  可选：ShellExecute（未收录）；system（系统）；system & pause（系统 & pause）
+- Scan Skip Hidden Files（中文：扫描时跳过隐藏文件）：类型=布尔，默认=false
+- Scan Skip Readonly Files（中文：扫描时跳过只读文件）：类型=布尔，默认=false
+- Unknown Command Auto Resolve（中文：未知命令自动解析）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Confirm（确认）；Run（未收录）
+- Output While Scanning（中文：Output While 扫描）：类型=布尔，默认=true
 
 历史更新
 - 32. 完善 /quickrun ，先扫描 Program Files，如果无结果再扫描全盘。
@@ -42,3 +47,4 @@ QuickRun 是 JackalClient 的 未分类 分类模块。启用后会围绕 快捷
 
 相关资料
 无
+

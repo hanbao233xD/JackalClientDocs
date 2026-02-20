@@ -12,30 +12,36 @@ AntiPopups
 - 版本属性：普通可用
 
 介绍
-AntiPopups 是 JackalClient 的 Window 分类模块。启用后会围绕 反弹窗 这一能力工作，核心行为是：暂无描述
+AntiPopups（反弹窗）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Ad Process Policy、Check Cooldown、Others Judge Policy。
 
 配置项
-- Exclude SystemProcess：类型=布尔，默认=true
-- Others Judge Policy：类型=枚举，默认="Title or Blacklist"
-- Chain LegitMouseClick X Margin Max：类型=数值，默认=22
-- Exclude MessageBox：类型=布尔，默认=true
-- Chain Allow LegitMouseClick：类型=布尔，默认=true
-- Chain LegitMouseClick Internal Delay (ms)：类型=数值，默认=200
-- Measures：类型=枚举，默认="Chain"
-- Exclude Maximized：类型=布尔，默认=false
-- Chain：类型=文本，默认="Close", "Destroy", "EndSession", "KillProcess"
-- Chain LegitMouseClick X Margin Min：类型=数值，默认=14
-- BottomRight Judge Policy：类型=枚举，默认="Size or Blacklist"
-- Exclude WinToast：类型=布尔，默认=true
-- Check Cooldown：类型=数值，默认=250U
-- Chain Allow Move Window Out：类型=布尔，默认=true
-- Ad Window Title Keywords List：类型=文本，默认="每日;开通会员;游戏中心;今日;新闻;优选;精选;推荐;热搜;软件管家;贴士;小助手;奖励;特惠;公测;一刀;贪玩;上线;News;Free Trial"
-- Whitelist Processes (Sep With Semicolon)：类型=文本，默认="哔哩哔哩.exe;explorer.exe;Snipaste.exe;steam.exe;steamwebhelper.exe;msedge.exe;iexp ...
-- Whitelist Processes Enabled：类型=布尔，默认=true
-- Chain LegitMouseClick Y Margin Max：类型=数值，默认=22
-- Blacklist Processes (Sep With Semicolon)：类型=文本，默认="mini.lohaslady.exe;FlashHelperService.exe;MultiTip.exe;sesvcr.exe;360SpeedldHea ...
-- Chain LegitMouseClick Y Margin Min：类型=数值，默认=14
-- Ad Process Policy：类型=枚举，默认="Warn & AutoKill"
+- Chain LegitMouseClick Y Margin Max（中文：链合法鼠标点击纵向偏移最大值）：类型=数值，默认=22
+- Ad Process Policy（中文：广告进程策略）：类型=枚举，默认="Warn & AutoKill"
+  可选：Ignore（忽略）；Warn（警告）；AutoKill（自动击杀）；Warn & AutoKill（警告并自动击杀）
+- Check Cooldown（中文：检查冷却）：类型=数值，默认=250U
+- Ad Window Title Keywords List（中文：广告窗口标题关键词列表）：类型=文本，默认="每日;开通会员;游戏中心;今日;新闻;优选;精选;推荐;热搜;软件管家;贴士;小助手;奖励;特惠;公测;一刀;贪玩;上线;News;Free Trial"
+- Chain LegitMouseClick X Margin Min（中文：链合法鼠标点击横向偏移最小值）：类型=数值，默认=14
+- Others Judge Policy（中文：其他判定策略）：类型=枚举，默认="Title or Blacklist"
+  可选：Title（标题）；Blacklist（黑名单）；Title or Blacklist（标题或黑名单）
+- Chain LegitMouseClick Internal Delay (ms)（中文：链合法鼠标点击内部延迟 (毫秒)）：类型=数值，默认=200
+- Measures（中文：措施）：类型=枚举，默认="Chain"
+  可选：Chain（链式）；Close（关闭）；Destroy（发送销毁消息）；EndSession（发送结束会话消息）；KillProcess（击杀进程）
+- Chain Allow LegitMouseClick（中文：链允许合法鼠标点击）：类型=布尔，默认=true
+- Blacklist Processes (Sep With Semicolon)（中文：黑名单进程（用分号分隔））：类型=文本，默认="mini.lohaslady.exe;FlashHelperService.exe;MultiTip.exe;sesvcr.exe;360SpeedldHea ...
+- Chain（中文：链式）：类型=文本，默认="Close", "Destroy", "EndSession", "KillProcess"
+- Chain LegitMouseClick X Margin Max（中文：链合法鼠标点击横向偏移最大值）：类型=数值，默认=22
+- Exclude Maximized（中文：排除最大化）：类型=布尔，默认=false
+- Whitelist Processes Enabled（中文：是否启用进程白名单。）：类型=布尔，默认=true
+- Exclude SystemProcess（中文：排除系统进程）：类型=布尔，默认=true
+- Chain Allow Move Window Out（中文：链允许把窗口挪出去）：类型=布尔，默认=true
+- Whitelist Processes (Sep With Semicolon)（中文：进程白名单，用分号分隔。）：类型=文本，默认="哔哩哔哩.exe;explorer.exe;Snipaste.exe;steam.exe;steamwebhelper.exe;msedge.exe;iexp ...
+- Chain LegitMouseClick Y Margin Min（中文：链合法鼠标点击纵向偏移最小值）：类型=数值，默认=14
+- Exclude MessageBox（中文：排除消息框）：类型=布尔，默认=true
+- Exclude WinToast（中文：排除系统通知）：类型=布尔，默认=true
+- BottomRight Judge Policy（中文：右下角判定策略）：类型=枚举，默认="Size or Blacklist"
+  可选：Size（大小）；Title（标题）；Size and Title（尺寸+标题）；Size or Blacklist（尺寸或黑名单）；Title or Blacklist（标题或黑名单）；Size and Title or Blacklist（尺寸+标题 或 在黑名单）
 
 历史更新
 - 29. Anti Popups 模块的 Ad Process Policy 广告进程政策的默认值改为 Warn & AutoKill（警告并自动击杀）
@@ -60,3 +66,4 @@ AntiPopups 是 JackalClient 的 Window 分类模块。启用后会围绕 反弹�
 
 相关资料
 无
+

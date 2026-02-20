@@ -12,13 +12,16 @@ AntiMicrophone
 - 版本属性：普通可用
 
 介绍
-AntiMicrophone 是 JackalClient 的 Misc 分类模块。启用后会围绕 反麦克风 这一能力工作，核心行为是：自动将采集设备静音，防止录音。
+AntiMicrophone（反麦克风）用于自动将采集设备静音，防止录音。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Check Cooldown (ms)、Notify、Mode。
 
 配置项
-- Notify：类型=布尔，默认=true
-- Mode：类型=枚举，默认="Mute"
-- Check Cooldown (ms)：类型=数值，默认=1000U
-- Async：类型=布尔，默认=true
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=1000U
+- Notify（中文：通知）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Mode（中文：模式）：类型=枚举，默认="Mute"
+  可选：Mute（静音）
 
 历史更新
 - 47. 让 AntiSpy 的 AntiMicrophone 为 Mute 时禁用模块自动给麦克风取消静音。
@@ -41,3 +44,4 @@ AntiMicrophone 是 JackalClient 的 Misc 分类模块。启用后会围绕 反�
 
 相关资料
 无
+

@@ -13,10 +13,12 @@ PrivacyDatabase
 - 版本属性：PRO 独有
 
 介绍
-PrivacyDatabase 是 JackalClient 的 File 分类模块。启用后会围绕 隐私数据库 这一能力工作，核心行为是：一个有用的隐私数据库。（专业版）
+PrivacyDatabase（隐私数据库）用于一个有用的隐私数据库。（专业版）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Database Directory。
 
 配置项
-- Database Directory：类型=文本，默认="D:\\Program Files (x86)\\Jackal\\Privacy"
+- Database Directory（中文：数据库目录）：类型=文本，默认="D:\\Program Files (x86)\\Jackal\\Privacy"
 
 历史更新
 - 4.  【PRO】添加模块：Privacy Database
@@ -39,3 +41,4 @@ PrivacyDatabase 是 JackalClient 的 File 分类模块。启用后会围绕 隐�
 
 相关资料
 无
+

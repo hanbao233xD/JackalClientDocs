@@ -12,19 +12,25 @@ ProcessESP
 - 版本属性：普通可用
 
 介绍
-ProcessESP 是 JackalClient 的 Process 分类模块。启用后会围绕 进程透视 这一能力工作，核心行为是：暂无描述
+ProcessESP（进程透视）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Exited Process Notify Whitelist Enabled、New Process Notify Blacklist Enabled、New Process Notify Whitelist (Regex Sep With Semicolon)。
 
 配置项
-- New Process Notify Whitelist (Regex Sep With Semicolon)：类型=文本，默认="cmd\\.exe;explorer\\.exe;Hips[a-zA-Z]+\\.exe;360[a-zA-Z0-9]+\\.exe"
-- Exited Process Notify Whitelist (Regex Sep With Semicolon)：类型=文本，默认="cmd\\.exe;explorer\\.exe;Hips[a-zA-Z]+\\.exe;360[a-zA-Z0-9]+\\.exe"
-- New Process Notify Blacklist (Regex Sep With Semicolon)：类型=文本，默认="loader\\.exe;conhost\\.exe;tesseract\\.exe"
-- New Process Parent Display：类型=布尔，默认=true
-- Exited Process Notify Blacklist (Regex Sep With Semicolon)：类型=文本，默认="loader\\.exe;conhost\\.exe;tesseract\\.exe"
-- New Process Notify Blacklist Enabled：类型=布尔，默认=false
-- New Process Notify Whitelist Enabled：类型=布尔，默认=false
-- Exited Process Notify Blacklist Enabled：类型=布尔，默认=false
-- Exited Process Notify Whitelist Enabled：类型=布尔，默认=false
-- Check Cooldown (ms)：类型=数值，默认=100L
+- Exited Process Notify Whitelist Enabled（中文：进程通知白名单是否启用）：类型=布尔，默认=false
+- New Process Notify Blacklist Enabled（中文：新增进程通知黑名单是否启用）：类型=布尔，默认=false
+- New Process Notify Whitelist (Regex Sep With Semicolon)（中文：新增进程通知白名单 (用分号分隔的正则表达式)）：类型=文本，默认="cmd\\.exe;explorer\\.exe;Hips[a-zA-Z]+\\.exe;360[a-zA-Z0-9]+\\.exe"
+- New Process Notify Blacklist (Regex Sep With Semicolon)（中文：新增进程通知黑名单 (用分号分隔的正则表达式)）：类型=文本，默认="loader\\.exe;conhost\\.exe;tesseract\\.exe"
+- New Process Notify Mode（中文：新增进程通知模式）：类型=枚举，默认="Notify"
+  可选：Off（关闭）；Notify（通知）；Chatter（弹幕）；Title（标题）
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=100L
+- Exited Process Notify Blacklist Enabled（中文：进程通知黑名单是否启用）：类型=布尔，默认=false
+- New Process Parent Display（中文：新进程显示父进程）：类型=布尔，默认=true
+- Exited Process Notify Whitelist (Regex Sep With Semicolon)（中文：退出进程通知白名单 (用分号分隔的正则表达式)）：类型=文本，默认="cmd\\.exe;explorer\\.exe;Hips[a-zA-Z]+\\.exe;360[a-zA-Z0-9]+\\.exe"
+- Exited Process Notify Blacklist (Regex Sep With Semicolon)（中文：退出进程通知黑名单 (用分号分隔的正则表达式)）：类型=文本，默认="loader\\.exe;conhost\\.exe;tesseract\\.exe"
+- Exited Process Notify Mode（中文：退出进程通知模式）：类型=枚举，默认="Notify"
+  可选：Off（关闭）；Notify（通知）；Chatter（弹幕）；Title（标题）
+- New Process Notify Whitelist Enabled（中文：新增进程通知白名单是否启用）：类型=布尔，默认=false
 
 历史更新
 - 12. 为 ProcessESP 添加配置：
@@ -48,3 +54,4 @@ ProcessESP 是 JackalClient 的 Process 分类模块。启用后会围绕 进程
 
 相关资料
 无
+

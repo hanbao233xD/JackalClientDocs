@@ -12,11 +12,13 @@ TriggerBot
 - 版本属性：普通可用
 
 介绍
-TriggerBot 是 JackalClient 的 Window 分类模块。启用后会围绕 触发点击 这一能力工作，核心行为是：暂无描述
+TriggerBot（触发点击）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Notify、Cooldown (ms)。
 
 配置项
-- Notify：类型=布尔，默认=true
-- Cooldown (ms)：类型=数值，默认=400U
+- Notify（中文：通知）：类型=布尔，默认=true
+- Cooldown (ms)（中文：冷却 (毫秒)）：类型=数值，默认=400U
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -39,3 +41,4 @@ TriggerBot 是 JackalClient 的 Window 分类模块。启用后会围绕 触发�
 
 相关资料
 无
+

@@ -12,17 +12,20 @@ BiliVideoHelper
 - 版本属性：普通可用
 
 介绍
-BiliVideoHelper 是 JackalClient 的 未分类 分类模块。启用后会围绕 BiliVideoHelper 这一能力工作，核心行为是：暂无描述
+BiliVideoHelper（BiliVideoHelper）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Update Cooldown (ms)、HUD、HUD Opacity (0~1)。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
-- Update Cooldown (ms)：类型=数值，默认=100L
-- Max Web Sessions：类型=数值，默认=5U
-- HUD：类型=布尔，默认=true
-- Monitor Web Client：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Monitor Desktop Client：类型=布尔，默认=true
-- HUD Opacity (0~1)：类型=数值，默认=0.75f
-- Hide When Menu On：类型=布尔，默认=true
+- Update Cooldown (ms)（中文：更新冷却（毫秒））：类型=数值，默认=100L
+- Monitor Web Client（中文：监视网页端）：类型=布尔，默认=true
+- HUD（中文：是否显示HUD。）：类型=布尔，默认=true
+- Max Web Sessions（中文：最大网页会话数）：类型=数值，默认=5U
+- Async（中文：异步）：类型=布尔，默认=true
+- HUD Opacity (0~1)（中文：HUD 不透明度）：类型=数值，默认=0.75f
+- Monitor Desktop Client（中文：监视桌面端）：类型=布尔，默认=true
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +41,4 @@ BiliVideoHelper 是 JackalClient 的 未分类 分类模块。启用后会围绕
 
 相关资料
 无
+

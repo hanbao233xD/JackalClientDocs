@@ -12,12 +12,16 @@ B站视频封面
 - 版本属性：普通可用
 
 介绍
-BiliVideoCover 是 JackalClient 的 Web 分类模块。启用后会围绕 B站视频封面 这一能力工作，核心行为是：解析并提取指定的B站视频的封面。
+BiliVideoCover（B站视频封面）用于解析并提取指定的B站视频的封面。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Mode。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Keep：类型=布尔，默认=false
-- Mode：类型=枚举，默认="Clipboard Forward"
-- Async：类型=布尔，默认=true
+- Keep（中文：保持）：类型=布尔，默认=false
+- Async（中文：异步）：类型=布尔，默认=true
+- Mode（中文：模式）：类型=枚举，默认="Clipboard Forward"
+  可选：Clipboard Forward（剪贴板跳转）；Clipboard Output Link（剪贴板输出链接）；Clipboard Download Image（剪贴板下载图片）
 
 历史更新
 - 23. 添加模块 BiliVideoCover，提取视频封面。
@@ -40,3 +44,4 @@ BiliVideoCover 是 JackalClient 的 Web 分类模块。启用后会围绕 B站�
 
 相关资料
 无
+

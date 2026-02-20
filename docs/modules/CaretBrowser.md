@@ -12,7 +12,9 @@ CaretBrowser
 - 版本属性：普通可用
 
 介绍
-CaretBrowser 是 JackalClient 的 未分类 分类模块。启用后会围绕 光标浏览 这一能力工作，核心行为是：允许你在更多的场景下使用键盘导航光标。(WIP)
+CaretBrowser（光标浏览）用于允许你在更多的场景下使用键盘导航光标。(WIP)。
+适合在日常管理与自动化场景中按需启用。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -32,3 +34,4 @@ CaretBrowser 是 JackalClient 的 未分类 分类模块。启用后会围绕 �
 
 相关资料
 无
+

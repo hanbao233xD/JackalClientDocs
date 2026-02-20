@@ -12,28 +12,35 @@ TimeManager
 - 版本属性：普通可用
 
 介绍
-TimeManager 是 JackalClient 的 Misc 分类模块。启用后会围绕 时间管理 这一能力工作，核心行为是：调整系统时间及其流速。
+TimeManager（时间管理）用于调整系统时间及其流速。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Mode、Sync Method (Disabling Offset)、Sync Method (Disabling Set)。
 
 配置项
-- Offset Second：类型=数值，默认=0
-- Offset Minute：类型=数值，默认=0
-- Set Year：类型=数值，默认=2025
-- Online Sync Cooldown (ms)：类型=数值，默认=30000L
-- Acceleration Speed：类型=数值，默认=1.0f
-- Mode：类型=枚举，默认="Offset Toggle"
-- Offset Year：类型=数值，默认=0
-- Offset Hour：类型=数值，默认=12
-- Sync Method (Disabling Offset)：类型=枚举，默认="Config"
-- Async：类型=布尔，默认=true
-- Offset Day：类型=数值，默认=0
-- Offset Month：类型=数值，默认=0
-- Set Minute：类型=数值，默认=0
-- Set Day：类型=数值，默认=28
-- Set Month：类型=数值，默认=2
-- Sync Method (Disabling Set)：类型=枚举，默认="Memory"
-- Set Hour：类型=数值，默认=12
-- Set Second：类型=数值，默认=0
-- Sync Method (Disabling Freeze)：类型=枚举，默认="Memory"
+- Offset Year（中文：偏移年）：类型=数值，默认=0
+- Set Day（中文：指定日）：类型=数值，默认=28
+- Async（中文：异步）：类型=布尔，默认=true
+- Set Month（中文：指定月份）：类型=数值，默认=2
+- Offset Minute（中文：偏移分钟）：类型=数值，默认=0
+- Set Hour（中文：指定时）：类型=数值，默认=12
+- Set Second（中文：指定秒）：类型=数值，默认=0
+- Mode（中文：模式）：类型=枚举，默认="Offset Toggle"
+  可选：Freeze（冻结）；Set Once（单次设置时间点）；Offset Once（单次偏移）；Offset Toggle（偏移切换）；Online Sync Once（单次联网同步）；Online Sync Keep（保持联网同步）；Set Accelerated（时间点变速）；Offset Accelerated（偏移变速）；Accelerated（纯变速）
+- Sync Method (Disabling Offset)（中文：同步方式 (当禁用偏移模式时)）：类型=枚举，默认="Config"
+  可选：Off（关闭）；Config（配置）；Web（网络）
+- Offset Month（中文：偏移月）：类型=数值，默认=0
+- Offset Second（中文：偏移秒钟）：类型=数值，默认=0
+- Sync Method (Disabling Set)（中文：同步方式 (禁用时间点模式时)）：类型=枚举，默认="Memory"
+  可选：Off（关闭）；Memory（内存）；Web（网络）
+- Sync Method (Disabling Freeze)（中文：同步方式 (禁用冻结时)）：类型=枚举，默认="Memory"
+  可选：Off（关闭）；Memory（内存）；Web（网络）
+- Online Sync Cooldown (ms)（中文：联网同步冷却 (毫秒)）：类型=数值，默认=30000L
+- Offset Hour（中文：偏移小时）：类型=数值，默认=12
+- Set Minute（中文：指定分）：类型=数值，默认=0
+- Set Year（中文：指定年份）：类型=数值，默认=2025
+- Acceleration Speed（中文：加速速率）：类型=数值，默认=1.0f
+- Offset Day（中文：偏移日）：类型=数值，默认=0
 
 历史更新
 - 2. 尝试修复 TimeManager 模块设置时间有时会发生错误的问题。添加时间修改数据的持久化。
@@ -58,3 +65,4 @@ TimeManager 是 JackalClient 的 Misc 分类模块。启用后会围绕 时间�
 
 相关资料
 无
+

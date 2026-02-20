@@ -12,7 +12,10 @@ RestrictRun
 - 版本属性：普通可用
 
 介绍
-RestrictRun 是 JackalClient 的 Registry 分类模块。启用后会围绕 限制运行 这一能力工作，核心行为是：暂无描述
+RestrictRun（限制运行）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +41,4 @@ RestrictRun 是 JackalClient 的 Registry 分类模块。启用后会围绕 限�
 
 相关资料
 无
+

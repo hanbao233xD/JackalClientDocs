@@ -12,7 +12,8 @@ DialogEscape
 - 版本属性：普通可用
 
 介绍
-DialogEscape 是 JackalClient 的 Window 分类模块。启用后会围绕 对话框关闭 这一能力工作，核心行为是：暂无描述
+DialogEscape（对话框关闭）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ DialogEscape 是 JackalClient 的 Window 分类模块。启用后会围绕 对�
 
 相关资料
 无
+

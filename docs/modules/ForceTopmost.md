@@ -12,15 +12,17 @@ ForceTopmost
 - 版本属性：普通可用
 
 介绍
-ForceTopmost 是 JackalClient 的 Misc 分类模块。启用后会围绕 强制置顶 这一能力工作，核心行为是：暂无描述
+ForceTopmost（强制置顶）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Cooldown。
 
 配置项
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'F'}}}
-- Not While Screenshot：类型=布尔，默认=true
-- Not While Hidden：类型=布尔，默认=true
-- Not While Using IME：类型=布尔，默认=true
-- Cooldown：类型=数值，默认=25
-- Use SW_RESTORE：类型=布尔，默认=false
+- Use SW_RESTORE（中文：使用 SW_RESTORE）：类型=布尔，默认=false
+- Not While Using IME（中文：使用输入法时禁用）：类型=布尔，默认=true
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'F'}}}
+- Not While Hidden（中文：隐藏时禁用）：类型=布尔，默认=true
+- Cooldown（中文：冷却）：类型=数值，默认=25
+- Not While Screenshot（中文：截图时禁用）：类型=布尔，默认=true
 
 历史更新
 - 3. 为 Force Topmost 添加配置：
@@ -44,3 +46,4 @@ ForceTopmost 是 JackalClient 的 Misc 分类模块。启用后会围绕 强制�
 
 相关资料
 无
+

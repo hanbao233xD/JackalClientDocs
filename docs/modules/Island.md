@@ -12,83 +12,96 @@ Island
 - 版本属性：普通可用
 
 介绍
-Island 是 JackalClient 的 Render 分类模块。启用后会围绕 灵动岛 这一能力工作，核心行为是：显示一个酷炫的灵动岛。
+Island（灵动岛）用于显示一个酷炫的灵动岛。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify Warning Text Color、Diversify Notify Icons、Sync Actionbar Status。
 
 配置项
-- Background Color：类型=枚举，默认="Black"
-- Idle Icon Type：类型=枚举，默认="Normal"
-- Give Way to Mouse Intensity：类型=数值，默认=0.5f
-- Lyrics Flow Color：类型=布尔，默认=false
-- Text Glow (PRO)：类型=布尔，默认=true
-- Outline Darkness (0~1)：类型=数值，默认=0.2f
-- Show Game：类型=布尔，默认=true
-- Idle Text Color：类型=枚举，默认="Flow"
-- Text Glow Radius Rate：类型=数值，默认=0.2f
-- Sync Notify Status：类型=布尔，默认=true
-- Y Rate：类型=数值，默认=0.12f
-- Notify Warning Text Color：类型=文本，默认="255;222;173"
-- Easing Speed (0~1)：类型=数值，默认=0.1
-- Background：类型=布尔，默认=true
-- Icon Opacity (0~1)：类型=数值，默认=1.0f
-- Fade Duration (ms)：类型=数值，默认=500L
-- Show FPS：类型=布尔，默认=true
-- Round Corners：类型=布尔，默认=true
-- Hide When Idle：类型=布尔，默认=false
-- Shadow Thickness：类型=数值，默认=70.0f
-- Icon Color：类型=枚举，默认="White"
-- Show User：类型=布尔，默认=true
-- Text Glow Alpha (0~1)：类型=数值，默认=0.5f
-- Show Battery：类型=枚举，默认="Level"
-- Icon Scale：类型=数值，默认=1.0f
-- Lyrics Effect Duration (ms)：类型=数值，默认=1000L
-- Width Addition：类型=数值，默认=40
-- Background Image Path：类型=文本，默认=""
-- Outline Color：类型=枚举，默认="Transparent"
-- Max Width Rate (0~1)：类型=数值，默认=0.7f
-- Clip Strictly：类型=布尔，默认=true
-- Lyrics Garble：类型=文本，默认="_"
-- Background Darkness (0~1)：类型=数值，默认=0.6f
-- Outline Thickness：类型=数值，默认=3.0f
-- Background Image：类型=布尔，默认=false
-- Roundness：类型=数值，默认=0.9f
-- Lyrics Decorations：类型=枚举，默认="Off"
-- Gradient Color：类型=布尔，默认=true
-- Sync Progress Status：类型=布尔，默认=true
-- Notify Error Text Color：类型=文本，默认="255;114;86"
-- Fade Color：类型=布尔，默认=true
-- Line Height Scale：类型=数值，默认=1.5f
-- Sync Actionbar Status：类型=布尔，默认=false
-- Brand Icon (PRO)：类型=文本，默认="wolf.png"
-- Brand Name (PRO)：类型=文本，默认="Jackal"
-- Shadow Color：类型=枚举，默认="Black"
-- Shadow：类型=布尔，默认=true
-- Background Image Moving Speed：类型=数值，默认=0.5f
-- Lyrics Text Color：类型=文本，默认="255;109;194;255"
-- Give Way to Mouse：类型=布尔，默认=true
-- Height Addition：类型=数值，默认=15
-- Shadow Opacity (0~1)：类型=数值，默认=0.6f
-- Sync Title Status：类型=布尔，默认=false
-- Show Other：类型=布尔，默认=true
-- Notify Info Text Color：类型=文本，默认="200;200;200"
-- Brand Edition：类型=布尔，默认=true
-- Vibration Amplitude：类型=数值，默认=2.0f
-- Background Image Opacity (0~1)：类型=数值，默认=0.5f
-- Lyrics Animation Duration (ms)：类型=数值，默认=500L
-- Show Brand：类型=布尔，默认=true
-- Font Size：类型=数值，默认=40
-- Lyrics Decoration Type：类型=枚举，默认="Classic"
-- Show Web：类型=布尔，默认=true
-- Vibration Frequency：类型=数值，默认=3.0f
-- Notify Success Text Color：类型=文本，默认="84;255;159"
-- Background Opacity (0~1)：类型=数值，默认=0.75f
-- Diversify Notify Icons：类型=布尔，默认=true
-- Local User：类型=布尔，默认=true
-- Background Image Scale：类型=数值，默认=1.0f
-- Show Location：类型=枚举，默认="Off"
-- Lyrics Effect：类型=枚举，默认="Off"
-- Show Volume：类型=布尔，默认=false
-- Show Time：类型=布尔，默认=true
-- Brand Version：类型=布尔，默认=false
+- Shadow Thickness（中文：阴影厚度）：类型=数值，默认=70.0f
+- Width Addition（中文：宽度额外添加值）：类型=数值，默认=40
+- Show Game（中文：显示游戏）：类型=布尔，默认=true
+- Brand Edition（中文：牌子版本）：类型=布尔，默认=true
+- Show Battery（中文：显示电池）：类型=枚举，默认="Level"
+  可选：Off（关闭）；Icon（图标）；Status（状态）；Level（等级）；Level & Status（等级和状态）
+- Notify Warning Text Color（中文：通知警告文本颜色）：类型=文本，默认="255;222;173"
+- Background Opacity (0~1)（中文：背景不透明度 (0~1)）：类型=数值，默认=0.75f
+- Show Volume（中文：显示音量）：类型=布尔，默认=false
+- Lyrics Decoration Type（中文：歌词装饰类型）：类型=枚举，默认="Classic"
+  可选：Classic（经典）；Slash（未收录）；Sharp（未收录）；Circle（圆圈）；Chinese Number（中文 号码）；Chinese Number II（中文 号码 II）
+- Font Size（中文：字号）：类型=数值，默认=40
+- Diversify Notify Icons（中文：多样化通知图标）：类型=布尔，默认=true
+- Background Image Opacity (0~1)（中文：背景图片不透明度 (0~1)）：类型=数值，默认=0.5f
+- Show FPS（中文：显示帧率）：类型=布尔，默认=true
+- Hide When Idle（中文：空闲时隐藏）：类型=布尔，默认=false
+- Background Image Scale（中文：背景图片缩放）：类型=数值，默认=1.0f
+- Shadow Color（中文：阴影颜色）：类型=枚举，默认="Black"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Clip Strictly（中文：严格裁剪）：类型=布尔，默认=true
+- Fade Duration (ms)（中文：淡入淡出时长 (毫秒)）：类型=数值，默认=500L
+- Lyrics Garble（中文：歌词乱码）：类型=文本，默认="_"
+- Background Image Path（中文：背景图片路径）：类型=文本，默认=""
+- Text Glow (PRO)（中文：文本发光（专业版））：类型=布尔，默认=true
+- Brand Icon (PRO)（中文：牌子图标（专业版））：类型=文本，默认="wolf.png"
+- Text Glow Alpha (0~1)（中文：文本发光不透明度 (0~1)）：类型=数值，默认=0.5f
+- Gradient Color（中文：渐变色）：类型=布尔，默认=true
+- Brand Name (PRO)（中文：牌子名称（专业版））：类型=文本，默认="Jackal"
+- Sync Actionbar Status（中文：同步行为栏状态）：类型=布尔，默认=false
+- Notify Info Text Color（中文：通知信息文本颜色）：类型=文本，默认="200;200;200"
+- Outline Color（中文：轮廓颜色）：类型=枚举，默认="Transparent"
+  可选：Transparent（透明）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Show Other（中文：显示其他内容）：类型=布尔，默认=true
+- Easing Speed (0~1)（中文：缓动速率 (0~1)）：类型=数值，默认=0.1
+- Height Addition（中文：高度额外添加值）：类型=数值，默认=15
+- Brand Version（中文：牌子版本号）：类型=布尔，默认=false
+- Local User（中文：本地用户）：类型=布尔，默认=true
+- Round Corners（中文：圆角）：类型=布尔，默认=true
+- Show User（中文：显示用户）：类型=布尔，默认=true
+- Line Height Scale（中文：行高度比例）：类型=数值，默认=1.5f
+- Icon Scale（中文：图标缩放）：类型=数值，默认=1.0f
+- Shadow Opacity (0~1)（中文：阴影不透明度 (0~1)）：类型=数值，默认=0.6f
+- Notify Error Text Color（中文：通知错误文本颜色）：类型=文本，默认="255;114;86"
+- Give Way to Mouse（中文：给鼠标让道）：类型=布尔，默认=true
+- Vibration Frequency（中文：震动频率）：类型=数值，默认=3.0f
+- Sync Title Status（中文：同步标题状态）：类型=布尔，默认=false
+- Lyrics Animation Duration (ms)（中文：歌词动画时长 (毫秒)）：类型=数值，默认=500L
+- Icon Opacity (0~1)（中文：图标不透明度 (0~1)）：类型=数值，默认=1.0f
+- Background Darkness (0~1)（中文：背景黑暗程度 (0~1)）：类型=数值，默认=0.6f
+- Background（中文：背景）：类型=布尔，默认=true
+- Background Color（中文：背景颜色）：类型=枚举，默认="Black"
+  可选：Transparent（透明）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Lyrics Text Color（中文：歌词文本颜色）：类型=文本，默认="255;109;194;255"
+- Sync Progress Status（中文：同步进度状态）：类型=布尔，默认=true
+- Icon Color（中文：图标颜色）：类型=枚举，默认="White"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Show Location（中文：显示位置）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Short（短小）；Details（详细信息）
+- Lyrics Effect Duration (ms)（中文：歌词效果时长 (毫秒)）：类型=数值，默认=1000L
+- Lyrics Flow Color（中文：歌词流动颜色）：类型=布尔，默认=false
+- Idle Icon Type（中文：空闲图标类型）：类型=枚举，默认="Normal"
+  可选：Off（关闭）；Character（字符）；Normal（普通）
+- Sync Notify Status（中文：同步通知状态）：类型=布尔，默认=true
+- Outline Darkness (0~1)（中文：轮廓黑暗程度 (0~1)）：类型=数值，默认=0.2f
+- Notify Success Text Color（中文：通知成功文本颜色）：类型=文本，默认="84;255;159"
+- Show Time（中文：显示时间）：类型=布尔，默认=true
+- Outline Thickness（中文：轮廓宽度）：类型=数值，默认=3.0f
+- Text Glow Radius Rate（中文：文本发光半径占比）：类型=数值，默认=0.2f
+- Give Way to Mouse Intensity（中文：给鼠标让道的强度）：类型=数值，默认=0.5f
+- Background Image（中文：背景图片）：类型=布尔，默认=false
+- Shadow（中文：阴影）：类型=布尔，默认=true
+- Roundness（中文：圆滑程度）：类型=数值，默认=0.9f
+- Background Image Moving Speed（中文：背景图片移动速度）：类型=数值，默认=0.5f
+- Y Rate（中文：纵坐标比例）：类型=数值，默认=0.12f
+- Fade Color（中文：淡入淡出颜色）：类型=布尔，默认=true
+- Lyrics Effect（中文：歌词效果）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Garble Slide（乱码滑动）；Garble Dissolved（乱码溶解）；Unfold（展开）；Sine Slide (PRO)（正弦滑动（专业版））；Stagger Lift (PRO)（错位上升入场（专业版））；Center Cascade (PRO)（中心级联入场（专业版））；Stagger Wave (PRO)（波浪错位升起（专业版））；Scale Cascade (PRO)（级联缩放入场（专业版））；Mirror Cascade (PRO)（镜像级联入场（专业版））；Converge (PRO)（文字收拢入场（专业版））；Soft Reveal (PRO)（柔和显现（专业版））；Tilt Drop (PRO)（倾斜下落入场（专业版））；Float Rise (PRO)（漂浮上升入场（专业版））；Flip In (PRO)（翻转入场（专业版））
+- Idle Text Color（中文：空闲文本颜色）：类型=枚举，默认="Flow"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Max Width Rate (0~1)（中文：最大宽度占比）：类型=数值，默认=0.7f
+- Lyrics Decorations（中文：歌词装饰）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Prefix（前缀）；Suffix（后缀）；Prefix + Suffix（前缀 + 后缀）
+- Show Web（中文：显示联网状态）：类型=布尔，默认=true
+- Show Brand（中文：显示牌子）：类型=布尔，默认=true
+- Vibration Amplitude（中文：震动幅度）：类型=数值，默认=2.0f
 
 历史更新
 - 39. 将 Island 的 Use Normal Icon 改为 Show Icon
@@ -113,3 +126,4 @@ Island 是 JackalClient 的 Render 分类模块。启用后会围绕 灵动岛 �
 
 相关资料
 无
+

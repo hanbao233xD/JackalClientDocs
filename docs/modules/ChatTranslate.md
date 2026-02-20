@@ -12,10 +12,13 @@ AI翻译
 - 版本属性：普通可用
 
 介绍
-ChatTranslate 是 JackalClient 的 未分类 分类模块。启用后会围绕 AI翻译 这一能力工作，核心行为是：暂无描述
+ChatTranslate（AI翻译）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Dest Language。
 
 配置项
-- Dest Language：类型=枚举，默认="Chinese-English"
+- Dest Language（中文：目标语言）：类型=枚举，默认="Chinese-English"
+  可选：English（英语）；Chinese（中文）；Chinese-English（中英）；Classic Chinese（经典 中文）；Japanese（日语）；French（法语）；German（德语）
 
 历史更新
 - 26. 为 Chat Translate 添加配置项，以便调整翻译目标语言。现已支持中文、英文、中英、文言文、日语、法语、德语。
@@ -31,3 +34,4 @@ ChatTranslate 是 JackalClient 的 未分类 分类模块。启用后会围绕 A
 
 相关资料
 无
+

@@ -12,14 +12,18 @@ B站推荐
 - 版本属性：普通可用
 
 介绍
-BiliFeed 是 JackalClient 的 Web 分类模块。启用后会围绕 B站推荐 这一能力工作，核心行为是：从B站获取一些推荐视频。
+BiliFeed（B站推荐）用于从B站获取一些推荐视频。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Style。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Connect Timeout (s)：类型=数值，默认=5L
-- Style：类型=枚举，默认="Simple"
-- Async：类型=布尔，默认=true
-- Limit：类型=数值，默认=100U
-- Auto Console：类型=布尔，默认=true
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=5L
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Style（中文：风格）：类型=枚举，默认="Simple"
+  可选：Simple（简易）；List（未收录）；Fancy（优美）
+- Limit（中文：上限）：类型=数值，默认=100U
 
 历史更新
 - 17. 添加新模块：Bili Feed，给出B站视频推荐。
@@ -42,3 +46,4 @@ BiliFeed 是 JackalClient 的 Web 分类模块。启用后会围绕 B站推荐 �
 
 相关资料
 无
+

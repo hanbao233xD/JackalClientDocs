@@ -12,16 +12,21 @@ DebugESP
 - 版本属性：普通可用
 
 介绍
-DebugESP 是 JackalClient 的 Process 分类模块。启用后会围绕 调试透视 这一能力工作，核心行为是：接收并输出进程的调试字符串。
+DebugESP（调试透视）用于接收并输出进程的调试字符串。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Display Mode。
 
 配置项
-- Chatter Type：类型=枚举，默认="Top"
-- Capture Global Win32 (Admin Required)：类型=布尔，默认=false
-- Capture Win32：类型=布尔，默认=true
-- Show Namespace Source：类型=布尔，默认=false
-- Show Process Source：类型=枚举，默认="Both"
-- Anti Spam：类型=布尔，默认=true
-- Display Mode：类型=枚举，默认="Chatter"
+- Chatter Type（中文：弹幕类型）：类型=枚举，默认="Top"
+  可选：Scroll（滚动）；Top（顶端）；Bottom（底部）；Reverse（颠倒）；Horizontal（横向）；Vertical（纵向）；Random（随机）
+- Show Namespace Source（中文：显示命名空间来源）：类型=布尔，默认=false
+- Capture Global Win32 (Admin Required)（中文：捕获全局 Win32（需要管理员））：类型=布尔，默认=false
+- Show Process Source（中文：显示进程来源）：类型=枚举，默认="Both"
+  可选：Off（关闭）；PID（进程ID）；Process Name（进程名）；Both（两者）
+- Capture Win32（中文：捕获 Win32）：类型=布尔，默认=true
+- Anti Spam（中文：反刷屏）：类型=布尔，默认=true
+- Display Mode（中文：展示模式）：类型=枚举，默认="Chatter"
+  可选：Console Output（控制台输出）；Chatter（弹幕）；Notify（通知）；Title（标题）；Actionbar（行为栏）；Speak（讲述）
 
 历史更新
 - 25. 添加模块：Debug ESP，捕获并显示应用程序的调试信息，就跟 Debugview 一样。
@@ -44,3 +49,4 @@ DebugESP 是 JackalClient 的 Process 分类模块。启用后会围绕 调试�
 
 相关资料
 无
+

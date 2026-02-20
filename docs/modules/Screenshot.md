@@ -12,23 +12,30 @@ Screenshot
 - 版本属性：普通可用
 
 介绍
-Screenshot 是 JackalClient 的 Misc 分类模块。启用后会围绕 截图工具 这一能力工作，核心行为是：你可以用PrtScr键打开截图工具。
+Screenshot（截图工具）用于你可以用PrtScr键打开截图工具。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：HUD Font Size、Notify Close、Mode。
 
 配置项
-- Notify Close：类型=布尔，默认=true
-- Save Image：类型=枚举，默认="Default"
-- Copy Image：类型=枚举，默认="DIB"
-- Countdown：类型=布尔，默认=false
-- Countdown Duration (ms)：类型=数值，默认=3000L
-- HUD Font Size：类型=数值，默认=35
-- Mode：类型=枚举，默认="Tool"
-- Exclude Client：类型=枚举，默认="Shift Key"
-- bind：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_SNAPSHOT}}}
-- Close Vanilla Snipping Tool：类型=布尔，默认=true
-- Preview Brightness (0~1)：类型=数值，默认=0.6f
-- Save Image Custom Path：类型=文本，默认="D:\\"
-- Extract Text Language (PRO)：类型=文本，默认="chi_sim"
-- Extract Text (PRO)：类型=枚举，默认="Off"
+- Exclude Client（中文：排除客户端）：类型=枚举，默认="Shift Key"
+  可选：Off（关闭）；Shift Key（Shift 按下时）；Always（总是）
+- HUD Font Size（中文：HUD 字号）：类型=数值，默认=35
+- Notify Close（中文：通知关闭）：类型=布尔，默认=true
+- Save Image Custom Path（中文：保存图片自定义路径）：类型=文本，默认="D:\\"
+- Extract Text (PRO)（中文：提取文本（专业版））：类型=枚举，默认="Off"
+  可选：Off（关闭）；Silent Copy（静默复制）；Console Output（控制台输出）
+- Copy Image（中文：复制图片）：类型=枚举，默认="DIB"
+  可选：Off（关闭）；DIB（未收录）；PNG+DIB（未收录）
+- Extract Text Language (PRO)（中文：提取文本所使用的语言（专业版））：类型=文本，默认="chi_sim"
+- Mode（中文：模式）：类型=枚举，默认="Tool"
+  可选：Instant（瞬间）；Tool（工具）
+- Preview Brightness (0~1)（中文：预览亮度 (0~1)）：类型=数值，默认=0.6f
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_SNAPSHOT}}}
+- Save Image（中文：保存图片）：类型=枚举，默认="Default"
+  可选：Off（关闭）；Default（默认）；Desktop（未收录）；Custom（自定义）；Dialog（对话框）
+- Countdown（中文：倒计时）：类型=布尔，默认=false
+- Close Vanilla Snipping Tool（中文：关闭原版截图工具）：类型=布尔，默认=true
+- Countdown Duration (ms)（中文：倒计时时长（毫秒））：类型=数值，默认=3000L
 
 历史更新
 - 27. 为 Screenshot 模块添加配置：
@@ -53,3 +60,4 @@ Screenshot 是 JackalClient 的 Misc 分类模块。启用后会围绕 截图工
 
 相关资料
 无
+

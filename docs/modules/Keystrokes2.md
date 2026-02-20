@@ -12,60 +12,72 @@ Keystrokes2
 - 版本属性：普通可用
 
 介绍
-Keystrokes2 是 JackalClient 的 Control 分类模块。启用后会围绕 按键显示II 这一能力工作，核心行为是：暂无描述
+Keystrokes2（按键显示II）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Toggle KeyReaction Module、Rain Effect Coordinate Mode、Multi Row Mode。
 
 配置项
-- Multi Row Vertical Sort (PRO)：类型=枚举，默认="Top"
-- Alignment：类型=枚举，默认="Center"
-- Easing Speed (0~1)：类型=数值，默认=0.1f
-- Hide F13-F24：类型=布尔，默认=true
-- Hide Mouse Buttons：类型=布尔，默认=false
-- Rain Effect Color：类型=枚举，默认="Rainbow"
-- Rain Effect Width Rate (0~1)：类型=数值，默认=0.8f
-- Rain Effect Opacity (0~1)：类型=数值，默认=0.5f
-- Key Display Order：类型=枚举，默认="Layout"
-- Hide When Menu On：类型=布尔，默认=false
-- Give Way to Mouse Distance：类型=数值，默认=200.0
-- Box Gap：类型=数值，默认=15
-- Start Pos Y Rate Max：类型=数值，默认=1.1f
-- Rain Effect Height：类型=数值，默认=250
-- Roundness：类型=数值，默认=0.2f
-- Background Color：类型=枚举，默认="Black"
-- Multi Row Offset (-1~1)：类型=数值，默认=-0.3f
-- Toggle KeyReaction Module：类型=布尔，默认=true
-- Outline Color：类型=枚举，默认="Rainbow"
-- Round Corners：类型=布尔，默认=false
-- Show Number Below：类型=布尔，默认=true
-- Shadow：类型=布尔，默认=true
-- Show Exit Animation：类型=布尔，默认=true
-- Rain Effect Fade Height：类型=数值，默认=60
-- X Rate：类型=数值，默认=0.5f
-- Box Height：类型=数值，默认=70
-- Give Way to Mouse：类型=布尔，默认=true
-- Rain Effect Whiteness (0~1)：类型=数值，默认=0.8f
-- Key Display Max Count：类型=数值，默认=10U
-- Text Color：类型=枚举，默认="Rainbow"
-- Bigger Font Size Of Single Char Key：类型=布尔，默认=false
-- Shadow Thickness：类型=数值，默认=20.0f
-- Multi Row Fog Enabled：类型=布尔，默认=false
-- Exit Animation Duration (ms)：类型=数值，默认=220L
-- Box Width：类型=数值，默认=55
-- Rain Effect Speed：类型=数值，默认=10.0f
-- Bigger Pressed：类型=布尔，默认=true
-- Font Size Rate：类型=数值，默认=1.5
-- Box Opacity (0~1)：类型=数值，默认=1.0f
-- Start Pos X Rate Max：类型=数值，默认=0.6f
-- Start Pos Y Rate Min：类型=数值，默认=1.0f
-- Multi Row Mode：类型=布尔，默认=false
-- Y Rate：类型=数值，默认=0.87f
-- Rain Effect Coordinate Mode：类型=枚举，默认="Independent"
-- Number Color Show Recent：类型=布尔，默认=true
-- Multi Row Fog Intensity (0~1)：类型=数值，默认=0.6f
-- Shadow Color：类型=枚举，默认="Black"
-- Number Display Recent：类型=布尔，默认=true
-- Rain Effect：类型=枚举，默认="Off"
-- Multi Row Row Gap：类型=数值，默认=45
-- Start Pos X Rate Min：类型=数值，默认=0.4f
+- Shadow（中文：阴影）：类型=布尔，默认=true
+- Toggle KeyReaction Module（中文：切换按键反应模块）：类型=布尔，默认=true
+- Start Pos X Rate Min（中文：起始点横坐标比例最小值）：类型=数值，默认=0.4f
+- Rain Effect Coordinate Mode（中文：雨效果坐标模式）：类型=枚举，默认="Independent"
+  可选：Follow Key Box（跟随按键框）；Independent（独立）
+- Bigger Pressed（中文：更大的按下）：类型=布尔，默认=true
+- Background Color（中文：背景颜色）：类型=枚举，默认="Black"
+  可选：Transparent（透明）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Rain Effect（中文：雨效果）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Rise（上升）；Fall（下落）
+- Hide F13-F24（中文：隐藏F13到F24）：类型=布尔，默认=true
+- Give Way to Mouse（中文：给鼠标让道）：类型=布尔，默认=true
+- Rain Effect Width Rate (0~1)（中文：雨效果宽度比例 (0~1)）：类型=数值，默认=0.8f
+- Key Display Max Count（中文：键显示最大数量）：类型=数值，默认=10U
+- Multi Row Row Gap（中文：排间距）：类型=数值，默认=45
+- Hide Mouse Buttons（中文：隐藏鼠标按钮）：类型=布尔，默认=false
+- Text Color（中文：文本颜色）：类型=枚举，默认="Rainbow"
+  可选：Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Start Pos X Rate Max（中文：起始点横坐标比例最大值）：类型=数值，默认=0.6f
+- Show Number Below（中文：显示底部数字）：类型=布尔，默认=true
+- Multi Row Offset (-1~1)（中文：排偏移(-1~1)）：类型=数值，默认=-0.3f
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=false
+- Box Gap（中文：方框间隙）：类型=数值，默认=15
+- Multi Row Fog Intensity (0~1)（中文：多排迷雾强度）：类型=数值，默认=0.6f
+- Rain Effect Color（中文：雨效果颜色）：类型=枚举，默认="Rainbow"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Shadow Thickness（中文：阴影厚度）：类型=数值，默认=20.0f
+- Multi Row Fog Enabled（中文：多排是否启用迷雾）：类型=布尔，默认=false
+- Rain Effect Whiteness (0~1)（中文：雨效果变白程度 (0~1)）：类型=数值，默认=0.8f
+- Key Display Order（中文：键显示顺序）：类型=枚举，默认="Layout"
+  可选：ASCII（未收录）；List Forward（未收录）；List Backward（未收录）；Layout（布局）
+- Bigger Font Size Of Single Char Key（中文：让单字符键字号更大）：类型=布尔，默认=false
+- Start Pos Y Rate Max（中文：起始点纵坐标比例最大值）：类型=数值，默认=1.1f
+- Multi Row Vertical Sort (PRO)（中文：排纵向排序（专业版））：类型=枚举，默认="Top"
+  可选：None（无）；Top（顶端）；Bottom（底部）
+- Round Corners（中文：圆角）：类型=布尔，默认=false
+- Y Rate（中文：纵坐标比例）：类型=数值，默认=0.87f
+- X Rate（中文：横坐标比例）：类型=数值，默认=0.5f
+- Exit Animation Duration (ms)（中文：退场动画时长（毫秒））：类型=数值，默认=220L
+- Box Width（中文：方框宽度）：类型=数值，默认=55
+- Easing Speed (0~1)（中文：缓动速率 (0~1)）：类型=数值，默认=0.1f
+- Box Opacity (0~1)（中文：方框不透明度 (0~1)）：类型=数值，默认=1.0f
+- Outline Color（中文：轮廓颜色）：类型=枚举，默认="Rainbow"
+  可选：Flow（流动）；Transparent（透明）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Roundness（中文：圆滑程度）：类型=数值，默认=0.2f
+- Box Height（中文：方框高度）：类型=数值，默认=70
+- Alignment（中文：对齐方式）：类型=枚举，默认="Center"
+  可选：Center（居中）；Left（左侧）；Right（右侧）
+- Show Exit Animation（中文：展示退场动画）：类型=布尔，默认=true
+- Rain Effect Height（中文：雨效果高度）：类型=数值，默认=250
+- Number Display Recent（中文：数字显示最近次数）：类型=布尔，默认=true
+- Shadow Color（中文：阴影颜色）：类型=枚举，默认="Black"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Number Color Show Recent（中文：数字颜色显示最近次数）：类型=布尔，默认=true
+- Font Size Rate（中文：字号比例）：类型=数值，默认=1.5
+- Start Pos Y Rate Min（中文：起始点纵坐标比例最小值）：类型=数值，默认=1.0f
+- Multi Row Mode（中文：多排模式）：类型=布尔，默认=false
+- Rain Effect Fade Height（中文：雨效果淡出高度）：类型=数值，默认=60
+- Rain Effect Opacity (0~1)（中文：雨效果不透明度 (0~1)）：类型=数值，默认=0.5f
+- Give Way to Mouse Distance（中文：给鼠标让道的距离）：类型=数值，默认=200.0
+- Rain Effect Speed（中文：雨效果速率）：类型=数值，默认=10.0f
 
 历史更新
 - 17. 尝试修复 Keystrokes2 对按下按键检测不灵敏的问题。没成功，，
@@ -90,3 +102,4 @@ Keystrokes2 是 JackalClient 的 Control 分类模块。启用后会围绕 按�
 
 相关资料
 无
+

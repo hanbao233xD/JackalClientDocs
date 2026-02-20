@@ -12,22 +12,26 @@ AutoSpeak
 - 版本属性：普通可用
 
 介绍
-AutoSpeak 是 JackalClient 的 Misc 分类模块。启用后会围绕 自动讲述 这一能力工作，核心行为是：自动说出一些话。
+AutoSpeak（自动讲述）用于自动说出一些话。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Translator (Except Main Mode)、Speak Actionbar、Main Mode。
 
 配置项
-- Speak Chatter：类型=布尔，默认=false
-- Dialog Text Max Speak Length：类型=数值，默认=100U
-- Main Mode：类型=枚举，默认="Off"
-- Translator (Except Main Mode)：类型=枚举，默认="Off"
-- Speak Subtitle：类型=布尔，默认=false
-- Smart Mode Gap (ms)：类型=数值，默认=1000L
-- Random Min Interval (ms)：类型=数值，默认=20000L
-- Random Max Interval (ms)：类型=数值，默认=120000L
-- Periodic Interval (ms)：类型=数值，默认=10000L
-- Speak Title：类型=布尔，默认=true
-- Skip Speaking Dialog Text Same As Previous：类型=布尔，默认=true
-- Speak Dialog (Auto Detect)：类型=布尔，默认=true
-- Speak Actionbar：类型=布尔，默认=false
+- Translator (Except Main Mode)（中文：翻译器 (除主模式外)）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Chinese（中文）；English（英语）；Exchange（交换）
+- Speak Actionbar（中文：念行为栏）：类型=布尔，默认=false
+- Random Min Interval (ms)（中文：最小随机间隔 (毫秒)）：类型=数值，默认=20000L
+- Speak Title（中文：念标题）：类型=布尔，默认=true
+- Random Max Interval (ms)（中文：最大随机间隔 (毫秒)）：类型=数值，默认=120000L
+- Dialog Text Max Speak Length（中文：对话框文本最大朗读长度）：类型=数值，默认=100U
+- Periodic Interval (ms)（中文：周期性间隔 (毫秒)）：类型=数值，默认=10000L
+- Main Mode（中文：主模式）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Periodic（周期性）；Random（随机）；Smart（智能）
+- Skip Speaking Dialog Text Same As Previous（中文：朗读跳过和上一次相同的对话框文本）：类型=布尔，默认=true
+- Speak Dialog (Auto Detect)（中文：念对话框 (自动检测)）：类型=布尔，默认=true
+- Speak Subtitle（中文：念副标题）：类型=布尔，默认=false
+- Smart Mode Gap (ms)（中文：智能模式间隔（毫秒））：类型=数值，默认=1000L
+- Speak Chatter（中文：念弹幕）：类型=布尔，默认=false
 
 历史更新
 - 33. 为 AutoSpeak 添加配置：
@@ -52,3 +56,4 @@ AutoSpeak 是 JackalClient 的 Misc 分类模块。启用后会围绕 自动讲�
 
 相关资料
 无
+

@@ -12,7 +12,8 @@ IQBooster
 - 版本属性：普通可用
 
 介绍
-IQBooster 是 JackalClient 的 未分类 分类模块。启用后会围绕 智商提升 这一能力工作，核心行为是：暗中提高你的智商。
+IQBooster（智商提升）用于暗中提高你的智商。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +32,4 @@ IQBooster 是 JackalClient 的 未分类 分类模块。启用后会围绕 智�
 
 相关资料
 无
+

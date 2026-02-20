@@ -12,13 +12,17 @@ Musics
 - 版本属性：普通可用
 
 介绍
-Musics 是 JackalClient 的 Misc 分类模块。启用后会围绕 音乐 这一能力工作，核心行为是：播放音乐。
+Musics（音乐）用于播放音乐。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Style。
 
 配置项
-- Style：类型=枚举，默认="Normal"
-- Filename：类型=文本，默认="FunkyStars.mp3"
-- When：类型=枚举，默认="Menu On"
-- MCI Mp3 Volume：类型=数值，默认=100
+- Filename（中文：文件名）：类型=文本，默认="FunkyStars.mp3"
+- MCI Mp3 Volume（中文：MCI Mp3 音量）：类型=数值，默认=100
+- Style（中文：风格）：类型=枚举，默认="Normal"
+  可选：Normal（普通）；Damaged（损坏）
+- When（中文：何时）：类型=枚举，默认="Menu On"
+  可选：Menu On（打开菜单）；Menu Off（关闭菜单）；Always（总是）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -41,3 +45,4 @@ Musics 是 JackalClient 的 Misc 分类模块。启用后会围绕 音乐 这一
 
 相关资料
 无
+

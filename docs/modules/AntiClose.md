@@ -12,10 +12,12 @@ AntiClose
 - 版本属性：普通可用
 
 介绍
-AntiClose 是 JackalClient 的 Combat 分类模块。启用后会围绕 反关闭 这一能力工作，核心行为是：屏蔽所有对本客户端窗口的关闭消息。
+AntiClose（反关闭）用于屏蔽所有对本客户端窗口的关闭消息。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify Close Message。
 
 配置项
-- Notify Close Message：类型=布尔，默认=true
+- Notify Close Message（中文：通知关闭消息）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -38,3 +40,4 @@ AntiClose 是 JackalClient 的 Combat 分类模块。启用后会围绕 反关�
 
 相关资料
 无
+

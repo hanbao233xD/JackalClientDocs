@@ -12,27 +12,35 @@ Speaker
 - 版本属性：普通可用
 
 介绍
-Speaker 是 JackalClient 的 Misc 分类模块。启用后会围绕 讲述人 这一能力工作，核心行为是：调用 Windows 的讲述人念一段文本。
+Speaker（讲述人）用于调用 Windows 的讲述人念一段文本。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Spoken Text Mode、Notify Error、Method。
 
 配置项
-- Custom Rate：类型=数值，默认=0
-- Voice：类型=枚举，默认="Default"
-- Fixed Spoken Text：类型=文本，默认="Hello World 你好，世界！"
-- Notify Error：类型=布尔，默认=true
-- Not As Debuggee：类型=布尔，默认=true
-- Multiple Text Arrangement：类型=枚举，默认="Queue"
-- Volume：类型=数值，默认=80
-- Pitch：类型=枚举，默认="Default"
-- Custom Voice Name：类型=文本，默认="Microsoft Huihui Desktop - Chinese (Simplified)"
-- Async：类型=布尔，默认=true
-- Spoken Text List：类型=文本，默认="你的钢门比较松弛;但是呢,你的痔疮又弥补了这一部分;如果做痔疮手术,把痔疮切除的话;可能就会显得你的钢门就比较大;可能会有一些漏液漏气的情况;现在最好的办法就 ...
-- Rate：类型=枚举，默认="Default"
-- Auto Rate Coefficient：类型=数值，默认=1.0f
-- Method：类型=枚举，默认="SAPI"
-- Custom Pitch：类型=数值，默认=0
-- Spoken Text Mode：类型=枚举，默认="Fixed"
-- List Current Index：类型=数值，默认=0
-- Japanese Transformation：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Pitch（中文：音高）：类型=枚举，默认="Default"
+  可选：Default（默认）；Auto（自动）；Custom（自定义）
+- Rate（中文：比率）：类型=枚举，默认="Default"
+  可选：Default（默认）；Auto（自动）；Custom（自定义）
+- Custom Pitch（中文：自定义音高）：类型=数值，默认=0
+- Spoken Text Mode（中文：讲述文本模式）：类型=枚举，默认="Fixed"
+  可选：Fixed（固定）；List Random Element（列表中随机的元素）；List Loop（列表循环）；Clipboard Text（剪贴板文本）
+- Spoken Text List（中文：讲述文本列表）：类型=文本，默认="你的钢门比较松弛;但是呢,你的痔疮又弥补了这一部分;如果做痔疮手术,把痔疮切除的话;可能就会显得你的钢门就比较大;可能会有一些漏液漏气的情况;现在最好的办法就 ...
+- Notify Error（中文：通知错误）：类型=布尔，默认=true
+- Not As Debuggee（中文：被调试时禁用）：类型=布尔，默认=true
+- Japanese Transformation（中文：日语转换）：类型=布尔，默认=true
+- Custom Rate（中文：自定义比率）：类型=数值，默认=0
+- Method（中文：方法）：类型=枚举，默认="SAPI"
+  可选：SAPI（未收录）
+- List Current Index（中文：列表当前索引）：类型=数值，默认=0
+- Auto Rate Coefficient（中文：自动速率系数）：类型=数值，默认=1.0f
+- Custom Voice Name（中文：自定义音色名称）：类型=文本，默认="Microsoft Huihui Desktop - Chinese (Simplified)"
+- Multiple Text Arrangement（中文：多文本安排）：类型=枚举，默认="Queue"
+  可选：Off（关闭）；Queue（队列）；Available（可用）
+- Voice（中文：音色）：类型=枚举，默认="Default"
+  可选：Default（默认）；Auto（自动）；Custom（自定义）
+- Volume（中文：音量）：类型=数值，默认=80
+- Fixed Spoken Text（中文：固定的讲述文本）：类型=文本，默认="Hello World 你好，世界！"
 
 历史更新
 - 14. 将部分配置中的 Speaker 改为 Speak
@@ -57,3 +65,4 @@ Speaker 是 JackalClient 的 Misc 分类模块。启用后会围绕 讲述人 �
 
 相关资料
 无
+

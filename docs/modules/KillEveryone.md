@@ -12,10 +12,14 @@ KillEveryone
 - 版本属性：普通可用
 
 介绍
-KillEveryone 是 JackalClient 的 未分类 分类模块。启用后会围绕 全员击杀 这一能力工作，核心行为是：暂无描述
+KillEveryone（全员击杀）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Method。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Method：类型=枚举，默认="Normal"
+- Method（中文：方法）：类型=枚举，默认="Normal"
+  可选：Normal（普通）；Driver（未收录）
 
 历史更新
 - 3. 为 KillMalware, KillEveryone 模块添加配置：
@@ -31,3 +35,4 @@ KillEveryone 是 JackalClient 的 未分类 分类模块。启用后会围绕 �
 
 相关资料
 无
+

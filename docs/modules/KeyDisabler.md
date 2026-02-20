@@ -12,10 +12,12 @@ KeyDisabler
 - 版本属性：普通可用
 
 介绍
-KeyDisabler 是 JackalClient 的 Control 分类模块。启用后会围绕 禁用键盘 这一能力工作，核心行为是：暂无描述
+KeyDisabler（禁用键盘）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Mode。
 
 配置项
-- Mode：类型=枚举，默认="Locker (Press End to escape
+- Mode（中文：模式）：类型=枚举，默认="Locker (Press End to escape
 
 历史更新
 - 7. 为 Key Disabler 模式添加 A,W,S,D,Space,Shift
@@ -40,3 +42,4 @@ KeyDisabler 是 JackalClient 的 Control 分类模块。启用后会围绕 禁�
 
 相关资料
 无
+

@@ -12,15 +12,19 @@ BetterAnimation
 - 版本属性：普通可用
 
 介绍
-BetterAnimation 是 JackalClient 的 未分类 分类模块。启用后会围绕 更好的动画 这一能力工作，核心行为是：自定义窗口动画效果。
+BetterAnimation（更好的动画）用于自定义窗口动画效果。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify Mode、Custom Style、Check Cooldown (ms)。
 
 配置项
-- Notify Mode：类型=枚举，默认="Off"
-- Custom Style：类型=枚举，默认="Fade"
-- Animation Duration (ms)：类型=数值，默认=300L
-- Color Transition：类型=文本，默认="1;1;1"
-- Toggle NoAnimation Module：类型=布尔，默认=true
-- Check Cooldown (ms)：类型=数值，默认=10L
+- Toggle NoAnimation Module（中文：切换禁用动画模块）：类型=布尔，默认=true
+- Color Transition（中文：颜色过渡）：类型=文本，默认="1;1;1"
+- Notify Mode（中文：通知模式）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Notify（通知）；Chatter（弹幕）；Actionbar（行为栏）
+- Custom Style（中文：自定义风格）：类型=枚举，默认="Fade"
+  可选：Fade（淡入淡出）；Color Transition（颜色过渡）
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=10L
+- Animation Duration (ms)（中文：动画持续时间 (毫秒)）：类型=数值，默认=300L
 
 历史更新
 - 47. 修复 Better Animation 的 Color Transition 模式矩形绘制不全的问题。
@@ -37,3 +41,4 @@ BetterAnimation 是 JackalClient 的 未分类 分类模块。启用后会围绕
 
 相关资料
 无
+

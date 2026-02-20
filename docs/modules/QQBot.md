@@ -12,13 +12,16 @@ QQ机器人
 - 版本属性：普通可用
 
 介绍
-QQBot 是 JackalClient 的 未分类 分类模块。启用后会围绕 QQ机器人 这一能力工作，核心行为是：一个简单的QQ机器人。
+QQBot（QQ机器人）用于一个简单的QQ机器人。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Scan Cooldown (ms)。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
-- Scan Cooldown (ms)：类型=数值，默认=5000L
-- Others Message Max X Rate：类型=数值，默认=0.4f
-- Own Message Min X Rate：类型=数值，默认=0.41f
-- Recognize Min Confidence (0~100)：类型=数值，默认=80.0f
+- Recognize Min Confidence (0~100)（中文：识别最小置信度 (0~100)）：类型=数值，默认=80.0f
+- Own Message Min X Rate（中文：Own Message Min X 比率）：类型=数值，默认=0.41f
+- Scan Cooldown (ms)（中文：扫描冷却 (毫秒)）：类型=数值，默认=5000L
+- Others Message Max X Rate（中文：Others Message 最大数量 X 比率）：类型=数值，默认=0.4f
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -34,3 +37,4 @@ QQBot 是 JackalClient 的 未分类 分类模块。启用后会围绕 QQ机器�
 
 相关资料
 无
+

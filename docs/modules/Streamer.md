@@ -12,20 +12,26 @@ Streamer
 - 版本属性：普通可用
 
 介绍
-Streamer 是 JackalClient 的 Web 分类模块。启用后会围绕 主播模式 这一能力工作，核心行为是：防止直播过程中发生意外。
+Streamer（主播模式）用于防止直播过程中发生意外。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Update Cooldown (ms)。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Sync Bili Live Status：类型=布尔，默认=true
-- Bili Live Area：类型=枚举，默认="Current"
-- Param build：类型=数值，默认=1234L
-- Update Cooldown (ms)：类型=数值，默认=8000L
-- Async：类型=布尔，默认=true
-- Param version：类型=文本，默认="1.0.0"
-- Bili Live Platform：类型=枚举，默认="pc_link"
-- Bili Live Area Custom Id：类型=数值，默认=701L
-- Toggle Bili Live Status (PRO)：类型=布尔，默认=false
-- Toggle LiveStream Module：类型=布尔，默认=true
-- Bili Live Stream Key Output：类型=枚举，默认="Both"
+- Sync Bili Live Status（中文：同步B站直播状态）：类型=布尔，默认=true
+- Bili Live Stream Key Output（中文：哔哩直播密钥输出）：类型=枚举，默认="Both"
+  可选：Off（关闭）；Copy（复制）；Console Output（控制台输出）；Both（两者）
+- Update Cooldown (ms)（中文：更新冷却（毫秒））：类型=数值，默认=8000L
+- Param build（中文：参数 build）：类型=数值，默认=1234L
+- Async（中文：异步）：类型=布尔，默认=true
+- Toggle Bili Live Status (PRO)（中文：切换B站直播状态（专业版））：类型=布尔，默认=false
+- Toggle LiveStream Module（中文：切换直播间模块）：类型=布尔，默认=true
+- Bili Live Area（中文：哔哩直播分区）：类型=枚举，默认="Current"
+  可选：Current（当前）；Indie Game（独立游戏）；Other Standalones（其他单机）；Console Games（主机游戏）；Minecraft（未收录）；Terraria（未收录）；CS:GO（未收录）；Science（未收录）；Virtual（虚拟）；Custom（自定义）
+- Param version（中文：参数 version）：类型=文本，默认="1.0.0"
+- Bili Live Platform（中文：哔哩直播平台）：类型=枚举，默认="pc_link"
+  可选：pc_link（未收录）；web_link（网络_link）；android_link（未收录）
+- Bili Live Area Custom Id（中文：哔哩直播自定义分区ID）：类型=数值，默认=701L
 
 历史更新
 - 39. 为 Streamer 添加配置项：
@@ -50,3 +56,4 @@ Streamer 是 JackalClient 的 Web 分类模块。启用后会围绕 主播模式
 
 相关资料
 无
+

@@ -12,14 +12,16 @@ GUIBlur
 - 版本属性：普通可用
 
 介绍
-GUIBlur 是 JackalClient 的 Render 分类模块。启用后会围绕 界面模糊 这一能力工作，核心行为是：应用模糊效果到GUI。
+GUIBlur（界面模糊）用于应用模糊效果到GUI。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Dark Mode。
 
 配置项
-- Blur Color Alpha (0~1)：类型=数值，默认=0.3f
-- Blur Color：类型=文本，默认="43;43;43"
-- Hide When No Focus：类型=布尔，默认=true
-- Dark Mode：类型=枚举，默认="On"
-- Not When Power Saving：类型=布尔，默认=true
+- Dark Mode（中文：深色模式）：类型=枚举，默认="On"
+- Not When Power Saving（中文：节电模式下不应用）：类型=布尔，默认=true
+- Blur Color Alpha (0~1)（中文：模糊颜色不透明度 (0~1)）：类型=数值，默认=0.3f
+- Hide When No Focus（中文：无焦点时隐藏）：类型=布尔，默认=true
+- Blur Color（中文：模糊颜色）：类型=文本，默认="43;43;43"
 
 历史更新
 - 17. 为 Background, Night, GUIBlur 添加了无焦点时隐藏的配置项。
@@ -44,3 +46,4 @@ GUIBlur 是 JackalClient 的 Render 分类模块。启用后会围绕 界面模�
 
 相关资料
 无
+

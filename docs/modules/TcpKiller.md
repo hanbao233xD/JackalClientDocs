@@ -12,26 +12,34 @@ TCP杀手
 - 版本属性：普通可用
 
 介绍
-TcpKiller 是 JackalClient 的 Web 分类模块。启用后会围绕 TCP杀手 这一能力工作，核心行为是：断开指定进程的某些TCP连接。
+TcpKiller（TCP杀手）用于断开指定进程的某些TCP连接。
+适合联网信息获取、账号联动和在线交互场景。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Filter IPs、Notify、Filter Processes。
 
 配置项
-- IP Blacklist (Sep With Semicolon)：类型=文本，默认=""
-- Ports Blacklist (e.g. 4-10,80)：类型=文本，默认=""
-- IP Type：类型=枚举，默认="Remote"
-- Process Id (Zero For Any)：类型=数值，默认=0
-- Exclude LAN IP：类型=布尔，默认=true
-- Mode：类型=枚举，默认="Once"
-- Filter Ports：类型=布尔，默认=true
-- Ports Whitelist (e.g. 4-10,80)：类型=文本，默认="80,443"
-- Port Type：类型=枚举，默认="Remote"
-- Keep Mode Cooldown (ms)：类型=数值，默认=200U
-- IP Whitelist (Sep With Semicolon)：类型=文本，默认=""
-- Notify Mode：类型=枚举，默认="Notify"
-- Filter Processes：类型=布尔，默认=false
-- Filter IPs：类型=布尔，默认=false
-- Max Disconnection Count：类型=数值，默认=65535
-- Notify：类型=枚举，默认="Smart"
-- Process Name (Empty For Any)：类型=文本，默认=""
+- Filter IPs（中文：过滤 IP）：类型=布尔，默认=false
+- Process Id (Zero For Any)（中文：进程ID (用0指代任何)）：类型=数值，默认=0
+- IP Type（中文：IP 类型）：类型=枚举，默认="Remote"
+  可选：Remote（远程）；Local（本地）
+- Notify（中文：通知）：类型=枚举，默认="Smart"
+  可选：Off（关闭）；Only Error（Only 错误）；Smart（智能）；All（所有）
+- Exclude LAN IP（中文：排除局域网IP）：类型=布尔，默认=true
+- Filter Processes（中文：过滤进程）：类型=布尔，默认=false
+- Port Type（中文：端口类型）：类型=枚举，默认="Remote"
+  可选：Remote（远程）；Local（本地）
+- Filter Ports（中文：过滤端口号）：类型=布尔，默认=true
+- Process Name (Empty For Any)（中文：进程名 (用空指代任何)）：类型=文本，默认=""
+- Mode（中文：模式）：类型=枚举，默认="Once"
+  可选：Once（未收录）；Keep（保持）
+- Ports Blacklist (e.g. 4-10,80)（中文：端口黑名单（例：4-10,80））：类型=文本，默认=""
+- IP Whitelist (Sep With Semicolon)（中文：IP 白名单（用分号分隔多个））：类型=文本，默认=""
+- Keep Mode Cooldown (ms)（中文：保持模式冷却时间 (毫秒)）：类型=数值，默认=200U
+- Ports Whitelist (e.g. 4-10,80)（中文：端口白名单（例：4-10,80））：类型=文本，默认="80,443"
+- Notify Mode（中文：通知模式）：类型=枚举，默认="Notify"
+  可选：Notify（通知）；Chatter（弹幕）；Actionbar（行为栏）
+- IP Blacklist (Sep With Semicolon)（中文：IP 黑名单（用分号分隔多个））：类型=文本，默认=""
+- Max Disconnection Count（中文：最大断连数量）：类型=数值，默认=65535
 
 历史更新
 - 4. 添加新模块：Tcp Killer，自动终止指定进程的 TCP 连接。
@@ -54,3 +62,4 @@ TcpKiller 是 JackalClient 的 Web 分类模块。启用后会围绕 TCP杀手 �
 
 相关资料
 无
+

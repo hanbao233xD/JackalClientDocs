@@ -12,10 +12,12 @@ RuinAura
 - 版本属性：普通可用
 
 介绍
-RuinAura 是 JackalClient 的 未分类 分类模块。启用后会围绕 毁灭光环 这一能力工作，核心行为是：暂无描述
+RuinAura（毁灭光环）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Cooldown (ms)。
 
 配置项
-- Cooldown (ms)：类型=数值，默认=400U
+- Cooldown (ms)（中文：冷却 (毫秒)）：类型=数值，默认=400U
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -31,3 +33,4 @@ RuinAura 是 JackalClient 的 未分类 分类模块。启用后会围绕 毁灭
 
 相关资料
 无
+

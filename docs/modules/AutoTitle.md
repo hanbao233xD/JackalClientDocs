@@ -12,14 +12,17 @@ AutoTitle
 - 版本属性：普通可用
 
 介绍
-AutoTitle 是 JackalClient 的 Render 分类模块。启用后会围绕 自动标题 这一能力工作，核心行为是：根据规则自动启用标题模块。
+AutoTitle（自动标题）用于根据规则自动启用标题模块。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Smart Mode Speed、Mode。
 
 配置项
-- Periodic Interval (ms)：类型=数值，默认=10000L
-- Random Min Interval (ms)：类型=数值，默认=20000L
-- Mode：类型=枚举，默认="Periodic"
-- Smart Mode Speed：类型=数值，默认=1.0f
-- Random Max Interval (ms)：类型=数值，默认=120000L
+- Smart Mode Speed（中文：智能模式速率）：类型=数值，默认=1.0f
+- Periodic Interval (ms)（中文：周期性间隔 (毫秒)）：类型=数值，默认=10000L
+- Random Max Interval (ms)（中文：最大随机间隔 (毫秒)）：类型=数值，默认=120000L
+- Random Min Interval (ms)（中文：最小随机间隔 (毫秒)）：类型=数值，默认=20000L
+- Mode（中文：模式）：类型=枚举，默认="Periodic"
+  可选：Periodic（周期性）；Random（随机）；Smart（智能）
 
 历史更新
 - 25. 现在 Auto Title 每次调用 Title 将不会出现通知。
@@ -42,3 +45,4 @@ AutoTitle 是 JackalClient 的 Render 分类模块。启用后会围绕 自动�
 
 相关资料
 无
+

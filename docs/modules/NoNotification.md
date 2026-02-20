@@ -12,7 +12,9 @@ NoNotification
 - 版本属性：普通可用
 
 介绍
-NoNotification 是 JackalClient 的 未分类 分类模块。启用后会围绕 关闭通知 这一能力工作，核心行为是：尝试关闭系统通知（没做好）
+NoNotification（关闭通知）用于尝试关闭系统通知（没做好）。
+适合在日常管理与自动化场景中按需启用。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -31,3 +33,4 @@ NoNotification 是 JackalClient 的 未分类 分类模块。启用后会围绕 
 
 相关资料
 无
+

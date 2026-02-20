@@ -12,13 +12,16 @@ NoUAC
 - 版本属性：普通可用
 
 介绍
-NoUAC 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁UAC 这一能力工作，核心行为是：暂无描述
+NoUAC（禁UAC）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Bypass Explorer Notify、Keep Mode Notify Action。
 
 配置项
-- Keep Mode Notify Action：类型=布尔，默认=true
-- Highest Level When UAC Enabled：类型=布尔，默认=false
-- Bypass Explorer Notify：类型=布尔，默认=true
-- Keep：类型=布尔，默认=false
+- Bypass Explorer Notify（中文：绕过资源管理器通知）：类型=布尔，默认=true
+- Highest Level When UAC Enabled（中文：UAC启用时使用最高等级）：类型=布尔，默认=false
+- Keep Mode Notify Action（中文：保持模式通知行为）：类型=布尔，默认=true
+- Keep（中文：保持）：类型=布尔，默认=false
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -41,3 +44,4 @@ NoUAC 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁UAC 这
 
 相关资料
 无
+

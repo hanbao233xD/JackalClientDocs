@@ -12,12 +12,15 @@ Night
 - 版本属性：普通可用
 
 介绍
-Night 是 JackalClient 的 Render 分类模块。启用后会围绕 夜间 这一能力工作，核心行为是：暂无描述
+Night（夜间）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Hide When No Focus、Mask Alpha Rate、When。
 
 配置项
-- Mask Alpha Rate：类型=数值，默认=0.8f
-- When：类型=枚举，默认="Menu On"
-- Hide When No Focus：类型=布尔，默认=true
+- Hide When No Focus（中文：无焦点时隐藏）：类型=布尔，默认=true
+- Mask Alpha Rate（中文：遮罩不透明度比例）：类型=数值，默认=0.8f
+- When（中文：何时）：类型=枚举，默认="Menu On"
+  可选：Menu On（打开菜单）；Menu Off（关闭菜单）；Always（总是）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -40,3 +43,4 @@ Night 是 JackalClient 的 Render 分类模块。启用后会围绕 夜间 这�
 
 相关资料
 无
+

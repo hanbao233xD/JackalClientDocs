@@ -12,13 +12,16 @@ NoFirewall
 - 版本属性：普通可用
 
 介绍
-NoFirewall 是 JackalClient 的 Combat 分类模块。启用后会围绕 关闭防火墙 这一能力工作，核心行为是：禁用系统防火墙（不需要管理员）
+NoFirewall（关闭防火墙）用于禁用系统防火墙（不需要管理员）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Domain、Private、Public。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Public：类型=布尔，默认=true
-- Masquerade：类型=布尔，默认=true
-- Private：类型=布尔，默认=true
-- Domain：类型=布尔，默认=true
+- Domain（中文：域）：类型=布尔，默认=true
+- Private（中文：专用）：类型=布尔，默认=true
+- Public（中文：公用）：类型=布尔，默认=true
+- Masquerade（中文：伪装）：类型=布尔，默认=true
 
 历史更新
 - 16. 客户端初始化时导入动态函数的操作为防止一些用户崩溃，被拆解至使用前导入。相关模块为：Masquerade, NoFirewall, ACGButcher
@@ -42,3 +45,4 @@ NoFirewall 是 JackalClient 的 Combat 分类模块。启用后会围绕 关闭�
 
 相关资料
 无
+

@@ -12,15 +12,18 @@ AntiTopmost
 - 版本属性：普通可用
 
 介绍
-AntiTopmost 是 JackalClient 的 Window 分类模块。启用后会围绕 反置顶 这一能力工作，核心行为是：抵御其他置顶窗口。
+AntiTopmost（反置顶）用于抵御其他置顶窗口。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Notify Kill、Violence Policy。
 
 配置项
-- Off：类型=文本，默认="Close Window", "Kill Process"
-- Auto Bottom：类型=布尔，默认=true
-- Notify Kill：类型=布尔，默认=true
-- Violence Policy：类型=枚举，默认="Off"
-- Only Check Foreground：类型=布尔，默认=false
-- Auto Untopmost：类型=布尔，默认=true
+- Auto Bottom（中文：自动置底）：类型=布尔，默认=true
+- Auto Untopmost（中文：自动取消置顶）：类型=布尔，默认=true
+- Notify Kill（中文：通知击杀）：类型=布尔，默认=true
+- Off（中文：关闭）：类型=文本，默认="Close Window", "Kill Process"
+- Only Check Foreground（中文：只检查前端）：类型=布尔，默认=false
+- Violence Policy（中文：武力策略）：类型=枚举，默认="Off"
+  可选：Off（关闭）；Close Window（关闭窗口）；Kill Process（结束进程）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -43,3 +46,4 @@ AntiTopmost 是 JackalClient 的 Window 分类模块。启用后会围绕 反置
 
 相关资料
 无
+

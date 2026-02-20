@@ -12,29 +12,35 @@ MC显示
 - 版本属性：普通可用
 
 介绍
-MCDisplay 是 JackalClient 的 Render 分类模块。启用后会围绕 MC显示 这一能力工作，核心行为是：显示 Minecraft 的 HUD 元素。
+MCDisplay（MC显示）用于显示 Minecraft 的 HUD 元素。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Hand Left Click Action、Hand Wield Action Rotation Changes (Degrees)、Hand Block Action Rotation Changes (Degrees)。
 
 配置项
-- Hand Scale：类型=数值，默认=6.0f
-- Hand Move Y Range：类型=数值，默认=1000.0f
-- Hand Texture Name：类型=文本，默认="iron_sword.png"
-- Hand Left Click Action：类型=枚举，默认="Wield"
-- Hand Wield Action Rotation Changes (Degrees)：类型=数值，默认=25.0f
-- Hand Right Click Action：类型=枚举，默认="Block"
-- Hand Move X Range：类型=数值，默认=400.0f
-- Hand Opacity (0~1)：类型=数值，默认=1.0f
-- Hide When In Minecraft：类型=布尔，默认=false
-- Hand X Addition：类型=数值，默认=0.0f
-- Hand Block Action Rotation Changes (Degrees)：类型=数值，默认=-45.0f
-- Crosshair：类型=枚举，默认="Vanilla"
-- Hand Left Click Action Duration (ms)：类型=数值，默认=400L
-- Crosshair Opacity (0~1)：类型=数值，默认=1.0f
-- Crosshair Color：类型=枚举，默认="Smart"
-- Hand Rotation Base (Degrees)：类型=数值，默认=-150.0f
-- Hand Y Addition：类型=数值，默认=0.0f
-- Hand Enabled：类型=布尔，默认=true
-- Hand Rotation Turn Coefficient (0~1)：类型=数值，默认=0.35f
-- Crosshair Scale：类型=数值，默认=1.0f
+- Hand Y Addition（中文：手部Y额外增加）：类型=数值，默认=0.0f
+- Hand Opacity (0~1)（中文：手部不透明度 (0~1)）：类型=数值，默认=1.0f
+- Crosshair Color（中文：准星颜色）：类型=枚举，默认="Smart"
+  可选：Smart（智能）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Hand Left Click Action（中文：手部左键行为）：类型=枚举，默认="Wield"
+  可选：Off（关闭）；Wield（挥动）
+- Hand X Addition（中文：手部X额外增加）：类型=数值，默认=0.0f
+- Hand Enabled（中文：启用手部）：类型=布尔，默认=true
+- Crosshair Opacity (0~1)（中文：准星不透明度 (0~1)）：类型=数值，默认=1.0f
+- Crosshair Scale（中文：准星缩放）：类型=数值，默认=1.0f
+- Hand Rotation Base (Degrees)（中文：手部旋转基础值（度））：类型=数值，默认=-150.0f
+- Hand Wield Action Rotation Changes (Degrees)（中文：手部挥动动作旋转角度变化（度））：类型=数值，默认=25.0f
+- Hand Block Action Rotation Changes (Degrees)（中文：手部格挡动作旋转角度变化（度））：类型=数值，默认=-45.0f
+- Hand Right Click Action（中文：手部右键行为）：类型=枚举，默认="Block"
+  可选：Off（关闭）；Block（格挡）
+- Hand Move X Range（中文：手部移动X范围）：类型=数值，默认=400.0f
+- Crosshair（中文：准星）：类型=枚举，默认="Vanilla"
+  可选：Off（关闭）；Vanilla（原版）
+- Hand Texture Name（中文：手部贴图名称）：类型=文本，默认="iron_sword.png"
+- Hand Rotation Turn Coefficient (0~1)（中文：手部旋转变向系数 (0~1)）：类型=数值，默认=0.35f
+- Hand Scale（中文：手部缩放）：类型=数值，默认=6.0f
+- Hand Move Y Range（中文：手部移动Y范围）：类型=数值，默认=1000.0f
+- Hand Left Click Action Duration (ms)（中文：手部左键行为持续时间（毫秒））：类型=数值，默认=400L
+- Hide When In Minecraft（中文：在MC中隐藏）：类型=布尔，默认=false
 
 历史更新
 - 33. 为 MC Display 添加配置：
@@ -59,3 +65,4 @@ MCDisplay 是 JackalClient 的 Render 分类模块。启用后会围绕 MC显示
 
 相关资料
 无
+

@@ -12,7 +12,8 @@ AntiKeyHook
 - 版本属性：普通可用
 
 介绍
-AntiKeyHook 是 JackalClient 的 Combat 分类模块。启用后会围绕 反键盘钩子 这一能力工作，核心行为是：阻止普通的键盘钩子。
+AntiKeyHook（反键盘钩子）用于阻止普通的键盘钩子。
+适合在日常管理与自动化场景中按需启用。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ AntiKeyHook 是 JackalClient 的 Combat 分类模块。启用后会围绕 反键
 
 相关资料
 无
+

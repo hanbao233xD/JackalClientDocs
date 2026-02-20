@@ -12,15 +12,18 @@ Messenger
 - 版本属性：普通可用
 
 介绍
-Messenger 是 JackalClient 的 Window 分类模块。启用后会围绕 消息通信 这一能力工作，核心行为是：接收到指定窗口消息时通知。
+Messenger（消息通信）用于接收到指定窗口消息时通知。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Notify Mode。
 
 配置项
-- Notify Mode：类型=枚举，默认="Console Output"
-- Whitelist (Sep With Semicolon)：类型=文本，默认=""
-- Whitelist Enabled：类型=布尔，默认=false
-- Blacklist (Sep With Semicolon)：类型=文本，默认="WM_NULL;WM_MOUSEFIRST;WM_NCHITTEST;WM_SETCURSOR;WM_GETTEXT;WM_WINDOWPOSCHANGING ...
-- Show Parameter Details：类型=布尔，默认=true
-- Blacklist Enabled：类型=布尔，默认=true
+- Blacklist (Sep With Semicolon)（中文：消息黑名单 (用分号分隔)）：类型=文本，默认="WM_NULL;WM_MOUSEFIRST;WM_NCHITTEST;WM_SETCURSOR;WM_GETTEXT;WM_WINDOWPOSCHANGING ...
+- Notify Mode（中文：通知模式）：类型=枚举，默认="Console Output"
+  可选：Console Output（控制台输出）；Notify（通知）；Chatter（弹幕）；Actionbar（行为栏）；Title（标题）
+- Show Parameter Details（中文：是否显示参数的详细信息。将会自动解析。）：类型=布尔，默认=true
+- Whitelist Enabled（中文：白名单启用）：类型=布尔，默认=false
+- Whitelist (Sep With Semicolon)（中文：消息白名单 (用分号分隔)）：类型=文本，默认=""
+- Blacklist Enabled（中文：黑名单启用）：类型=布尔，默认=true
 
 历史更新
 - 24. 添加模块： Messenger，通知收到的特定窗口消息。
@@ -43,3 +46,4 @@ Messenger 是 JackalClient 的 Window 分类模块。启用后会围绕 消息�
 
 相关资料
 无
+

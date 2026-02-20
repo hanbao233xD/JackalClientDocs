@@ -12,7 +12,9 @@ UIAccess
 - 版本属性：普通可用
 
 介绍
-UIAccess 是 JackalClient 的 Combat 分类模块。启用后会围绕 界面特权 这一能力工作，核心行为是：重启客户端窃取UIAccess特权。（需要系统权限）
+UIAccess（界面特权）用于重启客户端窃取UIAccess特权。（需要系统权限）。
+适合在日常管理与自动化场景中按需启用。
+建议先确保客户端已获得 System 权限。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +40,4 @@ UIAccess 是 JackalClient 的 Combat 分类模块。启用后会围绕 界面特
 
 相关资料
 无
+

@@ -12,18 +12,22 @@ WeatherInfo
 - 版本属性：普通可用
 
 介绍
-WeatherInfo 是 JackalClient 的 Web 分类模块。启用后会围绕 天气信息 这一能力工作，核心行为是：一些天气方面的功能。
+WeatherInfo（天气信息）用于一些天气方面的功能。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Custom City、Auto Console、Use Custom QWeather ApiHost。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Custom City：类型=文本，默认="北京市"
-- City：类型=枚举，默认="Auto Locate"
-- Auto Console：类型=布尔，默认=true
-- Custom QWeather ApiHost：类型=文本，默认=""
-- Async：类型=布尔，默认=true
-- Custom QWeather ApiKey：类型=文本，默认=""
-- Connect Timeout (s)：类型=数值，默认=10L
-- Use Custom QWeather ApiHost：类型=布尔，默认=false
-- Use Custom QWeather ApiKey：类型=布尔，默认=false
+- Custom City（中文：自定义城市）：类型=文本，默认="北京市"
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Use Custom QWeather ApiHost（中文：使用自定义和风天气Api主机）：类型=布尔，默认=false
+- Custom QWeather ApiKey（中文：自定义和风天气Api密钥）：类型=文本，默认=""
+- Custom QWeather ApiHost（中文：自定义和风天气Api主机）：类型=文本，默认=""
+- Async（中文：异步）：类型=布尔，默认=true
+- City（中文：城市）：类型=枚举，默认="Auto Locate"
+  可选：Auto Locate（自动定位）；Custom（自定义）
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=10L
+- Use Custom QWeather ApiKey（中文：使用自定义和风天气Api密钥）：类型=布尔，默认=false
 
 历史更新
 - 18. 为 WeatherInfo 添加配置：
@@ -48,3 +52,4 @@ WeatherInfo 是 JackalClient 的 Web 分类模块。启用后会围绕 天气信
 
 相关资料
 无
+

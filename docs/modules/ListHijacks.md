@@ -12,12 +12,16 @@ ListHijacks
 - 版本属性：普通可用
 
 介绍
-ListHijacks 是 JackalClient 的 Registry 分类模块。启用后会围绕 劫持调查 这一能力工作，核心行为是：枚举注册表内所有的映像劫持。
+ListHijacks（劫持调查）用于枚举注册表内所有的映像劫持。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Notify Mode。
 
 配置项
-- Notify Mode：类型=枚举，默认="Console Output"
-- Async：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Notify Mode（中文：通知模式）：类型=枚举，默认="Console Output"
+  可选：Console Output（控制台输出）；Notify（通知）
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 - 16. 修复 ListHijacks 的 AutoConsole 无效的问题。
@@ -41,3 +45,4 @@ ListHijacks 是 JackalClient 的 Registry 分类模块。启用后会围绕 劫�
 
 相关资料
 无
+

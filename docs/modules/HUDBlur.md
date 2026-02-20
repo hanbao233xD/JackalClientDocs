@@ -12,29 +12,32 @@ HUD模糊
 - 版本属性：普通可用
 
 介绍
-HUDBlur 是 JackalClient 的 Render 分类模块。启用后会围绕 HUD模糊 这一能力工作，核心行为是：应用模糊效果到HUD。
+HUDBlur（HUD模糊）用于应用模糊效果到HUD。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Screen Capture Cooldown (ms)、Style。
 
 配置项
-- Liquid Highlight：类型=通用，默认=8.f
-- Liquid Speed：类型=数值，默认=0.8f
-- Dropdown GUI Background (PRO)：类型=布尔，默认=true
-- Liquid Corner Roundness Rate：类型=数值，默认=0.6f
-- Liquid Scatter Quality：类型=数值，默认=2.0f
-- Liquid Scatter Directions：类型=数值，默认=5
-- Opacity (0~1)：类型=数值，默认=1.0f
-- Liquid Blur：类型=布尔，默认=false
-- Liquid Scatter Size (px)：类型=数值，默认=1.0f
-- Liquid Thickness Rate：类型=数值，默认=0.2f
-- Liquid IOR：类型=数值，默认=1.5f
-- Liquid Distortion (px)：类型=数值，默认=10.0f
-- Blur Strength：类型=数值，默认=20.0f
-- Liquid Flow Scale：类型=数值，默认=14.0f
-- Liquid Edge Width Rate：类型=数值，默认=0.45f
-- Style：类型=枚举，默认="Blur"
-- Screen Capture Cooldown (ms)：类型=数值，默认=100L
-- Liquid Brightness：类型=数值，默认=0.8f
-- Liquid Flow Strength：类型=数值，默认=0.2f
-- Blur Taps：类型=数值，默认=32
+- Liquid Highlight（中文：液体高光）：类型=通用，默认=8.f
+- Liquid Scatter Directions（中文：液体散射方向数）：类型=数值，默认=5
+- Liquid Edge Width Rate（中文：液体边缘宽度占比）：类型=数值，默认=0.45f
+- Liquid Flow Scale（中文：液体流动比例）：类型=数值，默认=14.0f
+- Liquid Blur（中文：液体模糊）：类型=布尔，默认=false
+- Liquid Corner Roundness Rate（中文：液体角落圆角率）：类型=数值，默认=0.6f
+- Screen Capture Cooldown (ms)（中文：屏幕捕获冷却（毫秒））：类型=数值，默认=100L
+- Liquid Speed（中文：液体速率）：类型=数值，默认=0.8f
+- Opacity (0~1)（中文：不透明度 (0~1））：类型=数值，默认=1.0f
+- Blur Taps（中文：模糊采样数）：类型=数值，默认=32
+- Style（中文：风格）：类型=枚举，默认="Blur"
+  可选：Blur（模糊）；Liquid Glass (PRO)（液体玻璃（专业版））
+- Liquid Flow Strength（中文：液体流动强度）：类型=数值，默认=0.2f
+- Liquid Distortion (px)（中文：液体扭曲（像素））：类型=数值，默认=10.0f
+- Liquid Brightness（中文：液体亮度）：类型=数值，默认=0.8f
+- Dropdown GUI Background (PRO)（中文：下拉式 GUI 背景（专业版））：类型=布尔，默认=true
+- Liquid Scatter Quality（中文：液体散射质量）：类型=数值，默认=2.0f
+- Liquid Thickness Rate（中文：液体厚度占比）：类型=数值，默认=0.2f
+- Liquid IOR（中文：液体折射率）：类型=数值，默认=1.5f
+- Liquid Scatter Size (px)（中文：液体散射大小（像素））：类型=数值，默认=1.0f
+- Blur Strength（中文：模糊强度）：类型=数值，默认=20.0f
 
 历史更新
 - 35. 为 HUD Blur 添加配置项：
@@ -58,3 +61,4 @@ HUDBlur 是 JackalClient 的 Render 分类模块。启用后会围绕 HUD模糊 
 
 相关资料
 无
+

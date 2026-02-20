@@ -12,7 +12,8 @@ MouseSwap
 - 版本属性：普通可用
 
 介绍
-MouseSwap 是 JackalClient 的 Control 分类模块。启用后会围绕 鼠标交换 这一能力工作，核心行为是：暂无描述
+MouseSwap（鼠标交换）用于暂无描述。
+适合键鼠行为控制、输入增强和自动化操作场景。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ MouseSwap 是 JackalClient 的 Control 分类模块。启用后会围绕 鼠标�
 
 相关资料
 无
+

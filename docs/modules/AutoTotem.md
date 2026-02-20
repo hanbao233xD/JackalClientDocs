@@ -12,16 +12,18 @@ AutoTotem
 - 版本属性：普通可用
 
 介绍
-AutoTotem 是 JackalClient 的 Render 分类模块。启用后会围绕 自动图腾 这一能力工作，核心行为是：自动播放爆图腾动画。
+AutoTotem（自动图腾）用于自动播放爆图腾动画。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：AntiTaskkill Defend Success、Gatekeeper Deny After Query、AntiClose Defend Success。
 
 配置项
-- AutoMute Triggered：类型=布尔，默认=true
-- AntiDebug Defend Success：类型=布尔，默认=true
-- Gatekeeper Deny After Query：类型=布尔，默认=true
-- Gatekeeper Deny：类型=布尔，默认=true
-- AntiTaskkill Defend Success：类型=布尔，默认=true
-- AntiInject Defend Success：类型=布尔，默认=true
-- AntiClose Defend Success：类型=布尔，默认=true
+- AntiTaskkill Defend Success（中文：反击杀防御成功）：类型=布尔，默认=true
+- Gatekeeper Deny After Query（中文：看门人在确认后拒绝）：类型=布尔，默认=true
+- AntiClose Defend Success（中文：反关闭防御成功）：类型=布尔，默认=true
+- AutoMute Triggered（中文：自动静音时是否触发。）：类型=布尔，默认=true
+- AntiInject Defend Success（中文：反注入防御成功）：类型=布尔，默认=true
+- AntiDebug Defend Success（中文：反调试防御成功）：类型=布尔，默认=true
+- Gatekeeper Deny（中文：看门人拒绝）：类型=布尔，默认=true
 
 历史更新
 - 41. 为 AutoTotem 添加配置：
@@ -46,3 +48,4 @@ AutoTotem 是 JackalClient 的 Render 分类模块。启用后会围绕 自动�
 
 相关资料
 无
+

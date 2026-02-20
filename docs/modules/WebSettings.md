@@ -12,13 +12,17 @@ WebSettings
 - 版本属性：普通可用
 
 介绍
-WebSettings 是 JackalClient 的 Web 分类模块。启用后会围绕 网络设定 这一能力工作，核心行为是：客户端联网设置。
+WebSettings（网络设定）用于客户端联网设置。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Network Check Cooldown (ms)、Network Online Status Change Notify Mode。
 
 配置项
-- Network Check Cooldown (ms)：类型=数值，默认=5000U
-- Network Online Status Change Notify Mode：类型=枚举，默认="Notify"
-- Output Curl Error：类型=枚举，默认="Always"
-- Network Module Force Online：类型=布尔，默认=true
+- Network Module Force Online（中文：联网模块强制联网）：类型=布尔，默认=true
+- Network Check Cooldown (ms)（中文：网络检查冷却 (毫秒)）：类型=数值，默认=5000U
+- Network Online Status Change Notify Mode（中文：网络在线状态变化时通知模式）：类型=枚举，默认="Notify"
+  可选：Off（关闭）；Notify（通知）；Title（标题）；Chatter（弹幕）；WinToast（系统通知）
+- Output Curl Error（中文：输出 Curl 错误）：类型=枚举，默认="Always"
+  可选：Off（关闭）；Non Timeout（非超时）；Always（总是）
 
 历史更新
 - 47. 添加模块：Web Settings，将客户端联网设置集中在这里。
@@ -41,3 +45,4 @@ WebSettings 是 JackalClient 的 Web 分类模块。启用后会围绕 网络设
 
 相关资料
 无
+

@@ -12,13 +12,16 @@ PhoneArea
 - 版本属性：普通可用
 
 介绍
-PhoneArea 是 JackalClient 的 Web 分类模块。启用后会围绕 手机归属地 这一能力工作，核心行为是：暂无描述
+PhoneArea（手机归属地）用于暂无描述。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Notify。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Notify：类型=布尔，默认=false
-- Connect Timeout (s)：类型=数值，默认=4L
-- Phone Number (actually just need first 7 digits)：类型=数值，默认=1234567LL
-- Auto Console：类型=布尔，默认=true
+- Notify（中文：通知）：类型=布尔，默认=false
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=4L
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Phone Number (actually just need first 7 digits)（中文：手机号 (其实只需要前七位)）：类型=数值，默认=1234567LL
 
 历史更新
 - 14. 添加模块：PhoneArea，查询手机号归属地。
@@ -41,3 +44,4 @@ PhoneArea 是 JackalClient 的 Web 分类模块。启用后会围绕 手机归�
 
 相关资料
 无
+

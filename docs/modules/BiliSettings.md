@@ -12,13 +12,16 @@ B站设定
 - 版本属性：普通可用
 
 介绍
-BiliSettings 是 JackalClient 的 Web 分类模块。启用后会围绕 B站设定 这一能力工作，核心行为是：有关B站账号的设置。启用以登录。
+BiliSettings（B站设定）用于有关B站账号的设置。启用以登录。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Login QR Code Scale、Black Capture When Login、Close Menu When Login。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Close Menu When Login：类型=布尔，默认=true
-- Login QR Code Scale：类型=数值，默认=6.0f
-- Black Capture When Login：类型=布尔，默认=false
-- Debug Output：类型=布尔，默认=false
+- Login QR Code Scale（中文：登录二维码图片缩放比例。）：类型=数值，默认=6.0f
+- Black Capture When Login（中文：登录时开启黑屏捕获。）：类型=布尔，默认=false
+- Close Menu When Login（中文：登录时关闭GUI。）：类型=布尔，默认=true
+- Debug Output（中文：调试输出）：类型=布尔，默认=false
 
 历史更新
 - 20. 修复 BiliSettings 在生成二维码时失败后未能关闭模块的问题。
@@ -43,3 +46,4 @@ BiliSettings 是 JackalClient 的 Web 分类模块。启用后会围绕 B站设�
 
 相关资料
 无
+

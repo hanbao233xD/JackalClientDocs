@@ -12,7 +12,8 @@ Gpedit
 - 版本属性：普通可用
 
 介绍
-Gpedit 是 JackalClient 的 Process 分类模块。启用后会围绕 组策略 这一能力工作，核心行为是：打开组策略编辑器。
+Gpedit（组策略）用于打开组策略编辑器。
+适合进程观测、控制与排障场景。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ Gpedit 是 JackalClient 的 Process 分类模块。启用后会围绕 组策略 
 
 相关资料
 无
+

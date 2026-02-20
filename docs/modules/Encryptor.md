@@ -12,29 +12,40 @@ Encryptor
 - 版本属性：普通可用
 
 介绍
-Encryptor 是 JackalClient 的 Misc 分类模块。启用后会围绕 加密器 这一能力工作，核心行为是：帮助你加密指定的文本。
+Encryptor（加密器）用于帮助你加密指定的文本。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Method。
 
 配置项
-- Morning Greetings：类型=枚举，默认="Basic"
-- Copy to Clipboard：类型=布尔，默认=true
-- Midnight Time Min：类型=数值，默认=0.0f
-- Afternoon Greetings：类型=枚举，默认="Basic"
-- Source：类型=枚举，默认="Clipboard"
-- Afternoon Time Max：类型=数值，默认=16.8f
-- Abracadabra Encryptor Path：类型=文本，默认=""
-- Midnight Time Max：类型=数值，默认=4.0f
-- Night Time Max：类型=数值，默认=23.5f
-- Night Time Min：类型=数值，默认=18.8f
-- Night Greetings：类型=枚举，默认="Basic"
-- Greeting Persona：类型=枚举，默认="Normal"
-- Afternoon Time Min：类型=数值，默认=12.5f
-- Method：类型=枚举，默认="beast"
-- Morning Time Max：类型=数值，默认=10.5f
-- Fixed Content：类型=文本，默认="Hello, Jackal!"
-- Holiday Greetings：类型=枚举，默认="Basic"
-- Operation：类型=枚举，默认="Encrypt"
-- Morning Time Min：类型=数值，默认=6.0f
-- Midnight Greetings：类型=枚举，默认="Basic"
+- Morning Greetings（中文：早晨问候）：类型=枚举，默认="Basic"
+  可选：Off（关闭）；Basic（基础）；AI（人工智能）
+- Night Greetings（中文：晚间问候）：类型=枚举，默认="Basic"
+  可选：Off（关闭）；Basic（基础）；AI（人工智能）
+- Afternoon Time Min（中文：下午最早时间）：类型=数值，默认=12.5f
+- Afternoon Time Max（中文：下午最晚时间）：类型=数值，默认=16.8f
+- Midnight Greetings（中文：凌晨问候）：类型=枚举，默认="Basic"
+  可选：Off（关闭）；Basic（基础）；AI（人工智能）
+- Abracadabra Encryptor Path（中文：魔曰加密器路径）：类型=文本，默认=""
+- Night Time Max（中文：晚间最晚时间）：类型=数值，默认=23.5f
+- Midnight Time Min（中文：凌晨最早时间）：类型=数值，默认=0.0f
+- Morning Time Max（中文：早晨最晚时间）：类型=数值，默认=10.5f
+- Midnight Time Max（中文：凌晨最晚时间）：类型=数值，默认=4.0f
+- Method（中文：方法）：类型=枚举，默认="beast"
+  可选：base64（未收录）；crc32（未收录）；md5（未收录）；sha1（未收录）；beast（兽语）；abracadabra（魔曰。由于开源协议影响，该方法需要你外部下载魔曰加密器并配置好 Encryptor 模块的路径。我已经尝试将原仓库移植为C++，点击链接查看仓库：https://github.com/noexcept2005/AbracadabraCpp 编译后将moyue.exe的绝对路径输入到 Encryptor 的 Abracadabra Encryptor Path 中。）；pipa（未收录）；pipaplus（未收录）；pipasimp（未收录）；pipatrad（未收录）；pipasimpplus（未收录）；pipatradplus（未收录）；pipasimpplus2（未收录）；pipatradplus2（未收录）
+- Source（中文：来源）：类型=枚举，默认="Clipboard"
+  可选：Fixed（固定）；Clipboard（剪贴板）
+- Greeting Persona（中文：问候口吻）：类型=枚举，默认="Normal"
+  可选：Normal（普通）；Maid（女仆）；Catgirl（猫娘）
+- Morning Time Min（中文：早晨最早时间）：类型=数值，默认=6.0f
+- Copy to Clipboard（中文：复制到剪贴板）：类型=布尔，默认=true
+- Night Time Min（中文：晚间最早时间）：类型=数值，默认=18.8f
+- Afternoon Greetings（中文：下午问候）：类型=枚举，默认="Basic"
+  可选：Off（关闭）；Basic（基础）；AI（人工智能）
+- Operation（中文：操作）：类型=枚举，默认="Encrypt"
+  可选：Encrypt（加密）；Decrypt（解密）
+- Fixed Content（中文：固定内容）：类型=文本，默认="Hello, Jackal!"
+- Holiday Greetings（中文：节日祝福）：类型=枚举，默认="Basic"
+  可选：Off（关闭）；Basic（基础）；AI（人工智能）
 
 历史更新
 - 21. 添加模块：Encryptor 加密器。加密或解密文本然后输出。
@@ -57,3 +68,4 @@ Encryptor 是 JackalClient 的 Misc 分类模块。启用后会围绕 加密器 
 
 相关资料
 无
+

@@ -12,19 +12,21 @@ ScreenSaver
 - 版本属性：普通可用
 
 介绍
-ScreenSaver 是 JackalClient 的 Render 分类模块。启用后会围绕 屏保程序 这一能力工作，核心行为是：启动系统的一个屏幕保护程序。
+ScreenSaver（屏保程序）用于启动系统的一个屏幕保护程序。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Disable Gamma、Use Custom Program、Your Custom Program。
 
 配置项
-- Use Custom Program：类型=布尔，默认=false
-- Mute：类型=布尔，默认=true
-- Key Locker (Press END to quit)：类型=布尔，默认=false
-- Your Custom Program：类型=文本，默认="null"
-- Disable Night：类型=布尔，默认=true
-- Display On Client：类型=布尔，默认=true
-- Mouse Disabler (Press END to quit)：类型=布尔，默认=false
-- Disable ForceTopmost：类型=布尔，默认=true
-- Disable Gamma：类型=布尔，默认=false
-- Close Client Menu：类型=布尔，默认=true
+- Disable Gamma（中文：关闭伽马覆写）：类型=布尔，默认=false
+- Use Custom Program（中文：使用自定义程序）：类型=布尔，默认=false
+- Your Custom Program（中文：你的自定义程序）：类型=文本，默认="null"
+- Mute（中文：静音）：类型=布尔，默认=true
+- Disable ForceTopmost（中文：关闭强制置顶）：类型=布尔，默认=true
+- Disable Night（中文：关闭夜间模式）：类型=布尔，默认=true
+- Close Client Menu（中文：关闭客户端菜单）：类型=布尔，默认=true
+- Mouse Disabler (Press END to quit)（中文：鼠标锁 (按End退出)）：类型=布尔，默认=false
+- Key Locker (Press END to quit)（中文：键盘锁 (按End退出)）：类型=布尔，默认=false
+- Display On Client（中文：在客户端窗口显示）：类型=布尔，默认=true
 
 历史更新
 - 31. 为 NoScreenSaver 添加对相关系统参数的设置。
@@ -47,3 +49,4 @@ ScreenSaver 是 JackalClient 的 Render 分类模块。启用后会围绕 屏保
 
 相关资料
 无
+

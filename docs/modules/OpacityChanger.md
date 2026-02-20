@@ -12,19 +12,25 @@ OpacityChanger
 - 版本属性：普通可用
 
 介绍
-OpacityChanger 是 JackalClient 的 Window 分类模块。启用后会围绕 透明度调节 这一能力工作，核心行为是：改变目标窗口不透明度。
+OpacityChanger（透明度调节）用于改变目标窗口不透明度。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Target Window、Hide HUD When Menu On、HUD。
 
 配置项
-- Step (%%)：类型=数值，默认=10U
-- Wheel Side：类型=枚举，默认="Left"
-- Hide HUD When Menu On：类型=布尔，默认=false
-- HUD：类型=枚举，默认="Giant"
-- Target Window：类型=枚举，默认="Foreground"
-- Temp HUD Animation Duration (ms)：类型=数值，默认=300L
-- Shortcut：类型=枚举，默认="Wheel on Side"
-- Wheel Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LMENU}}}
-- Wheel Detect Only If Cursor Visible：类型=布尔，默认=true
-- Temp HUD Duration (ms)：类型=数值，默认=3000L
+- Target Window（中文：目标窗口）：类型=枚举，默认="Foreground"
+  可选：Foreground（前端）；PointAt（指向）
+- Hide HUD When Menu On（中文：打开菜单时隐藏HUD）：类型=布尔，默认=false
+- Wheel Detect Only If Cursor Visible（中文：仅在光标可见时检测滚轮）：类型=布尔，默认=true
+- Shortcut（中文：快捷键）：类型=枚举，默认="Wheel on Side"
+  可选：Wheel on Side（在边缘滚轮）；HotKey + Wheel（热键 + 滚轮）
+- HUD（中文：是否显示HUD。）：类型=枚举，默认="Giant"
+  可选：Off（关闭）；Giant（巨型）；Rainbow Giant（彩虹巨型）
+- Step (%%)（中文：差值 (%%)）：类型=数值，默认=10U
+- Wheel Hotkey（中文：滚轮热键）：类型=按键/复合，默认={{"Keybind", {VK_LMENU}}}
+- Temp HUD Animation Duration (ms)（中文：临时显示的淡入淡出动画时长（毫秒）。）：类型=数值，默认=300L
+- Temp HUD Duration (ms)（中文：临时HUD持续时间(毫秒)）：类型=数值，默认=3000L
+- Wheel Side（中文：在哪个边缘滚轮）：类型=枚举，默认="Left"
+  可选：Left（左侧）；Top（顶端）；Right（右侧）；Bottom（底部）
 
 历史更新
 - 15. 为 Volume 和 Opacity Changer 添加配置：
@@ -49,3 +55,4 @@ OpacityChanger 是 JackalClient 的 Window 分类模块。启用后会围绕 透
 
 相关资料
 无
+

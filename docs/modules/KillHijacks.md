@@ -12,10 +12,13 @@ KillHijacks
 - 版本属性：普通可用
 
 介绍
-KillHijacks 是 JackalClient 的 Registry 分类模块。启用后会围绕 清除劫持 这一能力工作，核心行为是：清空注册表内所有的映像劫持。
+KillHijacks（清除劫持）用于清空注册表内所有的映像劫持。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Async。
 
 配置项
-- Async：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
 
 历史更新
 - 26. 添加新模块： Kill Hijacks。 清除所有的映像劫持。
@@ -38,3 +41,4 @@ KillHijacks 是 JackalClient 的 Registry 分类模块。启用后会围绕 清�
 
 相关资料
 无
+

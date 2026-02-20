@@ -12,21 +12,28 @@ B站视频
 - 版本属性：普通可用
 
 介绍
-BiliVideo 是 JackalClient 的 Web 分类模块。启用后会围绕 B站视频 这一能力工作，核心行为是：查询并输出指定的B站视频的信息。
+BiliVideo（B站视频）用于查询并输出指定的B站视频的信息。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Notify Mode、Mode、Notify Prefix。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Mode：类型=枚举，默认="Once"
-- No Decrease Notification：类型=布尔，默认=false
-- Auto Console：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- User ID：类型=通用，默认=WORMWAKER_MID
-- Query Cooldown (s)：类型=数值，默认=1L
-- Video：类型=枚举，默认="Latest"
-- Notify Prefix：类型=枚举，默认="Title"
-- AID/BID/Link：类型=文本，默认=""
-- Connect Timeout (s)：类型=数值，默认=4L
-- Speak Changes：类型=布尔，默认=false
-- Notify Mode：类型=枚举，默认="Chatter"
+- Speak Changes（中文：讲述变化）：类型=布尔，默认=false
+- Notify Mode（中文：通知模式）：类型=枚举，默认="Chatter"
+  可选：Off（关闭）；Notify（通知）；Chatter（弹幕）；Actionbar（行为栏）；Title（标题）；WinToast（系统通知）
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=4L
+- AID/BID/Link（中文：AID/BID/链接）：类型=文本，默认=""
+- Mode（中文：模式）：类型=枚举，默认="Once"
+  可选：Once（未收录）；Monitor（监视）
+- Async（中文：异步）：类型=布尔，默认=true
+- User ID（中文：用户ID）：类型=通用，默认=WORMWAKER_MID
+- Video（中文：视频）：类型=枚举，默认="Latest"
+  可选：Latest（未收录）；Custom（自定义）
+- Notify Prefix（中文：通知前缀）：类型=枚举，默认="Title"
+  可选：Off（关闭）；Module Name（模块名称）；Title（标题）；BVID（BV 号）
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Query Cooldown (s)（中文：查询冷却（秒））：类型=数值，默认=1L
+- No Decrease Notification（中文：禁用减少通知）：类型=布尔，默认=false
 
 历史更新
 - 22. /bilivideo 命令的参数现已支持完整链接。
@@ -51,3 +58,4 @@ BiliVideo 是 JackalClient 的 Web 分类模块。启用后会围绕 B站视频 
 
 相关资料
 无
+

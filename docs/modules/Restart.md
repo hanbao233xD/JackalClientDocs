@@ -12,12 +12,14 @@ Restart
 - 版本属性：普通可用
 
 介绍
-Restart 是 JackalClient 的 Misc 分类模块。启用后会围绕 重新启动 这一能力工作，核心行为是：暂无描述
+Restart（重新启动）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：bind、Generate Arguments、Run As User。
 
 配置项
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'R'}}}
-- Run As User：类型=布尔，默认=false
-- Generate Arguments：类型=布尔，默认=true
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'R'}}}
+- Generate Arguments（中文：生成参数）：类型=布尔，默认=true
+- Run As User（中文：用户身份启动）：类型=布尔，默认=false
 
 历史更新
 - 41. 修复 AntiCapture 和 Black Capture 在打开后重新启动后没有重新生效的问题。
@@ -42,3 +44,4 @@ Restart 是 JackalClient 的 Misc 分类模块。启用后会围绕 重新启动
 
 相关资料
 无
+

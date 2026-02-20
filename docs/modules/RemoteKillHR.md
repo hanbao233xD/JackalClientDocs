@@ -12,12 +12,15 @@ RemoteKillHR
 - 版本属性：普通可用
 
 介绍
-RemoteKillHR 是 JackalClient 的 未分类 分类模块。启用后会围绕 远程杀火绒 这一能力工作，核心行为是：用远程线程让其他进程杀火绒（没做好）。
+RemoteKillHR（远程杀火绒）用于用远程线程让其他进程杀火绒（没做好）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Hidden Cmd、Exclude Myself、Exclude Low PID。
+该模块处于 WIP 阶段，行为可能不稳定，建议先小范围测试。
 
 配置项
-- Hidden Cmd：类型=布尔，默认=false
-- Exclude Low PID：类型=布尔，默认=true
-- Exclude Myself：类型=布尔，默认=true
+- Hidden Cmd（中文：隐藏的Cmd）：类型=布尔，默认=false
+- Exclude Myself（中文：排除自身）：类型=布尔，默认=true
+- Exclude Low PID（中文：排除低PID进程）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -33,3 +36,4 @@ RemoteKillHR 是 JackalClient 的 未分类 分类模块。启用后会围绕 �
 
 相关资料
 无
+

@@ -12,16 +12,20 @@ TitleChanger
 - 版本属性：普通可用
 
 介绍
-TitleChanger 是 JackalClient 的 Window 分类模块。启用后会围绕 标题修改 这一能力工作，核心行为是：自动修改前端窗口的标题。
+TitleChanger（标题修改）用于自动修改前端窗口的标题。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Check Cooldown、Target。
 
 配置项
-- Word Replace New：类型=文本，默认="WaterShadow"
-- Pattern：类型=枚举，默认="Word Replace"
-- Fixed Title：类型=文本，默认="Chrome Legacy Window"
-- Word Replace Old：类型=文本，默认="LiquidBounce"
-- Target：类型=枚举，默认="Foreground"
-- Keep：类型=布尔，默认=true
-- Check Cooldown：类型=数值，默认=250L
+- Fixed Title（中文：固定标题）：类型=文本，默认="Chrome Legacy Window"
+- Check Cooldown（中文：检查冷却）：类型=数值，默认=250L
+- Keep（中文：保持）：类型=布尔，默认=true
+- Pattern（中文：样式）：类型=枚举，默认="Word Replace"
+  可选：Clear（清空）；Fixed（固定）；Random（随机）；Timestamp（时间戳）；Word Replace（单词替换）
+- Word Replace New（中文：单词替换新词）：类型=文本，默认="WaterShadow"
+- Word Replace Old（中文：单词替换旧词）：类型=文本，默认="LiquidBounce"
+- Target（中文：目标）：类型=枚举，默认="Foreground"
+  可选：Foreground（前端）；PointAt（指向）
 
 历史更新
 - 32. 添加模块： TitleChanger，根据规则自动修改前端窗口标题。
@@ -44,3 +48,4 @@ TitleChanger 是 JackalClient 的 Window 分类模块。启用后会围绕 标�
 
 相关资料
 无
+

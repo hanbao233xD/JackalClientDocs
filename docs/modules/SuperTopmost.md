@@ -13,11 +13,14 @@ SuperTopmost
 - 版本属性：PRO 独有
 
 介绍
-SuperTopmost 是 JackalClient 的 Combat 分类模块。启用后会围绕 超级置顶 这一能力工作，核心行为是：动态设置客户端窗口为超级置顶。（专业版）
+SuperTopmost（超级置顶）用于动态设置客户端窗口为超级置顶。（专业版）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Console Window、Main Window。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Main Window：类型=布尔，默认=true
-- Console Window：类型=布尔，默认=false
+- Console Window（中文：控制台窗口）：类型=布尔，默认=false
+- Main Window（中文：主窗口）：类型=布尔，默认=true
 
 历史更新
 - 20. 【PRO】添加模块：SuperTopmost，动态设置客户端窗口为 UIAccess
@@ -40,3 +43,4 @@ SuperTopmost 是 JackalClient 的 Combat 分类模块。启用后会围绕 超�
 
 相关资料
 无
+

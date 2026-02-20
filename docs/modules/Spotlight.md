@@ -12,15 +12,19 @@ Spotlight
 - 版本属性：普通可用
 
 介绍
-Spotlight 是 JackalClient 的 Render 分类模块。启用后会围绕 聚光灯 这一能力工作，核心行为是：暂无描述
+Spotlight（聚光灯）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Circle Color、Circle Alpha (0~1)、Circle Radius。
 
 配置项
-- Mask Color：类型=枚举，默认="Black"
-- Mask Alpha (0~1)：类型=数值，默认=0.75f
-- Animation Duration (ms)：类型=数值，默认=700L
-- Circle Radius：类型=数值，默认=75.0f
-- Circle Color：类型=枚举，默认="White"
-- Circle Alpha (0~1)：类型=数值，默认=0.7f
+- Circle Color（中文：圆圈颜色）：类型=枚举，默认="White"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Circle Alpha (0~1)（中文：圆圈不透明度 (0~1)）：类型=数值，默认=0.7f
+- Circle Radius（中文：圆圈半径）：类型=数值，默认=75.0f
+- Mask Color（中文：遮罩颜色）：类型=枚举，默认="Black"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Animation Duration (ms)（中文：动画持续时间 (毫秒)）：类型=数值，默认=700L
+- Mask Alpha (0~1)（中文：遮罩不透明度 (0~1)）：类型=数值，默认=0.75f
 
 历史更新
 - 27. 为 Spotlight 模块添加配置：
@@ -44,3 +48,4 @@ Spotlight 是 JackalClient 的 Render 分类模块。启用后会围绕 聚光�
 
 相关资料
 无
+

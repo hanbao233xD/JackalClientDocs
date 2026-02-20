@@ -12,10 +12,14 @@ Kill360
 - 版本属性：普通可用
 
 介绍
-Kill360 是 JackalClient 的 未分类 分类模块。启用后会围绕 杀数字 这一能力工作，核心行为是：用驱动杀死360所有进程。
+Kill360（杀数字）用于用驱动杀死360所有进程。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：360 Process Detection Method。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- 360 Process Detection Method：类型=枚举，默认="Directory"
+- 360 Process Detection Method（中文：360 进程检测方法）：类型=枚举，默认="Directory"
+  可选：Fixed List（固定清单）；Directory（目录）
 
 历史更新
 - 15. 添加模块：Kill360AdProc，就是上面的杀死 360 广告进程。你可以设置一个快捷键实现便捷操作。最好的方法是打开 Anti Popups，且启用对广告进程的自动击杀。
@@ -32,3 +36,4 @@ Kill360 是 JackalClient 的 未分类 分类模块。启用后会围绕 杀数�
 
 相关资料
 无
+

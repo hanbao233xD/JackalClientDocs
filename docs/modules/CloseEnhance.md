@@ -12,11 +12,14 @@ CloseEnhance
 - 版本属性：普通可用
 
 介绍
-CloseEnhance 是 JackalClient 的 Window 分类模块。启用后会围绕 关闭增强 这一能力工作，核心行为是：暂无描述
+CloseEnhance（关闭增强）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Method。
 
 配置项
-- Method：类型=枚举，默认="EndSession"
-- Exclude Self：类型=布尔，默认=true
+- Exclude Self（中文：排除自身）：类型=布尔，默认=true
+- Method（中文：方法）：类型=枚举，默认="EndSession"
+  可选：EndSession（发送结束会话消息）；KillProcess（击杀进程）；EndTask（暴力结束任务）
 
 历史更新
 - 13. 为 CloseEnhance 模块的 Method 添加一种方式： EndTask。
@@ -41,3 +44,4 @@ CloseEnhance 是 JackalClient 的 Window 分类模块。启用后会围绕 关�
 
 相关资料
 无
+

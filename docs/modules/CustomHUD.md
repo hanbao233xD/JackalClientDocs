@@ -12,14 +12,16 @@ CustomHUD
 - 版本属性：普通可用
 
 介绍
-CustomHUD 是 JackalClient 的 Render 分类模块。启用后会围绕 自定义显示 这一能力工作，核心行为是：自定义 HUD 元素。
+CustomHUD（自定义显示）用于自定义 HUD 元素。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Hide HUD When Menu On。
 
 配置项
-- Global Scale：类型=数值，默认=1.0f
-- Shell Mover Speed：类型=数值，默认=10
-- Elements：类型=文本，默认="[]"
-- Default Font Size：类型=数值，默认=30
-- Hide HUD When Menu On：类型=布尔，默认=true
+- Default Font Size（中文：默认字号）：类型=数值，默认=30
+- Global Scale（中文：全局缩放）：类型=数值，默认=1.0f
+- Shell Mover Speed（中文：命令行移动者速度）：类型=数值，默认=10
+- Elements（中文：元素）：类型=文本，默认="[]"
+- Hide HUD When Menu On（中文：打开菜单时隐藏HUD）：类型=布尔，默认=true
 
 历史更新
 - 6. 添加新模块：CustomHUD，自定义HUD元素。可以使用 /customhud 命令进行各方面操作。
@@ -42,3 +44,4 @@ CustomHUD 是 JackalClient 的 Render 分类模块。启用后会围绕 自定�
 
 相关资料
 无
+

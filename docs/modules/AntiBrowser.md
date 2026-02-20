@@ -12,13 +12,17 @@ AntiBrowser
 - 版本属性：普通可用
 
 介绍
-AntiBrowser 是 JackalClient 的 Web 分类模块。启用后会围绕 反浏览器 这一能力工作，核心行为是：自动关闭浏览器或者链接跳转。
+AntiBrowser（反浏览器）用于自动关闭浏览器或者链接跳转。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Check Cooldown、Filter。
 
 配置项
-- Filter：类型=枚举，默认="OpenUrl Browser"
-- Check Cooldown：类型=数值，默认=1000U
-- Measures：类型=枚举，默认="Kill"
-- Async：类型=布尔，默认=true
+- Check Cooldown（中文：检查冷却）：类型=数值，默认=1000U
+- Async（中文：异步）：类型=布尔，默认=true
+- Measures（中文：措施）：类型=枚举，默认="Kill"
+  可选：Warn（警告）；Kill（击杀）；SilentKill（暗杀）；KillParent（弑父）；KillFamily（剿灭父子）
+- Filter（中文：筛选器）：类型=枚举，默认="OpenUrl Browser"
+  可选：Any Browser（任何浏览器）；OpenUrl Browser（打开链接的浏览器）；OpenHttpUrl Browser（打开HTTP链接的浏览器）；OpenUrl Process（打开链接的进程）；OpenHttpUrl Process（打开HTTP链接的进程）
 
 历史更新
 - 6. 添加新模块 Anti Browser: 阻止弹出浏览器或者网站。
@@ -41,3 +45,4 @@ AntiBrowser 是 JackalClient 的 Web 分类模块。启用后会围绕 反浏览
 
 相关资料
 无
+

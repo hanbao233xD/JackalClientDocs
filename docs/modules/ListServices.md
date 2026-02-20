@@ -12,13 +12,16 @@ ListServices
 - 版本属性：普通可用
 
 介绍
-ListServices 是 JackalClient 的 Process 分类模块。启用后会围绕 枚举服务 这一能力工作，核心行为是：暂无描述
+ListServices（枚举服务）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Style。
 
 配置项
-- Style：类型=枚举，默认="Normal"
-- Async：类型=布尔，默认=true
-- Vanilla Enum Custom Command：类型=文本，默认="sc query"
-- Auto Console：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Style（中文：风格）：类型=枚举，默认="Normal"
+  可选：Vanilla（原版）；Vanilla (Only Win32)（原版 (仅Win32)）；Vanilla (Only Drivers)（原版 (仅驱动程序)）；Vanilla Custom（原版 (自定义)）；Normal（普通）；Simple（简易）
+- Vanilla Enum Custom Command（中文：原版枚举自定义命令）：类型=文本，默认="sc query"
 
 历史更新
 - 10. 添加新模块 ListServices: 枚举服务。
@@ -41,3 +44,4 @@ ListServices 是 JackalClient 的 Process 分类模块。启用后会围绕 枚�
 
 相关资料
 无
+

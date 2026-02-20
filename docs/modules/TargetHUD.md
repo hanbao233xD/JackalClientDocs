@@ -12,39 +12,48 @@ TargetHUD
 - 版本属性：普通可用
 
 介绍
-TargetHUD 是 JackalClient 的 Window 分类模块。启用后会围绕 目标显示 这一能力工作，核心行为是：暂无描述
+TargetHUD（目标显示）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：HUD Background Color、Target、HUD Position。
 
 配置项
-- Easing Speed (0~1)：类型=数值，默认=0.2f
-- HUD Background Opacity (0~1)：类型=数值，默认=0.8f
-- UWP Show Original Process：类型=布尔，默认=true
-- Style：类型=枚举，默认="Default"
-- HUD Shadow Thickness：类型=数值，默认=60.0f
-- Background Image：类型=布尔，默认=false
-- Fixed Y Rate：类型=数值，默认=0.65f
-- HUD Position：类型=枚举，默认="Follow"
-- Mouse Click Feedback：类型=布尔，默认=true
-- HUD Shadow Color：类型=枚举，默认="Black"
-- Background Image Opacity (0~1)：类型=数值，默认=0.5f
-- HUD Round Corners：类型=布尔，默认=true
-- HUD Outline Color：类型=枚举，默认="Dark Green"
-- Command Line Getter Hotkey：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LWIN, VK_SUBTRACT}}}
-- HUD Shadow Opacity (0~1)：类型=数值，默认=0.7f
-- Background Image Moving Speed：类型=数值，默认=0.5f
-- Target：类型=枚举，默认="Foreground"
-- HUD Shadow：类型=布尔，默认=true
-- Mouse Click Feedback Particles：类型=布尔，默认=true
-- Background Image Path：类型=文本，默认=""
-- Avatar Circle：类型=布尔，默认=true
-- Give Way to Mouse：类型=布尔，默认=true
-- Fade Time (ms)：类型=数值，默认=500L
-- Command Line Getter：类型=枚举，默认="Console Output"
-- HUD Background Darkness (0~1)：类型=数值，默认=0.85f
-- Easing：类型=布尔，默认=true
-- HUD Background Color：类型=枚举，默认="Flow"
-- Flow Color：类型=布尔，默认=true
-- HUD Roundness：类型=数值，默认=0.6f
-- Fixed X Rate：类型=数值，默认=0.85f
+- HUD Background Color（中文：HUD 背景颜色）：类型=枚举，默认="Flow"
+  可选：Transparent（透明）；Flow（流动）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Background Image（中文：背景图片）：类型=布尔，默认=false
+- Target（中文：目标）：类型=枚举，默认="Foreground"
+  可选：Foreground（前端）；PointAt（指向）；it (Pronoun)（代词 it）
+- HUD Position（中文：HUD 位置）：类型=枚举，默认="Follow"
+  可选：Follow（追随）；Fixed（固定）
+- HUD Roundness（中文：HUD 圆滑程度）：类型=数值，默认=0.6f
+- HUD Shadow Thickness（中文：HUD 阴影厚度）：类型=数值，默认=60.0f
+- HUD Background Opacity (0~1)（中文：HUD 背景不透明度 (0~1)）：类型=数值，默认=0.8f
+- Fixed X Rate（中文：固定X坐标比例）：类型=数值，默认=0.85f
+- HUD Shadow（中文：HUD 阴影）：类型=布尔，默认=true
+- Fixed Y Rate（中文：固定Y坐标比例）：类型=数值，默认=0.65f
+- HUD Outline Color（中文：HUD 轮廓线颜色）：类型=枚举，默认="Dark Green"
+  可选：Transparent（透明）；Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- HUD Background Darkness (0~1)（中文：HUD 背景暗度 (0~1)）：类型=数值，默认=0.85f
+- Flow Color（中文：流动颜色）：类型=布尔，默认=true
+- HUD Round Corners（中文：HUD 圆角）：类型=布尔，默认=true
+- Style（中文：风格）：类型=枚举，默认="Default"
+  可选：Default（默认）
+- Background Image Opacity (0~1)（中文：背景图片不透明度 (0~1)）：类型=数值，默认=0.5f
+- HUD Shadow Color（中文：HUD 阴影颜色）：类型=枚举，默认="Black"
+  可选：Black（黑色）；Gray（灰色）；White（白色）；Red（红色）；Gold（金瓜子）；Yellow（黄色）；Green（绿色）；Dark Green（深绿色）；Aqua（淡蓝色）；Blue（蓝色）；Magenta（品红色）；Pink（粉色）；Purple（紫色）；Pink-Magenta（粉-紫组合）；Red-Orange（红-橙组合）；White-Gray（白-灰组合）；Aqua-Blue（浅蓝-蓝组合）；Aqua-Pink（淡蓝-浅粉组合）；Green-Red（红-绿组合）；Astrolfo（未收录）；Colorful（缤纷）；Rainbow（彩虹色）
+- Fade Time (ms)（中文：淡入淡出时间（毫秒））：类型=数值，默认=500L
+- Easing Speed (0~1)（中文：缓动速率 (0~1)）：类型=数值，默认=0.2f
+- Give Way to Mouse（中文：给鼠标让道）：类型=布尔，默认=true
+- Mouse Click Feedback Particles（中文：鼠标点击反馈粒子）：类型=布尔，默认=true
+- Avatar Circle（中文：圆形头像）：类型=布尔，默认=true
+- Background Image Moving Speed（中文：背景图片移动速度）：类型=数值，默认=0.5f
+- UWP Show Original Process（中文：UWP 应用显示原始进程）：类型=布尔，默认=true
+- HUD Shadow Opacity (0~1)（中文：HUD 阴影不透明度 (0~1)）：类型=数值，默认=0.7f
+- Background Image Path（中文：背景图片路径）：类型=文本，默认=""
+- Easing（中文：缓动）：类型=布尔，默认=true
+- Mouse Click Feedback（中文：鼠标点击反馈）：类型=布尔，默认=true
+- Command Line Getter Hotkey（中文：命令行获取器快捷键）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL, VK_LWIN, VK_SUBTRACT}}}
+- Command Line Getter（中文：命令行获取器）：类型=枚举，默认="Console Output"
+  可选：Off（关闭）；Console Output（控制台输出）；Copy（复制）
 
 历史更新
 - 40. 为 Target Hud 添加了裁剪，以免文本超出范围。
@@ -69,3 +78,4 @@ TargetHUD 是 JackalClient 的 Window 分类模块。启用后会围绕 目标�
 
 相关资料
 无
+

@@ -12,11 +12,13 @@ Admin
 - 版本属性：普通可用
 
 介绍
-Admin 是 JackalClient 的 Combat 分类模块。启用后会围绕 管理员 这一能力工作，核心行为是：重启客户端获得管理员权限。
+Admin（管理员）用于重启客户端获得管理员权限。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：bind、Exit After Run。
 
 配置项
-- Exit After Run：类型=布尔，默认=true
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'A'}}}
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'A'}}}
+- Exit After Run（中文：运行后退出）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -39,3 +41,4 @@ Admin 是 JackalClient 的 Combat 分类模块。启用后会围绕 管理员 �
 
 相关资料
 无
+

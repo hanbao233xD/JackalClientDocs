@@ -12,11 +12,13 @@ B友成分
 - 版本属性：普通可用
 
 介绍
-BiliComponents 是 JackalClient 的 未分类 分类模块。启用后会围绕 B友成分 这一能力工作，核心行为是：暂无描述
+BiliComponents（B友成分）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Output、User ID。
 
 配置项
-- User ID：类型=通用，默认=WORMWAKER_MID
-- Output：类型=布尔，默认=true
+- Output（中文：未收录）：类型=布尔，默认=true
+- User ID（中文：用户ID）：类型=通用，默认=WORMWAKER_MID
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -32,3 +34,4 @@ BiliComponents 是 JackalClient 的 未分类 分类模块。启用后会围绕 
 
 相关资料
 无
+

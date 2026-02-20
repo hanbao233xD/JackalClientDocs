@@ -12,13 +12,16 @@ SuperCmd
 - 版本属性：普通可用
 
 介绍
-SuperCmd 是 JackalClient 的 Process 分类模块。启用后会围绕 超级CMD 这一能力工作，核心行为是：打开更高权限的命令提示符。
+SuperCmd（超级CMD）用于打开更高权限的命令提示符。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Mode。
 
 配置项
-- Enable Privileges：类型=布尔，默认=true
-- SetPrivileges Waiting Start Timeout (ms)：类型=数值，默认=5000L
-- Mode：类型=枚举，默认="System"
-- No Wow64 Redirection：类型=布尔，默认=true
+- SetPrivileges Waiting Start Timeout (ms)（中文：设置特权等待超时时间 (毫秒)）：类型=数值，默认=5000L
+- Enable Privileges（中文：启用特权）：类型=布尔，默认=true
+- No Wow64 Redirection（中文：禁用 Wow64 重定向）：类型=布尔，默认=true
+- Mode（中文：模式）：类型=枚举，默认="System"
+  可选：Admin（管理员）；Admin UAC Bypass（管理员UAC绕过）；System（系统）；Trusted Installer（未收录）
 
 历史更新
 - 2. 添加模块：SuperCmd，快捷启动高权限CMD。
@@ -41,3 +44,4 @@ SuperCmd 是 JackalClient 的 Process 分类模块。启用后会围绕 超级CM
 
 相关资料
 无
+

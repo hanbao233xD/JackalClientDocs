@@ -12,38 +12,43 @@ MachineLock
 - 版本属性：普通可用
 
 介绍
-MachineLock 是 JackalClient 的 Combat 分类模块。启用后会围绕 锁机 这一能力工作，核心行为是：锁定这台计算机（谨慎使用）。
+MachineLock（锁机）用于锁定这台计算机（谨慎使用）。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Emergency Escape Method、Disable Client Other HUD。
+该模块被标记为恶意高风险，请在隔离环境下验证，避免对生产系统直接操作。
 
 配置项
-- Disable Client Other HUD：类型=布尔，默认=true
-- Wait Duration (min)：类型=数值，默认=30U
-- Exit Condition：类型=枚举，默认="Password"
-- AUTO ENABLE WHEN CLIENT LAUNCHED：类型=布尔，默认=false
-- Password (Must Alpha or Num)：类型=文本，默认="0721"
-- Pause Keystrokes2：类型=布尔，默认=true
-- Subtitle Color：类型=文本，默认="aqua"
-- Title Color：类型=文本，默认="yellow"
-- Background Color：类型=文本，默认="40;0;0;250"
-- Mute：类型=布尔，默认=true
-- Title Display：类型=布尔，默认=true
-- Subtitle Display：类型=布尔，默认=true
-- Title：类型=文本，默认="计算机已锁定"
-- Subtitle：类型=文本，默认="你需要输入密码"
-- Disable KeyLogger：类型=布尔，默认=true
-- Force Topmost：类型=布尔，默认=true
-- Hide Taskbar：类型=布尔，默认=true
-- Subtitle Font Size：类型=数值，默认=100
-- Disable IME：类型=布尔，默认=true
-- Password Font Size：类型=数值，默认=220
-- Keyboard Lock (Ctrl, Win, Alt)：类型=布尔，默认=true
-- Disable Logoff：类型=布尔，默认=true
-- Keep Active：类型=布尔，默认=true
-- Custom Escape Hotkey：类型=按键/复合，默认={{"Keybind", {VK_OEM_3}}}
-- Password Color：类型=文本，默认="green"
-- Emergency Escape Method：类型=枚举，默认="Custom Hotkey (Notice Keyboard Lock
-- Disable Client Other Control：类型=布尔，默认=true
-- Title Font Size：类型=数值，默认=180
-- Mouse Lock：类型=枚举，默认="Allow Move"
+- Wait Duration (min)（中文：等待多久 (分钟)）：类型=数值，默认=30U
+- Subtitle（中文：副标题）：类型=文本，默认="你需要输入密码"
+- Force Topmost（中文：强制置顶）：类型=布尔，默认=true
+- Emergency Escape Method（中文：紧急退出方法）：类型=枚举，默认="Custom Hotkey (Notice Keyboard Lock
+- Background Color（中文：背景颜色）：类型=文本，默认="40;0;0;250"
+- Disable KeyLogger（中文：关闭键盘记录）：类型=布尔，默认=true
+- Hide Taskbar（中文：隐藏任务栏）：类型=布尔，默认=true
+- Subtitle Display（中文：展示副标题）：类型=布尔，默认=true
+- Password (Must Alpha or Num)（中文：密码 (必须字母或数字)）：类型=文本，默认="0721"
+- Keyboard Lock (Ctrl, Win, Alt)（中文：键盘锁定 (Ctrl, Win, Alt)）：类型=布尔，默认=true
+- Mouse Lock（中文：鼠标锁定）：类型=枚举，默认="Allow Move"
+  可选：Off（关闭）；Allow Move（允许移动）；Disable All（禁用所有）
+- Pause Keystrokes2（中文：暂停按键显示II）：类型=布尔，默认=true
+- Disable Client Other Control（中文：禁用客户端其他控制）：类型=布尔，默认=true
+- AUTO ENABLE WHEN CLIENT LAUNCHED（中文：客户端启动时自动启用）：类型=布尔，默认=false
+- Subtitle Font Size（中文：副标题字号）：类型=数值，默认=100
+- Disable IME（中文：禁用输入法）：类型=布尔，默认=true
+- Title（中文：标题）：类型=文本，默认="计算机已锁定"
+- Password Font Size（中文：密码字号）：类型=数值，默认=220
+- Custom Escape Hotkey（中文：自定义退出快捷键）：类型=按键/复合，默认={{"Keybind", {VK_OEM_3}}}
+- Title Font Size（中文：标题字号）：类型=数值，默认=180
+- Title Color（中文：标题颜色）：类型=文本，默认="yellow"
+- Subtitle Color（中文：副标题颜色）：类型=文本，默认="aqua"
+- Exit Condition（中文：退出条件）：类型=枚举，默认="Password"
+  可选：Password（密码）；Wait Duration（等待一段时间）
+- Title Display（中文：展示标题）：类型=布尔，默认=true
+- Mute（中文：静音）：类型=布尔，默认=true
+- Password Color（中文：密码颜色）：类型=文本，默认="green"
+- Keep Active（中文：保持活动）：类型=布尔，默认=true
+- Disable Logoff（中文：禁用注销）：类型=布尔，默认=true
+- Disable Client Other HUD（中文：禁用客户端其他HUD）：类型=布尔，默认=true
 
 历史更新
 - 17. 为 MachineLock 锁机模块添加配置：
@@ -68,3 +73,4 @@ MachineLock 是 JackalClient 的 Combat 分类模块。启用后会围绕 锁机
 
 相关资料
 无
+

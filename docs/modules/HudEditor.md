@@ -12,19 +12,21 @@ HUD编辑器
 - 版本属性：普通可用
 
 介绍
-HudEditor 是 JackalClient 的 Render 分类模块。启用后会围绕 HUD编辑器 这一能力工作，核心行为是：帮助你编辑 HUD 元素的属性。
+HudEditor（HUD编辑器）用于帮助你编辑 HUD 元素的属性。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Show Rectangle、Show Key Names、Rectangle Opacity (0~1)。
 
 配置项
-- Line Opacity (0~1)：类型=数值，默认=0.9f
-- Show Rectangle：类型=布尔，默认=true
-- Show Old Values：类型=布尔，默认=false
-- Show New Values：类型=布尔，默认=true
-- Preview Key：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL}}}
-- Drag Key：类型=按键/复合，默认={{"Keybind", {VK_MBUTTON}}}
-- Show Status：类型=布尔，默认=true
-- Show Key Names：类型=布尔，默认=true
-- Rectangle Opacity (0~1)：类型=数值，默认=0.7f
-- Show Line：类型=布尔，默认=true
+- Show Rectangle（中文：显示矩形）：类型=布尔，默认=true
+- Show Key Names（中文：显示键名）：类型=布尔，默认=true
+- Rectangle Opacity (0~1)（中文：矩形不透明度 (0~1)）：类型=数值，默认=0.7f
+- Drag Key（中文：拖拽键）：类型=按键/复合，默认={{"Keybind", {VK_MBUTTON}}}
+- Preview Key（中文：预览键）：类型=按键/复合，默认={{"Keybind", {VK_LCONTROL}}}
+- Show Status（中文：显示状态）：类型=布尔，默认=true
+- Show Line（中文：显示线条）：类型=布尔，默认=true
+- Show Old Values（中文：显示旧值）：类型=布尔，默认=false
+- Line Opacity (0~1)（中文：线条不透明度 (0~1)）：类型=数值，默认=0.9f
+- Show New Values（中文：显示新值）：类型=布尔，默认=true
 
 历史更新
 - 33. 实装了 HudEditor 的功能，打开后可以按住左Ctrl预览各 HUD 元素，默认按 Ctrl+鼠标中键 直接拖拽 HUD 元素。打开后，所有 Give Way to Mouse 选项将不生效。
@@ -49,3 +51,4 @@ HudEditor 是 JackalClient 的 Render 分类模块。启用后会围绕 HUD编�
 
 相关资料
 无
+

@@ -12,7 +12,9 @@ NoFolderOptions
 - 版本属性：普通可用
 
 介绍
-NoFolderOptions 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁目录选项 这一能力工作，核心行为是：暂无描述
+NoFolderOptions（禁目录选项）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +40,4 @@ NoFolderOptions 是 JackalClient 的 Registry 分类模块。启用后会围绕 
 
 相关资料
 无
+

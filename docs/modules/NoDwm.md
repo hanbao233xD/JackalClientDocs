@@ -12,7 +12,9 @@ NoDwm
 - 版本属性：普通可用
 
 介绍
-NoDwm 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁用DWM 这一能力工作，核心行为是：禁用桌面窗口管理器进程。需要重启计算机。
+NoDwm（禁用DWM）用于禁用桌面窗口管理器进程。需要重启计算机。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +40,4 @@ NoDwm 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁用DWM 
 
 相关资料
 无
+

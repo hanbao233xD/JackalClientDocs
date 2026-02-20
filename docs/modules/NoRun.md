@@ -12,7 +12,9 @@ NoRun
 - 版本属性：普通可用
 
 介绍
-NoRun 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁运行框 这一能力工作，核心行为是：暂无描述
+NoRun（禁运行框）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +40,4 @@ NoRun 是 JackalClient 的 Registry 分类模块。启用后会围绕 禁运行�
 
 相关资料
 无
+

@@ -12,18 +12,21 @@ AutoCopy
 - 版本属性：普通可用
 
 介绍
-AutoCopy 是 JackalClient 的 Control 分类模块。启用后会围绕 自动复制 这一能力工作，核心行为是：自动复制指定的文本。
+AutoCopy（自动复制）用于自动复制指定的文本。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Update Cooldown (ms)、Source Mode、Change Cooldown (ms)。
 
 配置项
-- Fixed Text：类型=文本，默认="/hub"
-- Ignore Empty Item：类型=布尔，默认=true
-- Update Cooldown (ms)：类型=数值，默认=1000
-- File Path：类型=文本，默认=""
-- Change Cooldown (ms)：类型=数值，默认=10000
-- Source Mode：类型=枚举，默认="Fixed"
-- Only Update When Holding Ctrl：类型=布尔，默认=true
-- Include Items With Keywords (Sep With Semicolon)：类型=文本，默认=""
-- Exclude Items With Keywords (Sep With Semicolon)：类型=文本，默认="{player}"
+- Fixed Text（中文：固定文本）：类型=文本，默认="/hub"
+- Update Cooldown (ms)（中文：更新冷却（毫秒））：类型=数值，默认=1000
+- Source Mode（中文：源模式）：类型=枚举，默认="Fixed"
+  可选：Fixed（固定）；File Content（文件内容）；File Random Line（文件随机行）
+- Only Update When Holding Ctrl（中文：仅当按住Ctrl时更新）：类型=布尔，默认=true
+- Exclude Items With Keywords (Sep With Semicolon)（中文：排除带有关键词的项目 (用分号分隔)）：类型=文本，默认="{player}"
+- Include Items With Keywords (Sep With Semicolon)（中文：包含带有关键词的项目 (用分号分隔)）：类型=文本，默认=""
+- Change Cooldown (ms)（中文：变更冷却（毫秒））：类型=数值，默认=10000
+- File Path（中文：文件路径）：类型=文本，默认=""
+- Ignore Empty Item（中文：忽略空项目）：类型=布尔，默认=true
 
 历史更新
 - 59. 添加自动复制模块：Auto Copy
@@ -46,3 +49,4 @@ AutoCopy 是 JackalClient 的 Control 分类模块。启用后会围绕 自动�
 
 相关资料
 无
+

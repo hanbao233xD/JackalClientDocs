@@ -12,23 +12,28 @@ AutoText
 - 版本属性：普通可用
 
 介绍
-AutoText 是 JackalClient 的 Control 分类模块。启用后会围绕 自动文本 这一能力工作，核心行为是：特定情况下自动发送指定文本。
+AutoText（自动文本）用于特定情况下自动发送指定文本。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Auto GG Mode、Auto Thank Watchdog Mode。
 
 配置项
-- Password Source：类型=枚举，默认="Fixed"
-- Auto Register (PRO)：类型=布尔，默认=false
-- Auto Thank Watchdog Content (Heypixel)：类型=文本，默认="少羽牛逼"
-- Auto Thank Watchdog：类型=布尔，默认=true
-- Auto Thank Watchdog Mode：类型=枚举，默认="Smart Send"
-- Auto GG Mode：类型=枚举，默认="Smart Send"
-- Password (Fixed)：类型=文本，默认="123456"
-- Auto Talk Back (Experimental)：类型=布尔，默认=false
-- Auto GG (PRO)：类型=布尔，默认=true
-- Auto Thank Watchdog Content (Hypixel)：类型=文本，默认="Thanks Watchd0g!!!"
-- Auto Login (PRO)：类型=布尔，默认=false
-- Auto GG Content (Defeat)：类型=文本，默认="gg"
-- Auto GG Content (Victory)：类型=文本，默认="gg"
-- Password File Path：类型=文本，默认=""
+- Auto GG (PRO)（中文：自动GG（专业版））：类型=布尔，默认=true
+- Auto Thank Watchdog（中文：自动感谢看门狗）：类型=布尔，默认=true
+- Auto GG Mode（中文：自动GG模式）：类型=枚举，默认="Smart Send"
+  可选：Smart Send（智能发送）；Copy（复制）；Chatter（弹幕）；Speak（讲述）；WinToast（系统通知）；Real Chatter（真弹幕）
+- Auto Talk Back (Experimental)（中文：自动顶嘴（实验性））：类型=布尔，默认=false
+- Auto Register (PRO)（中文：自动注册（专业版））：类型=布尔，默认=false
+- Auto Thank Watchdog Content (Hypixel)（中文：自动感谢看门狗内容 (Hypixel)）：类型=文本，默认="Thanks Watchd0g!!!"
+- Auto GG Content (Victory)（中文：自动GG内容（赢））：类型=文本，默认="gg"
+- Auto Thank Watchdog Mode（中文：自动感谢看门狗模式）：类型=枚举，默认="Smart Send"
+  可选：Smart Send（智能发送）；Copy（复制）；Chatter（弹幕）；Speak（讲述）；WinToast（系统通知）；Real Chatter（真弹幕）
+- Password Source（中文：密码来源）：类型=枚举，默认="Fixed"
+  可选：Fixed（固定）；File（文件）
+- Password File Path（中文：密码文件路径）：类型=文本，默认=""
+- Password (Fixed)（中文：密码（固定））：类型=文本，默认="123456"
+- Auto Thank Watchdog Content (Heypixel)（中文：自动感谢看门狗内容 (布吉岛)）：类型=文本，默认="少羽牛逼"
+- Auto GG Content (Defeat)（中文：自动GG内容（输））：类型=文本，默认="gg"
+- Auto Login (PRO)（中文：自动登陆（专业版））：类型=布尔，默认=false
 
 历史更新
 - 30. 修复 AutoText 未启用时仍 Auto Thank Watchdog 的问题。
@@ -53,3 +58,4 @@ AutoText 是 JackalClient 的 Control 分类模块。启用后会围绕 自动�
 
 相关资料
 无
+

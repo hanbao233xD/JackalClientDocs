@@ -12,13 +12,15 @@ ListModules
 - 版本属性：普通可用
 
 介绍
-ListModules 是 JackalClient 的 Process 分类模块。启用后会围绕 枚举模块 这一能力工作，核心行为是：暂无描述
+ListModules（枚举模块）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Async、Auto Console、Verify。
 
 配置项
-- Verify：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- PID (0 for self)：类型=数值，默认=0
-- Auto Console：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Verify（中文：验证）：类型=布尔，默认=true
+- PID (0 for self)（中文：进程ID (0 for self)）：类型=数值，默认=0
 
 历史更新
 - 18. 使 /listmodules 命令可以接收一个参数。
@@ -42,3 +44,4 @@ ListModules 是 JackalClient 的 Process 分类模块。启用后会围绕 枚�
 
 相关资料
 无
+

@@ -12,16 +12,19 @@ Vape
 - 版本属性：普通可用
 
 介绍
-Vape 是 JackalClient 的 Render 分类模块。启用后会围绕 电子烟 这一能力工作，核心行为是：绘制电子烟的标志。有点帅。
+Vape（电子烟）用于绘制电子烟的标志。有点帅。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Easing Speed (0~1)、Logo、Give Way to Mouse。
 
 配置项
-- Y Offset：类型=数值，默认=0
-- Easing Speed (0~1)：类型=数值，默认=0.1f
-- Logo：类型=枚举，默认="Vape"
-- Give Way to Mouse：类型=布尔，默认=true
-- Custom Logo Path：类型=文本，默认=""
-- X Offset：类型=数值，默认=0
-- Color：类型=枚举，默认="White"
+- Easing Speed (0~1)（中文：缓动速率 (0~1)）：类型=数值，默认=0.1f
+- Logo（中文：标志）：类型=枚举，默认="Vape"
+  可选：Vape（未收录）；LiquidBounce（水影）；Neverlose（未收录）；Jackal（未收录）；Custom（自定义）
+- Give Way to Mouse（中文：给鼠标让道）：类型=布尔，默认=true
+- X Offset（中文：横坐标偏移）：类型=数值，默认=0
+- Custom Logo Path（中文：自定义标志路径）：类型=文本，默认=""
+- Y Offset（中文：纵坐标偏移）：类型=数值，默认=0
+- Color（中文：颜色）：类型=枚举，默认="White"
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -44,3 +47,4 @@ Vape 是 JackalClient 的 Render 分类模块。启用后会围绕 电子烟 这
 
 相关资料
 无
+

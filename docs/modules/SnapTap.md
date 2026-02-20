@@ -12,15 +12,17 @@ SnapTap
 - 版本属性：普通可用
 
 介绍
-SnapTap 是 JackalClient 的 Control 分类模块。启用后会围绕 急停键 这一能力工作，核心行为是：按下新键（A/D）和（W/S）时，自动释放之前按住的键。
+SnapTap（急停键）用于按下新键（A/D）和（W/S）时，自动释放之前按住的键。
+适合键鼠行为控制、输入增强和自动化操作场景。
+初次使用可优先调整：Up & Down Arrows、Left & Right Arrows、W & S。
 
 配置项
-- W & S：类型=布尔，默认=true
-- Up & Down Arrows：类型=布尔，默认=true
-- Custom Key Pairs (e.g. Z&X;J&K)：类型=文本，默认=""
-- Left & Right Arrows：类型=布尔，默认=true
-- A & D：类型=布尔，默认=true
-- Custom Keys：类型=布尔，默认=false
+- Up & Down Arrows（中文：上下箭头）：类型=布尔，默认=true
+- Left & Right Arrows（中文：左右箭头）：类型=布尔，默认=true
+- W & S（中文：未收录）：类型=布尔，默认=true
+- Custom Key Pairs (e.g. Z&X;J&K)（中文：自定义 键 Pairs (e.g. Z&X;J&K)）：类型=文本，默认=""
+- A & D（中文：未收录）：类型=布尔，默认=true
+- Custom Keys（中文：自定义键）：类型=布尔，默认=false
 
 历史更新
 - 6. 为 Snap Tap 添加了自定义键对：
@@ -44,3 +46,4 @@ SnapTap 是 JackalClient 的 Control 分类模块。启用后会围绕 急停键
 
 相关资料
 无
+

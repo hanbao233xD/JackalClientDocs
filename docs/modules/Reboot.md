@@ -12,11 +12,15 @@ Reboot
 - 版本属性：普通可用
 
 介绍
-Reboot 是 JackalClient 的 Combat 分类模块。启用后会围绕 重启 这一能力工作，核心行为是：立即重启。
+Reboot（重启）用于立即重启。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Method。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Method：类型=枚举，默认="WINAPI"
-- Force：类型=布尔，默认=false
+- Force（中文：强制）：类型=布尔，默认=false
+- Method（中文：方法）：类型=枚举，默认="WINAPI"
+  可选：Command（命令）；WINAPI（未收录）
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -39,3 +43,4 @@ Reboot 是 JackalClient 的 Combat 分类模块。启用后会围绕 重启 这�
 
 相关资料
 无
+

@@ -13,12 +13,14 @@ CloudMusic
 - 版本属性：PRO 独有
 
 介绍
-CloudMusic 是 JackalClient 的 Misc 分类模块。启用后会围绕 云音乐 这一能力工作，核心行为是：一个简单的网易云音乐的挂钩。
+CloudMusic（云音乐）用于一个简单的网易云音乐的挂钩。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Delete DLL When Disabled、Start App When Enabled、Custom Directory。
 
 配置项
-- Custom Directory：类型=文本，默认=""
-- Delete DLL When Disabled：类型=布尔，默认=true
-- Start App When Enabled：类型=布尔，默认=true
+- Delete DLL When Disabled（中文：禁用时删除DLL）：类型=布尔，默认=true
+- Start App When Enabled（中文：启用时打开云音乐）：类型=布尔，默认=true
+- Custom Directory（中文：指定目录）：类型=文本，默认=""
 
 历史更新
 - 11. 修复 MusicOverlay 模式为 Hook 时开启后再开启网易云时不能立即打开 Cloud Music 模块的问题。
@@ -43,3 +45,4 @@ CloudMusic 是 JackalClient 的 Misc 分类模块。启用后会围绕 云音乐
 
 相关资料
 无
+

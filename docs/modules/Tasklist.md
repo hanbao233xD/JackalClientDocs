@@ -12,14 +12,17 @@ Tasklist
 - 版本属性：普通可用
 
 介绍
-Tasklist 是 JackalClient 的 Process 分类模块。启用后会围绕 进程列表 这一能力工作，核心行为是：暂无描述
+Tasklist（进程列表）用于暂无描述。
+适合进程观测、控制与排障场景。
+初次使用可优先调整：Style。
 
 配置项
-- Style：类型=枚举，默认="Normal"
-- Verify Signature：类型=布尔，默认=false
-- Use Record：类型=布尔，默认=false
-- Async：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
+- Use Record（中文：使用记录）：类型=布尔，默认=false
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Style（中文：风格）：类型=枚举，默认="Normal"
+  可选：Vanilla（原版）；Normal（普通）；Pathes（未收录）；Command Lines（命令行）
+- Verify Signature（中文：验证签名）：类型=布尔，默认=false
 
 历史更新
 - 42. 为 Tasklist 模块的 Style 添加配置项：Pathes
@@ -43,3 +46,4 @@ Tasklist 是 JackalClient 的 Process 分类模块。启用后会围绕 进程�
 
 相关资料
 无
+

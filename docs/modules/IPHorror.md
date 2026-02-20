@@ -12,15 +12,19 @@ IP恐惧
 - 版本属性：普通可用
 
 介绍
-IPHorror 是 JackalClient 的 Web 分类模块。启用后会围绕 IP恐惧 这一能力工作，核心行为是：根据提供的IP地址组装一个吓人的段落
+IPHorror（IP恐惧）用于根据提供的IP地址组装一个吓人的段落。
+适合联网信息获取、账号联动和在线交互场景。
+初次使用可优先调整：Target IP Address、Method。
+使用前请确认网络可用及相关 API/平台账号配置完整。
 
 配置项
-- Copy to Clipboard：类型=布尔，默认=true
-- Auto Console：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- Log Destination Info：类型=布尔，默认=true
-- Method：类型=枚举，默认="V1"
-- Target IP Address：类型=文本，默认="127.0.0.1"
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Log Destination Info（中文：日志记录目的地信息）：类型=布尔，默认=true
+- Target IP Address（中文：目标 IP 地址）：类型=文本，默认="127.0.0.1"
+- Async（中文：异步）：类型=布尔，默认=true
+- Method（中文：方法）：类型=枚举，默认="V1"
+  可选：V1（未收录）；AI Normal（人工智能 普通）；AI Mesugaki（人工智能 Mesugaki）；AI Catgirl（人工智能 猫娘）
+- Copy to Clipboard（中文：复制到剪贴板）：类型=布尔，默认=true
 
 历史更新
 - 24. 修正 IPHorror 的外国判定。
@@ -45,3 +49,4 @@ IPHorror 是 JackalClient 的 Web 分类模块。启用后会围绕 IP恐惧 这
 
 相关资料
 无
+

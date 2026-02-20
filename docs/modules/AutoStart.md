@@ -12,19 +12,22 @@ AutoStart
 - 版本属性：普通可用
 
 介绍
-AutoStart 是 JackalClient 的 Combat 分类模块。启用后会围绕 开机自启 这一能力工作，核心行为是：系统启动时自动启动本客户端。
+AutoStart（开机自启）用于系统启动时自动启动本客户端。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Method、Check Cooldown (ms)。
 
 配置项
-- Extra Arguments：类型=文本，默认=""
-- Check Cooldown (ms)：类型=数值，默认=30000L
-- Service Stopping Timeout (s)：类型=数值，默认=10
-- Service Display Name：类型=文本，默认="Jackal Client Service"
-- Async：类型=布尔，默认=true
-- Registry Value Name：类型=文本，默认="JackalClient"
-- Registry：类型=文本，默认="Service", "Scheduled Task"
-- Scheduled Task Name：类型=文本，默认="JackalClient"
-- Method：类型=枚举，默认="Registry"
-- Service Description：类型=文本，默认="Jackal Client Auto Start Service"
+- Service Stopping Timeout (s)（中文：停止服务的超时时间 (秒)）：类型=数值，默认=10
+- Scheduled Task Name（中文：计划任务名称）：类型=文本，默认="JackalClient"
+- Method（中文：方法）：类型=枚举，默认="Registry"
+  可选：Registry（注册表）；Service（未收录）；Scheduled Task（计划任务）
+- Check Cooldown (ms)（中文：检查冷却 (毫秒)）：类型=数值，默认=30000L
+- Extra Arguments（中文：额外参数）：类型=文本，默认=""
+- Async（中文：异步）：类型=布尔，默认=true
+- Service Display Name（中文：服务显示名称）：类型=文本，默认="Jackal Client Service"
+- Registry Value Name（中文：注册表值名称）：类型=文本，默认="JackalClient"
+- Registry（中文：注册表）：类型=文本，默认="Service", "Scheduled Task"
+- Service Description（中文：服务描述）：类型=文本，默认="Jackal Client Auto Start Service"
 
 历史更新
 - 43. 将 AutoStart 开机自启默认项改为 Registry.
@@ -48,3 +51,4 @@ AutoStart 是 JackalClient 的 Combat 分类模块。启用后会围绕 开机�
 
 相关资料
 无
+

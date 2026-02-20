@@ -13,23 +13,26 @@ WarpUI
 - 版本属性：PRO 独有
 
 介绍
-WarpUI 是 JackalClient 的 Render 分类模块。启用后会围绕 空间变形 这一能力工作，核心行为是：将伪 3D 视觉形变与 GUI 交互坐标精确同步的界面形变
+WarpUI（空间变形）用于将伪 3D 视觉形变与 GUI 交互坐标精确同步的界面形变。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：When、Flip Y、Curve Camera Z Bias。
 
 配置项
-- Camera Z：类型=数值，默认=0.0f
-- When：类型=枚举，默认="Always"
-- Easing：类型=布尔，默认=true
-- Camera Fov：类型=数值，默认=60.0f
-- Sphere Radius：类型=数值，默认=600.0f
-- Camera Yaw：类型=数值，默认=0.0f
-- Chroma：类型=数值，默认=0.008f
-- Camera Offset Y：类型=数值，默认=0.0f
-- Camera Pitch：类型=数值，默认=0.0f
-- Flip Y：类型=布尔，默认=true
-- Camera Offset X：类型=数值，默认=0.0f
-- Easing Speed (0~1)：类型=数值，默认=0.12f
-- Curve Camera Z Bias：类型=数值，默认=1.0f
-- Vignette：类型=数值，默认=0.25f
+- When（中文：何时）：类型=枚举，默认="Always"
+  可选：Always（总是）；Menu On（打开菜单）；Menu Off（关闭菜单）
+- Flip Y（中文：反转 Y）：类型=布尔，默认=true
+- Curve Camera Z Bias（中文：曲面相机Z矫正）：类型=数值，默认=1.0f
+- Camera Offset X（中文：相机横向偏移）：类型=数值，默认=0.0f
+- Easing（中文：缓动）：类型=布尔，默认=true
+- Sphere Radius（中文：球体半径）：类型=数值，默认=600.0f
+- Camera Yaw（中文：相机偏航）：类型=数值，默认=0.0f
+- Camera Z（中文：相机 Z）：类型=数值，默认=0.0f
+- Camera Offset Y（中文：相机纵向偏移）：类型=数值，默认=0.0f
+- Camera Pitch（中文：相机俯仰）：类型=数值，默认=0.0f
+- Camera Fov（中文：相机视野）：类型=数值，默认=60.0f
+- Easing Speed (0~1)（中文：缓动速率 (0~1)）：类型=数值，默认=0.12f
+- Vignette（中文：暗角）：类型=数值，默认=0.25f
+- Chroma（中文：色差）：类型=数值，默认=0.008f
 
 历史更新
 - 23. 【PRO】添加模块：WarpUI，实现三维界面，并修正鼠标坐标的映射关系。启用前最好绑定一个快捷键。注意启用后托盘右键菜单将会出现一个选项叫“禁用空间变形 Disable WarpUI”。
@@ -54,3 +57,4 @@ WarpUI 是 JackalClient 的 Render 分类模块。启用后会围绕 空间变�
 
 相关资料
 无
+

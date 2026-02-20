@@ -12,14 +12,17 @@ QQ查绑
 - 版本属性：普通可用
 
 介绍
-QQBindQuery 是 JackalClient 的 未分类 分类模块。启用后会围绕 QQ查绑 这一能力工作，核心行为是：暂无描述
+QQBindQuery（QQ查绑）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Query Microblog、Async、QQ Number。
+该模块属于不安全能力，建议先备份关键数据并确认回滚路径。
 
 配置项
-- Connect Timeout (s)：类型=数值，默认=3L
-- Query Microblog：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
-- QQ Number：类型=文本，默认="114514"
-- Auto Console：类型=布尔，默认=true
+- Query Microblog（中文：查询微博）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- QQ Number（中文：QQ 号）：类型=文本，默认="114514"
+- Auto Console（中文：自动启用控制台）：类型=布尔，默认=true
+- Connect Timeout (s)（中文：连接超时时间 (秒)）：类型=数值，默认=3L
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -35,3 +38,4 @@ QQBindQuery 是 JackalClient 的 未分类 分类模块。启用后会围绕 QQ�
 
 相关资料
 无
+

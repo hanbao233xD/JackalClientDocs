@@ -12,11 +12,14 @@ TrustedInstaller
 - 版本属性：普通可用
 
 介绍
-TrustedInstaller 是 JackalClient 的 Combat 分类模块。启用后会围绕 受信任安装者 这一能力工作，核心行为是：暂无描述
+TrustedInstaller（受信任安装者）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+建议先以管理员身份运行客户端。
+初次使用可优先调整：Exit After Run、Use NSudo。
 
 配置项
-- Exit After Run：类型=布尔，默认=true
-- Use NSudo：类型=布尔，默认=false
+- Exit After Run（中文：运行后退出）：类型=布尔，默认=true
+- Use NSudo（中文：使用 NSudo）：类型=布尔，默认=false
 
 历史更新
 - 6. 为需要管理员、系统、TrustedInstaller 权限的模块设计了新的图标。
@@ -40,3 +43,4 @@ TrustedInstaller 是 JackalClient 的 Combat 分类模块。启用后会围绕 �
 
 相关资料
 无
+

@@ -12,12 +12,14 @@ Gamma
 - 版本属性：普通可用
 
 介绍
-Gamma 是 JackalClient 的 Render 分类模块。启用后会围绕 伽马覆写 这一能力工作，核心行为是：暂无描述
+Gamma（伽马覆写）用于暂无描述。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Set Once、Alpha、Disable When Quit。
 
 配置项
-- Alpha：类型=数值，默认=255
-- Disable When Quit：类型=布尔，默认=true
-- Set Once：类型=布尔，默认=false
+- Set Once（中文：单次设置时间点）：类型=布尔，默认=false
+- Alpha（中文：不透明度）：类型=数值，默认=255
+- Disable When Quit（中文：退出时关闭）：类型=布尔，默认=true
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -40,3 +42,4 @@ Gamma 是 JackalClient 的 Render 分类模块。启用后会围绕 伽马覆写
 
 相关资料
 无
+

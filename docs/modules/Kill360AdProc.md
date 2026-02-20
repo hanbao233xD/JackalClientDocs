@@ -12,7 +12,8 @@ Kill360AdProc
 - 版本属性：普通可用
 
 介绍
-Kill360AdProc 是 JackalClient 的 Process 分类模块。启用后会围绕 杀数字广告进程 这一能力工作，核心行为是：杀死360的广告进程。
+Kill360AdProc（杀数字广告进程）用于杀死360的广告进程。
+适合进程观测、控制与排障场景。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
@@ -38,3 +39,4 @@ Kill360AdProc 是 JackalClient 的 Process 分类模块。启用后会围绕 杀
 
 相关资料
 无
+

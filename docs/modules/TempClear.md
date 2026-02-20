@@ -12,14 +12,16 @@ TempClear
 - 版本属性：普通可用
 
 介绍
-TempClear 是 JackalClient 的 File 分类模块。启用后会围绕 临时清空 这一能力工作，核心行为是：清空系统临时目录。
+TempClear（临时清空）用于清空系统临时目录。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify Result、Notify Errors、Filter。
 
 配置项
-- Filter：类型=文本，默认="*.*"
-- Keep：类型=布尔，默认=false
-- Notify Result：类型=布尔，默认=true
-- Notify Errors：类型=布尔，默认=true
-- Async：类型=布尔，默认=true
+- Keep（中文：保持）：类型=布尔，默认=false
+- Notify Result（中文：通知结果）：类型=布尔，默认=true
+- Notify Errors（中文：通知错误）：类型=布尔，默认=true
+- Async（中文：异步）：类型=布尔，默认=true
+- Filter（中文：筛选器）：类型=文本，默认="*.*"
 
 历史更新
 无（HISTORY 中暂无明确记录）
@@ -42,3 +44,4 @@ TempClear 是 JackalClient 的 File 分类模块。启用后会围绕 临时清�
 
 相关资料
 无
+

@@ -12,13 +12,16 @@ Totem
 - 版本属性：普通可用
 
 介绍
-Totem 是 JackalClient 的 Render 分类模块。启用后会围绕 不死图腾 这一能力工作，核心行为是：播放不死图腾的动画。
+Totem（不死图腾）用于播放不死图腾的动画。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Cooldown (ms)。
 
 配置项
-- Transparent Color Alpha：类型=数值，默认=0
-- Chatter New Advancement：类型=枚举，默认="Only First Time"
-- Transparent Color Key (For Cutout)：类型=文本，默认="16;16;16"
-- Cooldown (ms)：类型=数值，默认=5000L
+- Chatter New Advancement（中文：新进度弹幕）：类型=枚举，默认="Only First Time"
+  可选：Off（关闭）；Only First Time（只在第一次显示）；Always（总是）
+- Cooldown (ms)（中文：冷却 (毫秒)）：类型=数值，默认=5000L
+- Transparent Color Key (For Cutout)（中文：透明颜色键（用于抠图））：类型=文本，默认="16;16;16"
+- Transparent Color Alpha（中文：透明颜色不透明度）：类型=数值，默认=0
 
 历史更新
 - 6. 稍微修改了一下不死图腾的触发动画视频。
@@ -42,3 +45,4 @@ Totem 是 JackalClient 的 Render 分类模块。启用后会围绕 不死图腾
 
 相关资料
 无
+

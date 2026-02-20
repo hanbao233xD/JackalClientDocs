@@ -12,11 +12,13 @@ Privileges
 - 版本属性：普通可用
 
 介绍
-Privileges 是 JackalClient 的 Combat 分类模块。启用后会围绕 特权 这一能力工作，核心行为是：获得各项可用的特权。
+Privileges（特权）用于获得各项可用的特权。
+适合在日常管理与自动化场景中按需启用。
+初次使用可优先调整：Notify。
 
 配置项
-- Notify：类型=布尔，默认=true
-- bind：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'P'}}}
+- Notify（中文：通知）：类型=布尔，默认=true
+- bind（中文：绑定）：类型=按键/复合，默认={{"Keybind", {VK_RMENU, 'P'}}}
 
 历史更新
 - 7. 另设需要系统和 TrustedInstaller 权限的模块，将Config中的 Admin Modules Check Admin改为Check Module Privileges Before Turning On。
@@ -40,3 +42,4 @@ Privileges 是 JackalClient 的 Combat 分类模块。启用后会围绕 特权 
 
 相关资料
 无
+

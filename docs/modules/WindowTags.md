@@ -12,26 +12,29 @@ WindowTags
 - 版本属性：普通可用
 
 介绍
-WindowTags 是 JackalClient 的 Window 分类模块。启用后会围绕 窗口标签 这一能力工作，核心行为是：暂无描述
+WindowTags（窗口标签）用于暂无描述。
+适合窗口管理、可视化监控与交互增强场景。
+初次使用可优先调整：Target、Aura Target Highlight。
 
 配置项
-- Font Size：类型=数值，默认=18
-- Opacity Max (0~1)：类型=数值，默认=0.9f
-- Show Process Info：类型=布尔，默认=true
-- Easing：类型=布尔，默认=true
-- Show Position：类型=布尔，默认=false
-- Show Parent Info：类型=布尔，默认=true
-- Target：类型=枚举，默认="PointAt"
-- Aura Target Highlight：类型=布尔，默认=true
-- Text Background：类型=布尔，默认=true
-- Special Z-Order Anti-Obstruction：类型=布尔，默认=true
-- Hide When Menu On：类型=布尔，默认=true
-- Opacity Min (0~1)：类型=数值，默认=0.75f
-- Show Z-Order Band：类型=布尔，默认=false
-- Give Way to Mouse：类型=布尔，默认=true
-- Show Size：类型=布尔，默认=false
-- Easing Speed (0~1)：类型=数值，默认=0.2f
-- Show Handle Value：类型=布尔，默认=true
+- Show Size（中文：展示尺寸）：类型=布尔，默认=false
+- Show Parent Info（中文：显示家长信息）：类型=布尔，默认=true
+- Text Background（中文：文本背景）：类型=布尔，默认=true
+- Hide When Menu On（中文：菜单打开时不显示）：类型=布尔，默认=true
+- Easing（中文：缓动）：类型=布尔，默认=true
+- Opacity Min (0~1)（中文：不透明度最小值 (0~1)）：类型=数值，默认=0.75f
+- Target（中文：目标）：类型=枚举，默认="PointAt"
+  可选：PointAt（指向）；Foreground（前端）
+- Special Z-Order Anti-Obstruction（中文：特殊Z序防遮挡）：类型=布尔，默认=true
+- Aura Target Highlight（中文：高亮光环目标）：类型=布尔，默认=true
+- Show Position（中文：展示位置）：类型=布尔，默认=false
+- Easing Speed (0~1)（中文：缓动速率 (0~1)）：类型=数值，默认=0.2f
+- Font Size（中文：字号）：类型=数值，默认=18
+- Show Z-Order Band（中文：展示Z序段）：类型=布尔，默认=false
+- Show Process Info（中文：显示进程信息）：类型=布尔，默认=true
+- Opacity Max (0~1)（中文：不透明度最大值 (0~1)）：类型=数值，默认=0.9f
+- Give Way to Mouse（中文：给鼠标让道）：类型=布尔，默认=true
+- Show Handle Value（中文：展示句柄的值）：类型=布尔，默认=true
 
 历史更新
 - 27. 汉化 WindowTags 的 HUD。
@@ -56,3 +59,4 @@ WindowTags 是 JackalClient 的 Window 分类模块。启用后会围绕 窗口�
 
 相关资料
 无
+
