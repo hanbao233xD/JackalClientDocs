@@ -40,7 +40,7 @@ LiveStream（直播间）用于一些直播间的功能。
  类型：文本；默认："config/liveStreamGiftTriggers.ini"
  说明：用于指定文件/目录路径。建议使用稳定的绝对路径并确认权限可访问，避免因路径变化导致功能失效。
 - Gift Trigger Default Command（礼物触发器默认命令）
- 类型：文本；默认："/bili live chatter Thanks {{nickname}} for {{gift}}[比心]!!!"
+ 类型：文本；默认："/bili live chatter Thanks \{\{nickname}} for \{\{gift}}[比心]!!!"
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 - Gift Notify Mode（礼物通知模式）
  类型：枚举；默认："Notify"

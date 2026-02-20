@@ -75,7 +75,7 @@ AutoDanmaku（自动弹幕）用于根据xml文件自动发送弹幕。
  类型：布尔；默认：false
  说明：这是开关型配置。默认值 false 代表作者推荐的初始行为；若要改动，建议一次只改一个开关便于观察影响。
 - Hotkey (Next Danmaku File)（快捷键（下一个弹幕文件））
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, '2'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, '2' } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 历史更新
 - 17. 修复 AutoDanmaku 模块因为编码而无法启动问题。

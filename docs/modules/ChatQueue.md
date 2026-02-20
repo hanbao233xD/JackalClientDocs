@@ -21,16 +21,16 @@ ChatQueue（聊天队列）用于管理MC的聊天发送任务。
  类型：布尔；默认：false
  说明：这是行为开关项。建议先按默认值使用，确认行为符合预期后再逐项启停，避免多个开关同时改动造成排查困难。
 - Pause Hotkey（暂停快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, '0'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, '0' } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Clear Hotkey（清除快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, 'F'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, 'F' } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Send Queue Front Hotkey（发送队首快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_ADD}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_ADD } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Discard Queue Front Hotkey（丢弃队首快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_SUBTRACT}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_SUBTRACT } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Chat Send Required Idle Time (ms)（聊天发送要求的空闲时间（毫秒））
  类型：数值；默认：1500L

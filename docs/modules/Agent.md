@@ -23,7 +23,7 @@ Agent（AI代理）用于使用一个简单的人工智能代理完成你的任�
  说明：这是选项型配置。默认值 Run 一般更稳妥；建议按使用场景逐个试用，而不是一次性切换多项。
  可选：Run（未收录）；Pause（未收录）；Stop（停止）
 - Pause Task Hotkey（暂停任务快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_NUMPAD0}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_NUMPAD0 } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Correct JSON Format（纠正JSON格式）
  类型：布尔；默认：true

@@ -62,7 +62,7 @@ IRC（聊天室）用于一个简单的在线聊天系统。
  说明：这是选项型配置。默认值 Input Box 一般更稳妥；建议按使用场景逐个试用，而不是一次性切换多项。
  可选：Off（关闭）；Bottom Chat（底部聊天栏）；Input Box（输入框）
 - Quick Send Hotkey（快速发送快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, '0'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, '0' } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Message Length Limit Via GET（使用GET时的消息长度上限）
  类型：数值；默认：39

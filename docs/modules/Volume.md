@@ -35,13 +35,13 @@ Volume（音量）用于暂无描述。
  说明：用于选择结果反馈方式。默认值 Title 适合大多数场景；若你不想打扰可改为更安静的输出方式。
  可选：Off（关闭）；Title（标题）；Notify（通知）；Chatter（弹幕）；Actionbar（行为栏）；WinToast（系统通知）
 - Vol+（音量+）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LSHIFT, VK_UP}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LSHIFT, VK_UP } }`}
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 - Vol-（音量-）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LSHIFT, VK_DOWN}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LSHIFT, VK_DOWN } }`}
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 - Mute（静音）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LSHIFT, 'M'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LSHIFT, 'M' } }`}
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 - Hide HUD When Menu On（打开菜单时隐藏HUD）
  类型：布尔；默认：false

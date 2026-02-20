@@ -34,7 +34,7 @@ OpacityChanger（透明度调节）支持对目标窗口进行快捷透明度调
  说明：指定透明度调节作用窗口。
  可选：Foreground（前端）；PointAt（指向）
 - Wheel Hotkey（滚轮热键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LMENU}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU } }`}
  说明：该快捷键用于即时触发功能。建议避免与系统或常用软件冲突。
 - Hide HUD When Menu On（打开菜单时隐藏HUD）
  类型：布尔；默认：false

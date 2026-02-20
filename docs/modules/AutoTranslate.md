@@ -85,13 +85,13 @@ AutoTranslate 会对目标窗口（或全屏）截图做 OCR，再按阈值过�
 - Recognize Cooldown (ms)（识别冷却（毫秒））
   类型：数值；默认：3000L。Periodic 模式下的最小触发间隔。
 - Toggle Texts Hotkey（切换文本快捷键）
-  类型：按键/复合；默认：{{"Keybind", {0}}}。切换 Show Texts。
+  类型：按键/复合；默认：`{ { "Keybind", {0 } }`}。切换 Show Texts。
 - Trigger Hotkey（触发快捷键）
-  类型：按键/复合；默认：{{"Keybind", {0}}}。手动触发一次识别/翻译。
+  类型：按键/复合；默认：`{ { "Keybind", {0 } }`}。手动触发一次识别/翻译。
 - Re-merge Texts Hotkey（重新合并文本快捷键）
-  类型：按键/复合；默认：{{"Keybind", {0}}}。不重新 OCR，仅对现有结果重做合并/翻译流程。
+  类型：按键/复合；默认：`{ { "Keybind", {0 } }`}。不重新 OCR，仅对现有结果重做合并/翻译流程。
 - Clear Hotkey（清除快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_CAPITAL}}}。清空结果并强制重新显示文本。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_CAPITAL } }`}。清空结果并强制重新显示文本。
 
 历史更新
 - 49. 添加模块：AutoTranslate，自动识别文本并翻译展示。

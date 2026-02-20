@@ -83,7 +83,7 @@ TargetHUD 会为目标窗口绘制一块信息面板，展示进程名、PID、�
   类型：组合框；默认："Console Output"。按热键获取目标进程命令行后的输出方式。
   可选：Off（关闭）；Console Output（控制台输出）；Copy（复制）。
 - Command Line Getter Hotkey（命令行获取器快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LWIN, VK_SUBTRACT}}}。触发命令行读取动作的快捷键。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LWIN, VK_SUBTRACT } }`}。触发命令行读取动作的快捷键。
 
 历史更新
 - 31. 添加新模块：TargetHUD，显示目标窗口HUD。拥有丝滑动画。

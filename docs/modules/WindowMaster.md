@@ -48,39 +48,39 @@ WindowMaster 是窗口操作中枢：它用统一目标选择 + 快捷键动作�
 - HUD Item Count Per Page（HUD 每页显示的项数量）
   类型：数值；默认：11U。分页时每页条目数。
 - HUD Next Page（HUD 下一页）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_RIGHT}}}。下一页热键。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_RIGHT } }`}。下一页热键。
 - HUD Prev Page（HUD 上一页）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_LEFT}}}。上一页热键。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_LEFT } }`}。上一页热键。
 - Phantom Window Opacity (0~1)（Phantom 窗口 Opacity (0~1)）
   类型：数值；默认：0.1f。幻影窗口透明度；修改后会批量刷新现有幻影窗口。
 - Privacy/U Keybind（设为/取消隐私窗口快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F1}}}。切换窗口捕获亲和状态。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F1 } }`}。切换窗口捕获亲和状态。
 - Privacy Overlay/U Keybind（设为/取消隐私窗口(覆盖模式)快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F2}}}。切换透明覆盖层隐私模式。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F2 } }`}。切换透明覆盖层隐私模式。
 - Toggle Phantom Window Keybind（切换幻影窗口按键绑定）
-  类型：按键/复合；默认：{{"Keybind", {0}}}。切换窗口“可穿透+透明+置顶”的幻影态。
+  类型：按键/复合；默认：`{ { "Keybind", {0 } }`}。切换窗口“可穿透+透明+置顶”的幻影态。
 - Kill Process Keybind（结束进程快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F3}}}。直接结束目标窗口所属进程。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F3 } }`}。直接结束目标窗口所属进程。
 - EndTask Keybind（暴力结束任务快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F9}}}。调用系统 EndTask 路径结束目标。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F9 } }`}。调用系统 EndTask 路径结束目标。
 - Freeze/U Keybind（冻结/解冻窗口快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F6}}}。切换窗口 Enable 状态实现冻结/解冻。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F6 } }`}。切换窗口 Enable 状态实现冻结/解冻。
 - Process Freeze/U Keybind（冻结/解冻进程快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F7}}}。切换目标进程挂起/恢复。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F7 } }`}。切换目标进程挂起/恢复。
 - Topmost/U Keybind（置顶/取消置顶快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F8}}}。切换 TOPMOST。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F8 } }`}。切换 TOPMOST。
 - Hide/Show Keybind（隐藏/显示快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F5}}}。切换窗口可见性。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F5 } }`}。切换窗口可见性。
 - Destroy Keybind（发送销毁消息快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F11}}}。发送销毁消息。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F11 } }`}。发送销毁消息。
 - Update Keybind（更新窗口快捷键）
-  类型：按键/复合；默认：{{"Keybind", {0}}}。触发窗口刷新/重绘。
+  类型：按键/复合；默认：`{ { "Keybind", {0 } }`}。触发窗口刷新/重绘。
 - Lock Update Keybind（锁定更新快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F10}}}。调用 LockWindowUpdate 锁定更新。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F10 } }`}。调用 LockWindowUpdate 锁定更新。
 - EndSession Keybind（发送结束会话消息快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_LMENU, VK_F12}}}。发送结束会话消息。
+  类型：按键/复合；默认：`{ { "Keybind", {VK_LMENU, VK_F12 } }`}。发送结束会话消息。
 - Sink Keybind（沉没窗口快捷键）
-  类型：按键/复合；默认：{{"Keybind", {0}}}。把窗口下沉到底层。
+  类型：按键/复合；默认：`{ { "Keybind", {0 } }`}。把窗口下沉到底层。
 
 历史更新
 - 9. 为 WindowMaster 添加注入式隐私设置功能。

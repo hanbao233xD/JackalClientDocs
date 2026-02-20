@@ -50,7 +50,7 @@ LiveChatter（直播弹幕）用于管理直播间弹幕交互（接收/发送/A
  说明：这是选项型配置。默认值 Off 一般更稳妥；建议按使用场景逐个试用，而不是一次性切换多项。
  可选：Off（关闭）；Send（未收录）；Copy and Send（复制并发送）；Select All, Copy and Send（全选复制并发送）
 - Clipboard Quick Send Key（剪贴板快速发送快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_ADD}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_ADD } }`}
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 - Clipboard Quick Send Confirm（剪贴板快速发送是否确认）
  类型：布尔；默认：false
@@ -111,7 +111,7 @@ LiveChatter（直播弹幕）用于管理直播间弹幕交互（接收/发送/A
  类型：布尔；默认：false
  说明：用于指定文件/目录路径。建议使用稳定的绝对路径并确认权限可访问，避免因路径变化导致功能失效。
 - File Output Format（文件输出格式）
- 类型：文本；默认："{{content}}`{{nickname}}"
+ 类型：文本；默认："\{\{content}}`\{\{nickname}}"
  说明：用于指定文件/目录路径。建议使用稳定的绝对路径并确认权限可访问，避免因路径变化导致功能失效。
 - File Output Path（文件输出路径）
  类型：文本；默认："output\\Chatters.txt"

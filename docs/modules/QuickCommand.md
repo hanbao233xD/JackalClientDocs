@@ -28,7 +28,7 @@ QuickCommand（快速命令）用于按快捷键打开输入框，输入后快�
  说明：这是该模块的核心行为开关，不同选项对应不同执行策略。建议先保持默认 Input Box ，确认稳定后再逐项切换比较效果。
  可选：Input Box（输入框）；Chat Box（聊天框）
 - Trigger Hotkey（触发快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_3}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_3 } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 历史更新
 - 38. 修复 QuickCommand 单例模式下 Chat Box 创建一次后无法再次创建的问题；单例模式关闭时无限创建的问题。

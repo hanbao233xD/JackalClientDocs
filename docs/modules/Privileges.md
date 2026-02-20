@@ -18,7 +18,7 @@ Privileges（特权）建议先按默认配置运行一段时间，确认对目�
  类型：布尔；默认：true
  说明：用于控制结果反馈方式。调试阶段建议开启，日常使用可按需要关闭。
 - bind（绑定）
- 类型：按键/复合；默认：{{"Keybind", {VK_RMENU, 'P'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_RMENU, 'P' } }`}
  说明：该快捷键用于即时触发功能。建议避免与系统或常用软件冲突。
 历史更新
 - 7. 另设需要系统和 TrustedInstaller 权限的模块，将Config中的 Admin Modules Check Admin改为Check Module Privileges Before Turning On。

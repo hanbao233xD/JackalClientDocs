@@ -88,7 +88,7 @@ MachineLock（锁机）启用后会同时接管输入、窗口焦点与多项系
  类型：枚举；默认："Custom Hotkey (Notice Keyboard Lock)"
  说明：紧急退出兜底策略。`Esc 20秒` 适合无可用热键场景；`Custom Hotkey` 更快但需确保按键未被锁定。
 - Custom Escape Hotkey（自定义退出快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_OEM_3}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_OEM_3 } }`}
  说明：紧急退出快捷键。建议使用单独保留的组合键，并先实测在当前键盘锁策略下可触发。
 - Exit Condition（退出条件）
  类型：枚举；默认："Password"

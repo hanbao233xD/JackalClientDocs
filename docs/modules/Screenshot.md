@@ -62,7 +62,7 @@ Screenshot（截图工具）用于你可以用PrtScr键打开截图工具。
  说明：这是选项型配置。默认值 Shift Key 一般更稳妥；建议按使用场景逐个试用，而不是一次性切换多项。
  可选：Off（关闭）；Shift Key（Shift 按下时）；Always（总是）
 - bind（绑定）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_SNAPSHOT}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_SNAPSHOT } }`}
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 历史更新
 - 27. 为 Screenshot 模块添加配置：

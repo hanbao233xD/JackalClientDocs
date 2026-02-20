@@ -90,7 +90,7 @@ Shell（命令行）用于暂无描述。
  说明：用于选择结果反馈方式。默认值 Rainbow 适合大多数场景；若你不想打扰可改为更安静的输出方式。
  可选：见 [NAMED_COLOR_BASE_LIST](./NAMED_COLOR_BASE_LIST.md)
 - bind（绑定）
- 类型：按键/复合；默认：{{"Keybind", {VK_RMENU, 'S'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_RMENU, 'S' } }`}
  说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
 历史更新
 无（HISTORY 中暂无明确记录）

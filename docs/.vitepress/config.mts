@@ -52,10 +52,17 @@ const sidebarGroups = [
 const teekConfig = defineTeekConfig({
   teekTheme: false,
   vitePlugins: {
-    sidebar: false,
+    sidebar: true,
+    sidebarOption: {
+      ignoreList: ['modules', 'public', '.vitepress']
+    },
     permalink: false,
     mdH1: false,
-    docAnalysis: true
+    docAnalysis: true,
+    docAnalysisOption: {
+      cn: 400,
+      en: 200
+    }
   },
   themeEnhance: {
     enabled: true,
@@ -73,6 +80,17 @@ const teekConfig = defineTeekConfig({
   ],
   sidebar: {
     '/': sidebarGroups
+  },
+  editLink: {
+    pattern: 'https://github.com/acmuhan/JackalClientDocs/edit/main/docs/:path',
+    text: '在 GitHub 上编辑此页'
+  },
+  lastUpdated: {
+    text: '上次更新时间',
+    formatOptions: {
+      dateStyle: 'short',
+      timeStyle: 'short'
+    }
   }
 })
 
@@ -95,5 +113,6 @@ teekConfig.vite.plugins = [
 export default withMermaid({
   ...teekConfig,
   title: 'JackalClient',
-  description: 'Windows client toolbox documentation'
+  description: 'Windows client toolbox documentation',
+  lastUpdated: true
 })

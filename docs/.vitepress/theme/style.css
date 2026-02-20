@@ -117,3 +117,123 @@
 .tk-sidebar .group::-webkit-scrollbar-thumb:hover {
   background: rgba(120, 130, 150, 0.7);
 }
+
+/* ==========================================================================
+   首页动画与特效增强
+   ========================================================================== */
+
+/* 1. 动态渐变流光文字效果 */
+@keyframes vp-gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 2. 元素入场动画 */
+@keyframes vp-fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 指令卡片样式 */
+.command-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.command-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  background-color: var(--vp-c-bg-soft);
+  transition: transform 0.2s, border-color 0.2s;
+  text-decoration: none !important;
+  color: var(--vp-c-text-1) !important;
+  display: flex;
+  flex-direction: column;
+}
+.command-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+}
+.command-card-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: var(--vp-c-brand-1);
+}
+.command-card-count {
+  font-size: 0.9em;
+  color: var(--vp-c-text-2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* 针对 Hero 区域的主要元素应用入场动画 */
+  .VPHero .name {
+    animation: vp-fade-in-up 0.8s ease-out forwards, vp-gradient-flow 3s linear infinite;
+    animation-delay: 0.1s, 0s;
+    background: linear-gradient(
+      120deg, 
+      #bd34fe 30%, 
+      #41d1ff 50%, 
+      #bd34fe 70%
+    );
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; /* 确保背景裁剪生效 */
+  }
+
+  .VPHero .text {
+    opacity: 0;
+    animation: vp-fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  .VPHero .tagline {
+    opacity: 0;
+    animation: vp-fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  .VPHero .actions {
+    opacity: 0;
+    animation: vp-fade-in-up 0.8s ease-out forwards;
+    animation-delay: 0.7s;
+  }
+
+  /* 图片区域也可以添加动画 */
+  .VPHero .image-container,
+  .VPHero .image-bg {
+    opacity: 0;
+    animation: vp-fade-in-up 1s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+
+  /* 特性卡片依次入场 */
+  .VPFeatures .VPFeature {
+    opacity: 0;
+    animation: vp-fade-in-up 0.6s ease-out forwards;
+  }
+
+  .VPFeatures .VPFeature:nth-child(1) { animation-delay: 0.4s; }
+  .VPFeatures .VPFeature:nth-child(2) { animation-delay: 0.5s; }
+  .VPFeatures .VPFeature:nth-child(3) { animation-delay: 0.6s; }
+  .VPFeatures .VPFeature:nth-child(4) { animation-delay: 0.7s; }
+  .VPFeatures .VPFeature:nth-child(n+5) { animation-delay: 0.8s; }
+}

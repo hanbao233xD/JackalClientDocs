@@ -34,10 +34,10 @@ ColorPicker（取色器）用于显示和复制鼠标位置的颜色。
  类型：枚举；默认："R
  说明：这是选项型配置。默认值 R 一般更稳妥；建议按使用场景逐个试用，而不是一次性切换多项。
 - Copy Hotkey（复制快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, 'C'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, 'C' } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Copy Hotkey (Inverted Color)（复制快捷键（反转色））
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, 'I'}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, 'I' } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 历史更新
 - 13. 添加模块：Color Picker 取色器。

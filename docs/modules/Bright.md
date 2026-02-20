@@ -26,10 +26,10 @@ Bright（亮度修改）用于调节屏幕亮度。
  说明：这是该模块的核心行为开关，不同选项对应不同执行策略。建议先保持默认 Lazy ，确认稳定后再逐项切换比较效果。
  可选：Once（未收录）；Hotkey（快捷键）；Lazy（懒散）；Keep（保持）
 - Hotkey Brightness-（降低亮度快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_COMMA}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_COMMA } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Hotkey Brightness+（提高亮度快捷键）
- 类型：按键/复合；默认：{{"Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_PERIOD}}}
+ 类型：按键/复合；默认：`{ { "Keybind", {VK_LCONTROL, VK_LMENU, VK_OEM_PERIOD } }`}
  说明：用于设置快捷键触发。建议避免与系统或常用软件冲突，优先使用组合键提高可控性。
 - Hotkey Step (%%)（快捷键调节差值 (%%)）
  类型：数值；默认：5
