@@ -5,43 +5,37 @@ PowerShell
 
 需求
 - 安全级别：常规模块
+- 恶意标记：否
 - 权限需求：无
 - 驱动依赖：否
 - 联网需求：否
-- 开发状态：稳定/常规
+- 开发状态：稳定
 - 版本属性：普通可用
 
 介绍
-PowerShell（PowerShell）用于打开 PowerShell。
-适合进程观测、控制与排障场景。
-初次使用可优先调整：Run As Admin、No Wow64 Redirection。
+PowerShell 用于拉起系统 PowerShell 终端，触发后自动关闭模块。
+启用 Run As Admin 时会优先尝试管理员方式启动；未启用时按普通方式直接打开。
 
 配置项
 - Run As Admin（以管理员身份运行）
- 类型：布尔；默认：false
- 说明：这是开关型配置。默认值 false 代表作者推荐的初始行为；若要改动，建议一次只改一个开关便于观察影响。
+  类型：布尔；默认：false；说明：开启后在非管理员环境下会触发管理员启动流程，适合需要执行高权限命令时使用。
 - No Wow64 Redirection（禁用 Wow64 重定向）
- 类型：布尔；默认：true
- 说明：这是开关型配置。默认值 true 代表作者推荐的初始行为；若要改动，建议一次只改一个开关便于观察影响。
+  类型：布尔；默认：true；说明：开启后临时关闭 Wow64 重定向再启动 PowerShell，降低系统位数差异带来的路径歧义。
+
 历史更新
-- 2. 修复了 NoCmd, NoPowerShell, NoTaskmgr, NoRegedit 无效的问题。
+- 2. 修复 NoCmd、NoPowerShell、NoTaskmgr、NoRegedit 无效的问题。
 
 备注
-该模块可能受系统版本、权限级别、目标进程状态或安全软件策略影响；若功能未生效，优先检查管理员权限、驱动依赖、联网状态与系统兼容性。
+如果系统启用了 NoPowerShell 限制策略，PowerShell 可能被立即拦截或关闭，建议先检查限制模块状态。
 
 相关命令
 无
 
 相关模块
-- [ProcessManager (进程管理器)](./ProcessManager.md)
-- [Elevator (电梯)](./Elevator.md)
-- [ForceTerminator (暴力送终)](./ForceTerminator.md)
-- [Anti360Ad (反数字广告)](./Anti360Ad.md)
-- [Kill360AdProc (杀数字广告进程)](./Kill360AdProc.md)
-- [KillAV (击杀杀软)](./KillAV.md)
-- [KillMalware (击杀病毒)](./KillMalware.md)
-- [ListModules (枚举模块)](./ListModules.md)
+- [Cmd (命令提示符)](./Cmd.md)
+- [SuperCmd (超级命令提示符)](./SuperCmd.md)
+- [Regedit (注册表)](./Regedit.md)
+- [Taskmgr (任务管理器)](./Taskmgr.md)
 
 相关资料
 无
-

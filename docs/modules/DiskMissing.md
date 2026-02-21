@@ -4,51 +4,44 @@ DiskMissing
 描述：制造磁盘丢失的假象。
 
 需求
-- 安全级别：常规模块
-- 权限需求：无
+- Unsafe：否
+- Malicious：否
+- 需要管理员权限：否
+- 需要系统权限：否
+- 需要 TrustedInstaller 权限：否
 - 驱动依赖：否
-- 联网需求：否
-- 开发状态：稳定/常规
+- 是否 WIP：否
+- 是否需要联网：否
 - 版本属性：普通可用
 
 介绍
-DiskMissing（磁盘丢失）用于制造磁盘丢失的假象。
-适合在日常管理与自动化场景中按需启用。
-初次使用可优先调整：Signal Cooldown (ms)。
+DiskMissing 通过发送外壳目录变更信号，让系统或资源管理器产生“某些盘符已消失”的表象。
+启用时会立即执行一次；如果 `Keep` 开启，模块会在后台按冷却周期重复发送信号，持续维持这种状态。
 
 配置项
 - Keep（保持）
- 类型：布尔；默认：true
- 说明：这是行为开关项。建议先按默认值使用，确认行为符合预期后再逐项启停，避免多个开关同时改动造成排查困难。
+类型：布尔；默认：true；作用：开启后周期性重复发送丢盘信号；关闭时仅在启用瞬间执行一次。建议：临时演示用关闭，持续效果用开启。
+
 - Signal Cooldown (ms)（发送信号冷却 (毫秒)）
- 类型：数值；默认：80L
- 说明：用于控制检测/刷新/动画节奏。默认值 80L 以稳定为主；调小会更灵敏但可能增加资源占用，调大则更省资源但响应更慢。
+类型：整数；默认：80；作用：`Keep` 模式下两次信号发送间隔。建议：值越小效果越“持续”，但事件更频繁；一般 80~300 足够。
+
 - Missing Drives（丢失的磁盘）
- 类型：枚举；默认："System Drive"
- 说明：这是选项型配置。默认值 System Drive 一般更稳妥；建议按使用场景逐个试用，而不是一次性切换多项。
- 可选：System Drive（系统盘）；All（所有）；Custom（自定义）
+类型：枚举；默认：System Drive；作用：选择对哪些盘符发送丢失信号。可选项：System Drive（系统盘）、All（所有）、Custom（自定义）。建议：先从 `Custom` 小范围验证。
+
 - Custom Missing Drives（自定义丢失的磁盘）
- 类型：文本；默认："D;E"
- 说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
-历史更新
-- 21. 添加模块：DiskMissing，可以制造磁盘消失的假象。
+类型：文本；默认："D;E"；作用：当 `Missing Drives=Custom` 时生效，使用分号分隔盘符字母。建议：只填盘符字母，不要带路径。
 
 备注
-该模块可能受系统版本、权限级别、目标进程状态或安全软件策略影响；若功能未生效，优先检查管理员权限、驱动依赖、联网状态与系统兼容性。
+该模块主要影响外壳层感知与显示，不等同于真实卸载磁盘。
+如果只需短时触发一次效果，关闭 `Keep` 更可控。
 
 相关命令
 无
 
 相关模块
+- [RootProgram (根目录程序)](./RootProgram.md)
 - [FileManager (文件管理器)](./FileManager.md)
-- [Everything (Everything)](./Everything.md)
-- [FileDelete (文件删除)](./FileDelete.md)
-- [FileCreate (文件创建)](./FileCreate.md)
 - [FileMonitor (文件监视)](./FileMonitor.md)
-- [FolderClear (目录清空)](./FolderClear.md)
-- [TempClear (临时清空)](./TempClear.md)
-- [RecyclerClear (回收站清空)](./RecyclerClear.md)
 
 相关资料
 无
-

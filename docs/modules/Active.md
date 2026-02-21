@@ -1,44 +1,39 @@
 Active
 活动
 分类：Misc
-描述：暂无描述
+描述：始终让客户端窗口获得焦点。
 
 需求
 - 安全级别：常规模块
+- 恶意标记：否
 - 权限需求：无
 - 驱动依赖：否
 - 联网需求：否
-- 开发状态：稳定/常规
+- 开发状态：稳定
 - 版本属性：普通可用
 
 介绍
-Active（活动）用于暂无描述。
-适合在日常管理与自动化场景中按需启用。
-初次使用可优先调整：Cooldown。
+Active 会周期性把焦点拉回客户端窗口，用于防止窗口失焦或被其他程序抢前台。
+它和 AutoFocus 互斥：开启 Active 时会自动关闭 AutoFocus；开启 AutoFocus 时也会反向关闭 Active。
 
 配置项
 - Cooldown（冷却）
- 类型：数值；默认：0
- 说明：用于控制检测/刷新/动画节奏。默认值 0 以稳定为主；调小会更灵敏但可能增加资源占用，调大则更省资源但响应更慢。
+  类型：整数；默认：0；说明：控制焦点回拉间隔。值越小回拉越频繁、干预越强；默认 0 偏激进，若你感到频繁抢焦点，建议逐步增大该值。
+
 历史更新
 无（HISTORY 中暂无明确记录）
 
 备注
-该模块可能受系统版本、权限级别、目标进程状态或安全软件策略影响；若功能未生效，优先检查管理员权限、驱动依赖、联网状态与系统兼容性。
+Active 会直接影响前台交互体验。日常办公或多窗口操作场景不建议长期开启，只在需要强制保持客户端前台时短时启用。
 
 相关命令
 无
 
 相关模块
-- [AutoSpeak (自动讲述)](./AutoSpeak.md)
-- [AntiMicrophone (反麦克风)](./AntiMicrophone.md)
-- [Console (控制台)](./Console.md)
-- [Shell (命令行)](./Shell.md)
-- [QuickCommand (快速命令)](./QuickCommand.md)
+- [AutoFocus (自动聚焦)](./AutoFocus.md)
 - [ForceTopmost (强制置顶)](./ForceTopmost.md)
-- [MemeTrigger (梗触发)](./MemeTrigger.md)
-- [Encryptor (加密器)](./Encryptor.md)
+- [Hidden (隐藏)](./Hidden.md)
+- [Panic (恐慌)](./Panic.md)
 
 相关资料
 无
-

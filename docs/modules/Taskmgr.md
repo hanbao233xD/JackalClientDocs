@@ -5,42 +5,37 @@ Taskmgr
 
 需求
 - 安全级别：常规模块
+- 恶意标记：否
 - 权限需求：无
 - 驱动依赖：否
 - 联网需求：否
-- 开发状态：稳定/常规
+- 开发状态：稳定
 - 版本属性：普通可用
 
 介绍
-Taskmgr（任务管理器）用于打开任务管理器。
-适合进程观测、控制与排障场景。
-初次使用可优先调整：No Wow64 Redirection。
+Taskmgr 用于管理任务管理器窗口状态：开启时拉起或聚焦任务管理器，关闭时结束 `taskmgr.exe`。
+该模块会与系统进程状态联动：如果你手动关闭了任务管理器，模块状态会同步关闭；手动打开时模块状态也会同步开启。
 
 配置项
 - No Wow64 Redirection（禁用 Wow64 重定向）
- 类型：布尔；默认：true
- 说明：这是开关型配置。默认值 true 代表作者推荐的初始行为；若要改动，建议一次只改一个开关便于观察影响。
+  类型：布尔；默认：true；说明：开启后会临时关闭 Wow64 文件系统重定向再启动 Task Manager，更容易在 64 位系统下拉起正确目标。默认建议保持开启。
+
 历史更新
-- 5. 检查 taskmgr, regedit, cmd 是否被禁用如果失败将不会输出错误信息了，以免刷屏。
-- 2. 修复了 NoCmd, NoPowerShell, NoTaskmgr, NoRegedit 无效的问题。
-- 11. Taskmgr: 将会临时关闭重定向，以便打开64位任务管理器。
+- 5. 优化 taskmgr/regedit/cmd 禁用检测，减少失败刷屏。
+- 2. 修复 NoCmd/NoPowerShell/NoTaskmgr/NoRegedit 无效问题。
+- 11. Taskmgr 临时关闭重定向以打开 64 位任务管理器。
 
 备注
-该模块可能受系统版本、权限级别、目标进程状态或安全软件策略影响；若功能未生效，优先检查管理员权限、驱动依赖、联网状态与系统兼容性。
+如果你同时启用了限制任务管理器的模块（如 NoTaskmgr），Taskmgr 的打开行为会被策略模块拦截或反复拉回，排障时建议先停用限制模块。
 
 相关命令
 无
 
 相关模块
+- [NoTaskmgr (禁任务管理器)](./NoTaskmgr.md)
 - [ProcessManager (进程管理器)](./ProcessManager.md)
-- [Elevator (电梯)](./Elevator.md)
-- [ForceTerminator (暴力送终)](./ForceTerminator.md)
-- [Anti360Ad (反数字广告)](./Anti360Ad.md)
-- [Kill360AdProc (杀数字广告进程)](./Kill360AdProc.md)
-- [KillAV (击杀杀软)](./KillAV.md)
-- [KillMalware (击杀病毒)](./KillMalware.md)
-- [ListModules (枚举模块)](./ListModules.md)
+- [Regedit (注册表编辑器)](./Regedit.md)
+- [Cmd (命令提示符)](./Cmd.md)
 
 相关资料
 无
-

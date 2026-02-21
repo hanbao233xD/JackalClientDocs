@@ -5,38 +5,34 @@ Gpedit
 
 需求
 - 安全级别：常规模块
-- 权限需求：无
+- 恶意标记：否
+- 权限需求：无（下载安装阶段可能触发提权需求）
 - 驱动依赖：否
-- 联网需求：否
-- 开发状态：稳定/常规
+- 联网需求：按需（缺失组件时需要下载）
+- 开发状态：稳定
 - 版本属性：普通可用
 
 介绍
-Gpedit（组策略）用于打开组策略编辑器。
-适合进程观测、控制与排障场景。
+Gpedit 用于打开本地组策略编辑器。开启时会先尝试直接启动；若本机缺失 `gpedit.msc`，会进入自动下载并再次尝试打开。
+关闭模块时会尝试关闭组策略编辑器窗口，必要时回退到进程级结束。
 
 配置项
 无（该模块在 default_settings.h 中未定义独立配置项）
 
 历史更新
-- 26. 添加模块 Gpedit, 用于启动组策略管理器。如果用户电脑上没有，会自动下载安装。
+- 26. 新增 Gpedit 模块；当本机缺失时可自动下载安装。
 
 备注
-该模块可能受系统版本、权限级别、目标进程状态或安全软件策略影响；若功能未生效，优先检查管理员权限、驱动依赖、联网状态与系统兼容性。
+模块状态与组策略窗口存在状态联动：窗口关闭后模块会自动关闭，窗口打开时模块会自动显示为开启。
 
 相关命令
 无
 
 相关模块
-- [ProcessManager (进程管理器)](./ProcessManager.md)
-- [Elevator (电梯)](./Elevator.md)
-- [ForceTerminator (暴力送终)](./ForceTerminator.md)
-- [Anti360Ad (反数字广告)](./Anti360Ad.md)
-- [Kill360AdProc (杀数字广告进程)](./Kill360AdProc.md)
-- [KillAV (击杀杀软)](./KillAV.md)
-- [KillMalware (击杀病毒)](./KillMalware.md)
-- [ListModules (枚举模块)](./ListModules.md)
+- [Regedit (注册表)](./Regedit.md)
+- [Taskmgr (任务管理器)](./Taskmgr.md)
+- [Cmd (命令提示符)](./Cmd.md)
+- [PowerShell (PowerShell)](./PowerShell.md)
 
 相关资料
 无
-

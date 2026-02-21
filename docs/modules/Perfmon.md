@@ -5,43 +5,37 @@ Perfmon
 
 需求
 - 安全级别：常规模块
+- 恶意标记：否
 - 权限需求：无
 - 驱动依赖：否
 - 联网需求：否
-- 开发状态：稳定/常规
+- 开发状态：稳定
 - 版本属性：普通可用
 
 介绍
-Perfmon（资源监视器）用于打开资源监视器。
-适合进程观测、控制与排障场景。
-初次使用可优先调整：Parameters、No Wow64 Redirection。
+Perfmon 用于打开或聚焦资源监视器。若 `perfmon.exe` 已在运行，会直接恢复并前置窗口；否则按配置参数启动。
+关闭模块时会尝试结束 `perfmon.exe`，并且模块状态会与进程状态自动同步。
 
 配置项
 - Parameters（参数）
- 类型：文本；默认："/reS"
- 说明：该配置用于调整模块行为细节。建议先按默认值运行，确认需求后再逐步调整。
+  类型：文本；默认："/reS"；说明：启动资源监视器时附带参数。默认参数会直接打开资源监视器界面。
 - No Wow64 Redirection（禁用 Wow64 重定向）
- 类型：布尔；默认：true
- 说明：这是开关型配置。默认值 true 代表作者推荐的初始行为；若要改动，建议一次只改一个开关便于观察影响。
+  类型：布尔；默认：true；说明：开启后临时关闭 Wow64 重定向再启动 perfmon，减少系统路径重定向干扰。
+
 历史更新
-- 10. 添加模块：Perfmon。打开资源监视器。
+- 10. 新增 Perfmon 模块（打开资源监视器）。
 
 备注
-该模块可能受系统版本、权限级别、目标进程状态或安全软件策略影响；若功能未生效，优先检查管理员权限、驱动依赖、联网状态与系统兼容性。
+如果 Perfmon 打开后立即消失，通常是系统策略或权限环境导致；可先用默认参数单独测试是否能手工启动。
 
 相关命令
 无
 
 相关模块
+- [Taskmgr (任务管理器)](./Taskmgr.md)
 - [ProcessManager (进程管理器)](./ProcessManager.md)
-- [Elevator (电梯)](./Elevator.md)
-- [ForceTerminator (暴力送终)](./ForceTerminator.md)
-- [Anti360Ad (反数字广告)](./Anti360Ad.md)
-- [Kill360AdProc (杀数字广告进程)](./Kill360AdProc.md)
-- [KillAV (击杀杀软)](./KillAV.md)
-- [KillMalware (击杀病毒)](./KillMalware.md)
-- [ListModules (枚举模块)](./ListModules.md)
+- [Regedit (注册表)](./Regedit.md)
+- [Gpedit (组策略)](./Gpedit.md)
 
 相关资料
 无
-
