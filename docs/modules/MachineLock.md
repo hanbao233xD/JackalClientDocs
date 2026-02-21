@@ -68,7 +68,7 @@ MachineLock 启用后会接管输入与界面控制：按配置联动静音、�
   类型：组合框；默认："Custom Hotkey (Notice Keyboard Lock)"。紧急退出通道。
   可选：Off（关闭）；Esc (Press 20 seconds)（Esc 键 (长按 20 秒)）；Custom Hotkey (Notice Keyboard Lock)（自定义快捷键 (注意键盘锁)）。
 - Custom Escape Hotkey（自定义退出快捷键）
-  类型：按键/复合；默认：{{"Keybind", {VK_OEM_3}}}。紧急退出热键，建议先实测在当前键盘锁策略下可触发。
+  类型：按键/复合；默认：`&#123;&#123;"Keybind", {VK_OEM_3}&#125;&#125;`。紧急退出热键，建议先实测在当前键盘锁策略下可触发。
 - Exit Condition（退出条件）
   类型：组合框；默认："Password"。常规退出条件。
   可选：Password（密码）；Wait Duration（等待一段时间）。
