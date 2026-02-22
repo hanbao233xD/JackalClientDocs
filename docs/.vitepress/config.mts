@@ -1,8 +1,19 @@
-﻿import { withMermaid } from 'vitepress-plugin-mermaid'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { defineTeekConfig } from 'vitepress-theme-teek/config'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { RssPlugin, type RSSOptions } from 'vitepress-plugin-rss'
-import { SearchPlugin } from 'vitepress-plugin-search'
+import { readdirSync } from 'node:fs'
+
+const moduleDocs = readdirSync(new URL('../modules', import.meta.url), { withFileTypes: true })
+  .filter((entry) => entry.isFile() && entry.name.endsWith('.md') && entry.name !== 'index.md')
+  .map((entry) => {
+    const name = entry.name.replace(/\.md$/, '')
+    return {
+      text: name,
+      link: `/modules/${name}`
+    }
+  })
+  .sort((a, b) => a.text.localeCompare(b.text, 'en'))
 
 const rss: RSSOptions = {
   title: 'JackalClient Docs',
@@ -12,13 +23,6 @@ const rss: RSSOptions = {
   language: 'zh-CN'
 }
 
-const searchOptions = {
-  previewLength: 100,
-  buttonLabel: '搜索',
-  placeholder: '搜索文档',
-  allow: ['docs/**/*.md'],
-  ignore: ['docs/.vitepress/**', 'docs/public/**']
-}
 
 const sidebarGroups = [
   {
@@ -32,6 +36,7 @@ const sidebarGroups = [
     text: '核心内容',
     items: [
       { text: '功能与模块地图', link: '/module-map' },
+      { text: '模块介绍', link: '/modules/' },
       { text: '完整命令手册', link: '/commands/' },
       { text: '命令目录页', link: '/commands-catalogue' },
       { text: '安全与使用边界', link: '/safety' },
@@ -55,6 +60,10 @@ const sidebarGroups = [
       { text: '常见问题', link: '/faq' },
       { text: 'BetterLyrics 说明', link: '/betterlyrics' }
     ]
+  },
+  {
+    text: '模块文档索引',
+    items: [{ text: '模块介绍', link: '/modules/' }, ...moduleDocs]
   }
 ]
 
@@ -80,9 +89,13 @@ const teekConfig = defineTeekConfig({
     spotlight: { disabled: true },
     themeColor: { defaultColorName: 'vp-default' }
   },
+  search: {
+    provider: 'local'
+  },
   nav: [
     { text: '首页', link: '/' },
     { text: '快速开始', link: '/quick-start' },
+    { text: '模块介绍', link: '/modules/' },
     { text: '完整命令手册', link: '/commands/' },
     { text: '命令目录页', link: '/commands-catalogue' },
     { text: '安全边界', link: '/safety' }
@@ -90,6 +103,9 @@ const teekConfig = defineTeekConfig({
   sidebar: {
     '/': sidebarGroups
   },
+  socialLinks: [
+    { icon: 'github', link: 'https://github.com/acmuhan/JackalClientDocs' }
+  ],
   editLink: {
     pattern: 'https://github.com/acmuhan/JackalClientDocs/edit/main/docs/:path',
     text: '在 GitHub 上编辑此页'
@@ -121,7 +137,6 @@ teekConfig.vite.ssr.noExternal = [
 ]
 teekConfig.vite.plugins = [
   ...(teekConfig.vite.plugins ?? []),
-  SearchPlugin(searchOptions),
   groupIconVitePlugin(),
   RssPlugin(rss)
 ]

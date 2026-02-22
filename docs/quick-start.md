@@ -1,7 +1,7 @@
-﻿# 快速开始
+# 快速开始
 <TkVpContainer type="tip" title="使用前确认" text="首次使用建议先阅读安全边界页，并确认仅在授权场景下运行。" />
 
-这个是电脑小白请单击此处 → [如何下载并运行 JackalClient 说明书](/download-and-run.md)
+这个是电脑小白请单击此处 → [如何下载并运行 JackalClient 说明书](/download-and-run)
 
 ## 1. 启动方式
 
