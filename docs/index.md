@@ -1,4 +1,4 @@
-﻿﻿---
+---
 layout: home
 
 hero:
@@ -20,7 +20,7 @@ features:
   - title: 快速上手
     details: 零基础入门指南，涵盖启动方式、GUI 操作、基础命令与常见入口，助你快速掌握核心用法。
     link: /quick-start
-  - title:  模块能力
+  - title: 模块能力
     details: 深度解析百余种功能模块，按场景分类：系统工具、自动化脚本、游戏辅助与在线服务。
     link: /module-map
   - title: 命令手册
@@ -28,7 +28,7 @@ features:
     link: /commands/
   - title: 安全边界
     details: 明确的使用规范与安全指引，包含风险分级、合规建议、故障排查与日志定位，保障使用安全。
-    link: /security/
+    link: /safety
 ---
 
 <TkVpContainer type="tip" title="推荐阅读顺序" text="新手建议优先阅读 **快速开始**，随后浏览 **模块地图** 了解功能全貌，最后查阅 **完整命令手册** 与 **安全边界**。" />
