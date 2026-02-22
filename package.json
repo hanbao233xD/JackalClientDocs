@@ -1,10 +1,14 @@
 {
   "devDependencies": {
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
+    "flexsearch": "^0.7.43",
+    "markdown-it": "^14.1.1",
     "mermaid": "^11.12.3",
     "vitepress": "^1.6.4",
     "vitepress-plugin-group-icons": "^1.7.1",
     "vitepress-plugin-mermaid": "^2.0.17",
     "vitepress-plugin-rss": "^0.4.2",
+    "vitepress-plugin-search": "^1.0.4-alpha.22",
     "vitepress-theme-teek": "^1.5.4"
   },
   "scripts": {

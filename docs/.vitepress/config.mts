@@ -2,6 +2,7 @@
 import { defineTeekConfig } from 'vitepress-theme-teek/config'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { RssPlugin, type RSSOptions } from 'vitepress-plugin-rss'
+import { SearchPlugin } from 'vitepress-plugin-search'
 
 const rss: RSSOptions = {
   title: 'JackalClient Docs',
@@ -9,6 +10,14 @@ const rss: RSSOptions = {
   baseUrl: 'https://doc.wormwake.com',
   copyright: 'Copyright (c) JackalClient',
   language: 'zh-CN'
+}
+
+const searchOptions = {
+  previewLength: 100,
+  buttonLabel: '搜索',
+  placeholder: '搜索文档',
+  allow: ['docs/**/*.md'],
+  ignore: ['docs/.vitepress/**', 'docs/public/**']
 }
 
 const sidebarGroups = [
@@ -33,11 +42,11 @@ const sidebarGroups = [
     text: '命令手册',
     items: [
       { text: '章节总览', link: '/commands/' },
-      { text: '系统命令', link: '/commands/系统命令' },
-      { text: '文件命令', link: '/commands/文件命令' },
-      { text: '网络命令', link: '/commands/网络命令' },
-      { text: 'B站命令', link: '/commands/B站命令' },
-      { text: '文本处理命令', link: '/commands/文本处理命令' }
+      { text: '系统命令', link: '/commands/system-commands' },
+      { text: '文件命令', link: '/commands/file-commands' },
+      { text: '网络命令', link: '/commands/network-commands' },
+      { text: 'B站命令', link: '/commands/bili-commands' },
+      { text: '文本处理命令', link: '/commands/text-processing-commands' }
     ]
   },
   {
@@ -85,13 +94,8 @@ const teekConfig = defineTeekConfig({
     pattern: 'https://github.com/acmuhan/JackalClientDocs/edit/main/docs/:path',
     text: '在 GitHub 上编辑此页'
   },
-  lastUpdated: {
-    text: '上次更新时间',
-    formatOptions: {
-      dateStyle: 'short',
-      timeStyle: 'short'
-    }
-  }
+  lastUpdated: true,
+  lastUpdatedText: '上次更新时间'
 })
 
 const originalMarkdownConfig = teekConfig.markdown?.config
@@ -104,8 +108,20 @@ teekConfig.markdown = {
 }
 
 teekConfig.vite = teekConfig.vite ?? {}
+teekConfig.vite.optimizeDeps = teekConfig.vite.optimizeDeps ?? {}
+teekConfig.vite.optimizeDeps.exclude = [
+  ...(teekConfig.vite.optimizeDeps.exclude ?? []),
+  '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+]
+teekConfig.vite.ssr = teekConfig.vite.ssr ?? {}
+teekConfig.vite.ssr.noExternal = [
+  ...(Array.isArray(teekConfig.vite.ssr.noExternal) ? teekConfig.vite.ssr.noExternal : []),
+  '@nolebase/vitepress-plugin-enhanced-readabilities',
+  '@nolebase/ui'
+]
 teekConfig.vite.plugins = [
   ...(teekConfig.vite.plugins ?? []),
+  SearchPlugin(searchOptions),
   groupIconVitePlugin(),
   RssPlugin(rss)
 ]

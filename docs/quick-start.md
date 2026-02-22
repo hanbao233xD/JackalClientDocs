@@ -1,15 +1,7 @@
 ﻿# 快速开始
-
-<div class="doc-status-list">
-  <div class="doc-status-item"><TkIcon icon="mdi:play-circle" size="18" /> 启动</div>
-  <div class="doc-status-item"><TkIcon icon="mdi:view-dashboard" size="18" /> GUI</div>
-  <div class="doc-status-item"><TkIcon icon="mdi:console" size="18" /> 命令行</div>
-  <div class="doc-status-item"><TkIcon icon="mdi:shield-alert" size="18" /> 风险检查</div>
-</div>
-
-<TkTitleTag text="新手入口" type="vp-primary" /> <TkTitleTag text="5分钟" type="vp-success" />
-
 <TkVpContainer type="tip" title="使用前确认" text="首次使用建议先阅读安全边界页，并确认仅在授权场景下运行。" />
+
+这个是电脑小白请单击此处 → [如何下载并运行 JackalClient 说明书](/download-and-run.md)
 
 ## 1. 启动方式
 

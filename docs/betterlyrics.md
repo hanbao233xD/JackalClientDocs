@@ -12,7 +12,7 @@
 
 打开GUI，按Ctrl+F或者在上面选择“搜索”选项卡，搜索tess找到一个叫TesseractOCR的模块，右键打开配置，找到可执行文件路径，点击，然后按 Ctrl+O 弹出一个选择框，找到你刚刚安装的路径里面的 tesseract.exe，确认。
 
-![Snipaste_2025-11-08_21-37-46.png](https://cdn.nlark.com/yuque/0/2025/png/54044512/1762610336648-56177034-680b-43cd-b4bd-909f2ee077c3.png)
+![Snipaste_2025-11-08_21-37-46.png](public/Snipaste_2025-11-08_21-37-46.png)
 
 群文件找到 chi_sim.traineddata，这个是简体中文的模型文件，塞到你安装路径的 tessdata 文件夹下，文件夹下应该也有其他的模型文件，例如 eng.traineddata 等。如果你想识别其他语言，就安装对应的模型文件，都可以在网上找来下载。
 
