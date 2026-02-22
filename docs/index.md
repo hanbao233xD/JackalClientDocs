@@ -31,7 +31,7 @@ features:
     link: /commands/
   - title: 安全边界
     details: 明确的使用规范与安全指引，包含风险分级、合规建议、故障排查与日志定位，保障使用安全。
-    link: /security/
+    link: /safety/
 ---
 
 <TkVpContainer type="tip" title="推荐阅读顺序" text="新手建议优先阅读 **快速开始**，随后浏览 **模块地图** 了解功能全貌，最后查阅 **完整命令手册** 与 **安全边界**。" />

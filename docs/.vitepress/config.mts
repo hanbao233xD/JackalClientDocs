@@ -2,7 +2,18 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 import { defineTeekConfig } from 'vitepress-theme-teek/config'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { RssPlugin, type RSSOptions } from 'vitepress-plugin-rss'
-import { SearchPlugin } from 'vitepress-plugin-search'
+import { readdirSync } from 'node:fs'
+
+const moduleDocs = readdirSync(new URL('../modules', import.meta.url), { withFileTypes: true })
+  .filter((entry) => entry.isFile() && entry.name.endsWith('.md') && entry.name !== 'index.md')
+  .map((entry) => {
+    const name = entry.name.replace(/\.md$/, '')
+    return {
+      text: name,
+      link: `/modules/${name}`
+    }
+  })
+  .sort((a, b) => a.text.localeCompare(b.text, 'en'))
 
 const rss: RSSOptions = {
   title: 'JackalClient Docs',
@@ -12,13 +23,6 @@ const rss: RSSOptions = {
   language: 'zh-CN'
 }
 
-const searchOptions = {
-  previewLength: 100,
-  buttonLabel: '搜索',
-  placeholder: '搜索文档',
-  allow: ['docs/**/*.md'],
-  ignore: ['docs/.vitepress/**', 'docs/public/**']
-}
 
 const sidebarGroups = [
   {
@@ -56,6 +60,10 @@ const sidebarGroups = [
       { text: '常见问题', link: '/faq' },
       { text: 'BetterLyrics 说明', link: '/betterlyrics' }
     ]
+  },
+  {
+    text: '模块文档索引',
+    items: [{ text: '模块介绍', link: '/modules/' }, ...moduleDocs]
   }
 ]
 
@@ -80,6 +88,9 @@ const teekConfig = defineTeekConfig({
     layoutSwitch: { disabled: true },
     spotlight: { disabled: true },
     themeColor: { defaultColorName: 'vp-default' }
+  },
+  search: {
+    provider: 'local'
   },
   nav: [
     { text: '首页', link: '/' },
@@ -126,7 +137,6 @@ teekConfig.vite.ssr.noExternal = [
 ]
 teekConfig.vite.plugins = [
   ...(teekConfig.vite.plugins ?? []),
-  SearchPlugin(searchOptions),
   groupIconVitePlugin(),
   RssPlugin(rss)
 ]
